@@ -1,0 +1,85 @@
+0 verbose cli /opt/homebrew/Cellar/node/20.4.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@9.7.2
+2 info using node@v20.4.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/arunakumari/Desktop/TestProject/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/arunakumari/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/opt/homebrew/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 5ms
+17 timing npm:load:configload Completed in 5ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm i react-native-photos-frameworknpm i react-native-photos-framework
+22 verbose argv "i" "react-native-photos-frameworknpm" "i" "react-native-photos-framework" "--save"
+23 timing npm:load:setTitle Completed in 3ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:/Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-24T10_43_59_237Z-
+26 verbose logfile /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-24T10_43_59_237Z-debug-0.log
+27 timing npm:load:logFile Completed in 4ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 21ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 173ms
+34 timing idealTree:userRequests Completed in 2ms
+35 silly idealTree buildDeps
+36 silly fetch manifest react-native-photos-frameworknpm@*
+37 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+38 http fetch GET 404 https://registry.npmjs.org/react-native-photos-frameworknpm 1518ms (cache skip)
+39 http fetch GET 404 https://registry.npmjs.org/react-native-photos-frameworknpm 1191ms (cache skip)
+40 silly fetch manifest i@*
+41 http fetch GET 200 https://registry.npmjs.org/i 83ms (cache miss)
+42 silly fetch manifest react-native-photos-framework@*
+43 http fetch GET 200 https://registry.npmjs.org/react-native-photos-framework 8ms (cache hit)
+44 silly placeDep ROOT i@0.3.7 OK for: TestProject@0.0.1 want: *
+45 silly placeDep ROOT react-native-photos-framework@1.0.8 OK for: TestProject@0.0.1 want: *
+46 silly placeDep ROOT react-native-photos-frameworknpm@ OK for: TestProject@0.0.1 want: *
+47 timing idealTree:#root Completed in 2815ms
+48 timing idealTree:node_modules/i Completed in 0ms
+49 timing idealTree:node_modules/react-native-photos-framework Completed in 0ms
+50 timing idealTree:node_modules/react-native-photos-frameworknpm Completed in 0ms
+51 timing idealTree:buildDeps Completed in 2816ms
+52 timing idealTree:fixDepFlags Completed in 5ms
+53 timing idealTree Completed in 2997ms
+54 timing command:i Completed in 3001ms
+55 verbose stack HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/react-native-photos-frameworknpm - Not found
+55 verbose stack     at /opt/homebrew/lib/node_modules/npm/node_modules/npm-registry-fetch/lib/check-response.js:95:15
+55 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+55 verbose stack     at async RegistryFetcher.packument (/opt/homebrew/lib/node_modules/npm/node_modules/pacote/lib/registry.js:87:19)
+55 verbose stack     at async RegistryFetcher.manifest (/opt/homebrew/lib/node_modules/npm/node_modules/pacote/lib/registry.js:118:23)
+55 verbose stack     at async #nodeFromEdge (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1049:19)
+55 verbose stack     at async #buildDepStep (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:917:11)
+55 verbose stack     at async Arborist.buildIdealTree (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:196:7)
+55 verbose stack     at async Promise.all (index 1)
+55 verbose stack     at async Arborist.reify (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:159:5)
+55 verbose stack     at async Install.exec (/opt/homebrew/lib/node_modules/npm/lib/commands/install.js:149:5)
+56 verbose statusCode 404
+57 verbose pkgid react-native-photos-frameworknpm@*
+58 verbose cwd /Users/arunakumari/Desktop/TestProject
+59 verbose Darwin 22.1.0
+60 verbose node v20.4.0
+61 verbose npm  v9.7.2
+62 error code E404
+63 error 404 Not Found - GET https://registry.npmjs.org/react-native-photos-frameworknpm - Not found
+64 error 404
+65 error 404  'react-native-photos-frameworknpm@*' is not in this registry.
+66 error 404
+66 error 404 Note that you can also install from a
+67 error 404 tarball, folder, http url, or git url.
+68 verbose exit 1
+69 timing npm Completed in 3116ms
+70 verbose unfinished npm timer reify 1690195439350
+71 verbose unfinished npm timer reify:loadTrees 1690195439351
+72 verbose code 1
+73 error A complete log of this run can be found in: /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-24T10_43_59_237Z-debug-0.log

@@ -1,0 +1,18 @@
+'Log files:
+/Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-10T04_36_32_629Z-debug-0.log
+
+# npm resolution error report
+
+While resolving: TestProject@0.0.1
+Found: react@18.2.0
+node_modules/react
+  react@"18.2.0" from the root project
+
+Could not resolve dependency:
+peer react@"16.8.6" from react-native-webview-fix@1.0.10
+node_modules/react-native-webview-fix
+  react-native-webview-fix@"*" from the root project
+
+Fix the upstream dependency conflict, or retry
+this command with --force or --legacy-peer-deps
+to accept an incorrect (and potentially broken) dependency resolution.

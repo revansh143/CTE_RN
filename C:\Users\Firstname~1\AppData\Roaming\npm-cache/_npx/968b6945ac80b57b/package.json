@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "react-codemod": "^5.4.3"
+  }
+}

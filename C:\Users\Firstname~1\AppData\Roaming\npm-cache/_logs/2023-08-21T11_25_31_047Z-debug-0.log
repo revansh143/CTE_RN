@@ -1,0 +1,65 @@
+0 verbose cli /opt/homebrew/Cellar/node/20.4.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@9.7.2
+2 info using node@v20.4.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 0ms
+5 timing config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/arunakumari/Desktop/TestProject/.npmrc Completed in 1ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/arunakumari/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/opt/homebrew/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 0ms
+16 timing config:load Completed in 3ms
+17 timing npm:load:configload Completed in 3ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm init instamobile-google-login-demo
+22 verbose argv "init" "instamobile-google-login-demo"
+23 timing npm:load:setTitle Completed in 2ms
+24 timing npm:load:display Completed in 1ms
+25 verbose logfile logs-max:10 dir:/Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-08-21T11_25_31_047Z-
+26 verbose logfile /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-08-21T11_25_31_047Z-debug-0.log
+27 timing npm:load:logFile Completed in 5ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 20ms
+31 silly logfile done cleaning log files
+32 timing arborist:ctor Completed in 0ms
+33 timing arborist:ctor Completed in 0ms
+34 http fetch GET 404 https://registry.npmjs.org/create-instamobile-google-login-demo 410ms (cache skip)
+35 http fetch GET 404 https://registry.npmjs.org/create-instamobile-google-login-demo 1042ms (cache skip)
+36 timing command:init Completed in 1569ms
+37 verbose stack HttpErrorGeneral: 404 Not Found - GET https://registry.npmjs.org/create-instamobile-google-login-demo - Not found
+37 verbose stack     at /opt/homebrew/lib/node_modules/npm/node_modules/npm-registry-fetch/lib/check-response.js:95:15
+37 verbose stack     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+37 verbose stack     at async RegistryFetcher.packument (/opt/homebrew/lib/node_modules/npm/node_modules/pacote/lib/registry.js:87:19)
+37 verbose stack     at async RegistryFetcher.manifest (/opt/homebrew/lib/node_modules/npm/node_modules/pacote/lib/registry.js:118:23)
+37 verbose stack     at async getManifest (/opt/homebrew/lib/node_modules/npm/node_modules/libnpmexec/lib/index.js:30:22)
+37 verbose stack     at async missingFromTree (/opt/homebrew/lib/node_modules/npm/node_modules/libnpmexec/lib/index.js:59:22)
+37 verbose stack     at async /opt/homebrew/lib/node_modules/npm/node_modules/libnpmexec/lib/index.js:168:32
+37 verbose stack     at async Promise.all (index 0)
+37 verbose stack     at async exec (/opt/homebrew/lib/node_modules/npm/node_modules/libnpmexec/lib/index.js:166:3)
+37 verbose stack     at async Init.execCreate (/opt/homebrew/lib/node_modules/npm/lib/commands/init.js:133:5)
+38 verbose statusCode 404
+39 verbose pkgid create-instamobile-google-login-demo@*
+40 verbose cwd /Users/arunakumari/Desktop/TestProject
+41 verbose Darwin 22.1.0
+42 verbose node v20.4.0
+43 verbose npm  v9.7.2
+44 error code E404
+45 error 404 Not Found - GET https://registry.npmjs.org/create-instamobile-google-login-demo - Not found
+46 error 404
+47 error 404  'create-instamobile-google-login-demo@*' is not in this registry.
+48 error 404
+48 error 404 Note that you can also install from a
+49 error 404 tarball, folder, http url, or git url.
+50 verbose exit 1
+51 timing npm Completed in 1671ms
+52 verbose code 1
+53 error A complete log of this run can be found in: /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-08-21T11_25_31_047Z-debug-0.log

@@ -1,0 +1,1607 @@
+0 verbose cli /opt/homebrew/Cellar/node/20.4.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@9.7.2
+2 info using node@v20.4.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:project Completed in 1ms
+10 timing config:load:file:/Users/arunakumari/.npmrc Completed in 0ms
+11 timing config:load:user Completed in 0ms
+12 timing config:load:file:/opt/homebrew/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 1ms
+14 timing config:load:setEnvs Completed in 0ms
+15 timing config:load Completed in 5ms
+16 timing npm:load:configload Completed in 5ms
+17 timing config:load:flatten Completed in 1ms
+18 timing npm:load:mkdirpcache Completed in 1ms
+19 timing npm:load:mkdirplogs Completed in 1ms
+20 verbose title npm install npm-reinstall
+21 verbose argv "install" "--global" "npm-reinstall"
+22 timing npm:load:setTitle Completed in 2ms
+23 timing npm:load:display Completed in 0ms
+24 verbose logfile logs-max:10 dir:/Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-31T05_23_44_754Z-
+25 verbose logfile /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-31T05_23_44_754Z-debug-0.log
+26 timing npm:load:logFile Completed in 5ms
+27 timing npm:load:timers Completed in 0ms
+28 timing npm:load:configScope Completed in 0ms
+29 timing npm:load Completed in 22ms
+30 timing config:load:flatten Completed in 0ms
+31 timing arborist:ctor Completed in 0ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 2ms
+34 timing idealTree:userRequests Completed in 1ms
+35 silly idealTree buildDeps
+36 silly fetch manifest npm-reinstall@*
+37 http fetch GET 200 https://registry.npmjs.org/npm-reinstall 722ms (cache miss)
+38 silly placeDep ROOT npm-reinstall@3.1.0 OK for:  want: *
+39 silly fetch manifest @danielbayerlein/caniuse-yarn@^1.1.0
+40 silly fetch manifest caniuse-pnpm@^1.1.0
+41 silly fetch manifest chalk@^2.4.2
+42 silly fetch manifest del@^4.1.0
+43 silly fetch manifest execa@^1.0.0
+44 silly fetch manifest has-pnpm@^1.1.1
+45 silly fetch manifest has-yarn@^2.1.0
+46 silly fetch manifest ora@^3.4.0
+47 silly fetch manifest update-notifier@^2.5.0
+48 silly fetch manifest yargs@^13.2.2
+49 http fetch GET 200 https://registry.npmjs.org/chalk 115ms (cache revalidated)
+50 http fetch GET 200 https://registry.npmjs.org/yargs 132ms (cache revalidated)
+51 http fetch GET 200 https://registry.npmjs.org/execa 164ms (cache updated)
+52 http fetch GET 200 https://registry.npmjs.org/ora 180ms (cache updated)
+53 http fetch GET 200 https://registry.npmjs.org/caniuse-pnpm 364ms (cache miss)
+54 http fetch GET 200 https://registry.npmjs.org/del 383ms (cache miss)
+55 http fetch GET 200 https://registry.npmjs.org/has-yarn 404ms (cache miss)
+56 http fetch GET 200 https://registry.npmjs.org/has-pnpm 405ms (cache miss)
+57 http fetch GET 200 https://registry.npmjs.org/update-notifier 413ms (cache miss)
+58 http fetch GET 200 https://registry.npmjs.org/@danielbayerlein%2fcaniuse-yarn 859ms (cache miss)
+59 timing idealTree:#root Completed in 1589ms
+60 silly placeDep node_modules/npm-reinstall @danielbayerlein/caniuse-yarn@1.1.0 OK for: npm-reinstall@3.1.0 want: ^1.1.0
+61 silly fetch manifest commander@^2.9.0
+62 silly fetch manifest shelljs@^0.7.5
+63 silly fetch manifest update-notifier@^1.0.3
+64 silly placeDep node_modules/npm-reinstall caniuse-pnpm@1.1.0 OK for: npm-reinstall@3.1.0 want: ^1.1.0
+65 silly fetch manifest figures@^3.0.0
+66 silly fetch manifest shelljs@^0.8.3
+67 silly placeDep node_modules/npm-reinstall chalk@2.4.2 OK for: npm-reinstall@3.1.0 want: ^2.4.2
+68 silly fetch manifest ansi-styles@^3.2.1
+69 silly fetch manifest escape-string-regexp@^1.0.5
+70 silly fetch manifest supports-color@^5.3.0
+71 silly placeDep node_modules/npm-reinstall del@4.1.1 OK for: npm-reinstall@3.1.0 want: ^4.1.0
+72 silly fetch manifest @types/glob@^7.1.1
+73 silly fetch manifest globby@^6.1.0
+74 silly fetch manifest is-path-cwd@^2.0.0
+75 silly fetch manifest is-path-in-cwd@^2.0.0
+76 silly fetch manifest p-map@^2.0.0
+77 silly fetch manifest pify@^4.0.1
+78 silly fetch manifest rimraf@^2.6.3
+79 silly placeDep node_modules/npm-reinstall execa@1.0.0 OK for: npm-reinstall@3.1.0 want: ^1.0.0
+80 silly fetch manifest cross-spawn@^6.0.0
+81 silly fetch manifest get-stream@^4.0.0
+82 silly fetch manifest is-stream@^1.1.0
+83 silly fetch manifest npm-run-path@^2.0.0
+84 silly fetch manifest p-finally@^1.0.0
+85 silly fetch manifest signal-exit@^3.0.0
+86 silly fetch manifest strip-eof@^1.0.0
+87 silly placeDep node_modules/npm-reinstall has-pnpm@1.1.1 OK for: npm-reinstall@3.1.0 want: ^1.1.1
+88 silly placeDep node_modules/npm-reinstall has-yarn@2.1.0 OK for: npm-reinstall@3.1.0 want: ^2.1.0
+89 silly placeDep node_modules/npm-reinstall ora@3.4.0 OK for: npm-reinstall@3.1.0 want: ^3.4.0
+90 silly fetch manifest cli-cursor@^2.1.0
+91 silly fetch manifest cli-spinners@^2.0.0
+92 silly fetch manifest log-symbols@^2.2.0
+93 silly fetch manifest strip-ansi@^5.2.0
+94 silly fetch manifest wcwidth@^1.0.1
+95 silly placeDep node_modules/npm-reinstall update-notifier@2.5.0 OK for: npm-reinstall@3.1.0 want: ^2.5.0
+96 silly fetch manifest boxen@^1.2.1
+97 silly fetch manifest configstore@^3.0.0
+98 silly fetch manifest import-lazy@^2.1.0
+99 silly fetch manifest is-ci@^1.0.10
+100 silly fetch manifest is-installed-globally@^0.1.0
+101 silly fetch manifest is-npm@^1.0.0
+102 silly fetch manifest latest-version@^3.0.0
+103 silly fetch manifest semver-diff@^2.0.0
+104 silly fetch manifest xdg-basedir@^3.0.0
+105 silly placeDep node_modules/npm-reinstall yargs@13.3.2 OK for: npm-reinstall@3.1.0 want: ^13.2.2
+106 silly fetch manifest cliui@^5.0.0
+107 silly fetch manifest find-up@^3.0.0
+108 silly fetch manifest get-caller-file@^2.0.1
+109 silly fetch manifest require-directory@^2.1.1
+110 silly fetch manifest require-main-filename@^2.0.0
+111 silly fetch manifest set-blocking@^2.0.0
+112 silly fetch manifest string-width@^3.0.0
+113 silly fetch manifest which-module@^2.0.0
+114 silly fetch manifest y18n@^4.0.0
+115 silly fetch manifest yargs-parser@^13.1.2
+116 http fetch GET 200 https://registry.npmjs.org/globby 102ms (cache miss)
+117 http fetch GET 200 https://registry.npmjs.org/strip-eof 324ms (cache miss)
+118 http fetch GET 200 https://registry.npmjs.org/p-finally 324ms (cache miss)
+119 http fetch GET 200 https://registry.npmjs.org/p-map 346ms (cache miss)
+120 http fetch GET 200 https://registry.npmjs.org/shelljs 358ms (cache miss)
+121 http fetch GET 200 https://registry.npmjs.org/is-ci 364ms (cache miss)
+122 http fetch GET 200 https://registry.npmjs.org/is-npm 376ms (cache miss)
+123 http fetch GET 200 https://registry.npmjs.org/figures 410ms (cache miss)
+124 http fetch GET 200 https://registry.npmjs.org/configstore 403ms (cache miss)
+125 http fetch GET 200 https://registry.npmjs.org/cross-spawn 423ms (cache revalidated)
+126 http fetch GET 200 https://registry.npmjs.org/get-stream 424ms (cache revalidated)
+127 http fetch GET 200 https://registry.npmjs.org/ansi-styles 428ms (cache revalidated)
+128 http fetch GET 200 https://registry.npmjs.org/boxen 424ms (cache miss)
+129 http fetch GET 200 https://registry.npmjs.org/log-symbols 441ms (cache revalidated)
+130 http fetch GET 200 https://registry.npmjs.org/supports-color 448ms (cache revalidated)
+131 http fetch GET 200 https://registry.npmjs.org/escape-string-regexp 472ms (cache revalidated)
+132 http fetch GET 200 https://registry.npmjs.org/rimraf 470ms (cache revalidated)
+133 http fetch GET 200 https://registry.npmjs.org/cli-spinners 466ms (cache revalidated)
+134 http fetch GET 200 https://registry.npmjs.org/signal-exit 470ms (cache updated)
+135 http fetch GET 200 https://registry.npmjs.org/require-directory 466ms (cache revalidated)
+136 http fetch GET 200 https://registry.npmjs.org/is-stream 500ms (cache revalidated)
+137 http fetch GET 200 https://registry.npmjs.org/npm-run-path 501ms (cache revalidated)
+138 http fetch GET 200 https://registry.npmjs.org/yargs-parser 487ms (cache revalidated)
+139 http fetch GET 200 https://registry.npmjs.org/find-up 530ms (cache revalidated)
+140 http fetch GET 200 https://registry.npmjs.org/commander 545ms (cache revalidated)
+141 http fetch GET 200 https://registry.npmjs.org/shelljs 546ms (cache miss)
+142 http fetch GET 200 https://registry.npmjs.org/cliui 562ms (cache revalidated)
+143 http fetch GET 200 https://registry.npmjs.org/get-caller-file 563ms (cache revalidated)
+144 http fetch GET 200 https://registry.npmjs.org/strip-ansi 573ms (cache revalidated)
+145 http fetch GET 200 https://registry.npmjs.org/pify 605ms (cache revalidated)
+146 http fetch GET 200 https://registry.npmjs.org/string-width 596ms (cache revalidated)
+147 http fetch GET 200 https://registry.npmjs.org/@types%2fglob 623ms (cache miss)
+148 http fetch GET 200 https://registry.npmjs.org/semver-diff 628ms (cache miss)
+149 http fetch GET 200 https://registry.npmjs.org/xdg-basedir 629ms (cache miss)
+150 http fetch GET 200 https://registry.npmjs.org/is-installed-globally 659ms (cache miss)
+151 http fetch GET 200 https://registry.npmjs.org/y18n 656ms (cache updated)
+152 http fetch GET 200 https://registry.npmjs.org/is-path-cwd 696ms (cache miss)
+153 http fetch GET 200 https://registry.npmjs.org/cli-cursor 750ms (cache revalidated)
+154 http fetch GET 200 https://registry.npmjs.org/wcwidth 754ms (cache revalidated)
+155 http fetch GET 200 https://registry.npmjs.org/which-module 887ms (cache updated)
+156 http fetch GET 200 https://registry.npmjs.org/is-path-in-cwd 1100ms (cache miss)
+157 http fetch GET 200 https://registry.npmjs.org/latest-version 1176ms (cache miss)
+158 http fetch GET 200 https://registry.npmjs.org/import-lazy 1178ms (cache miss)
+159 http fetch GET 200 https://registry.npmjs.org/require-main-filename 1605ms (cache revalidated)
+160 http fetch GET 200 https://registry.npmjs.org/set-blocking 1606ms (cache revalidated)
+161 timing idealTree:node_modules/npm-reinstall Completed in 1628ms
+162 silly placeDep node_modules/npm-reinstall commander@2.20.3 OK for: @danielbayerlein/caniuse-yarn@1.1.0 want: ^2.9.0
+163 silly placeDep node_modules/npm-reinstall shelljs@0.7.8 OK for: @danielbayerlein/caniuse-yarn@1.1.0 want: ^0.7.5
+164 silly fetch manifest glob@^7.0.0
+165 silly fetch manifest interpret@^1.0.0
+166 silly fetch manifest rechoir@^0.6.2
+167 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn update-notifier@1.0.3 OK for: @danielbayerlein/caniuse-yarn@1.1.0 want: ^1.0.3
+168 silly fetch manifest boxen@^0.6.0
+169 silly fetch manifest chalk@^1.0.0
+170 silly fetch manifest configstore@^2.0.0
+171 silly fetch manifest latest-version@^2.0.0
+172 silly fetch manifest lazy-req@^1.1.0
+173 silly fetch manifest xdg-basedir@^2.0.0
+174 http fetch GET 200 https://registry.npmjs.org/glob 55ms (cache revalidated)
+175 http fetch GET 200 https://registry.npmjs.org/interpret 315ms (cache miss)
+176 http fetch GET 200 https://registry.npmjs.org/rechoir 321ms (cache miss)
+177 http fetch GET 200 https://registry.npmjs.org/lazy-req 323ms (cache miss)
+178 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn Completed in 326ms
+179 silly placeDep node_modules/npm-reinstall figures@3.2.0 OK for: caniuse-pnpm@1.1.0 want: ^3.0.0
+180 silly placeDep node_modules/npm-reinstall/node_modules/caniuse-pnpm shelljs@0.8.5 OK for: caniuse-pnpm@1.1.0 want: ^0.8.3
+181 timing idealTree:node_modules/npm-reinstall/node_modules/caniuse-pnpm Completed in 2ms
+182 silly placeDep node_modules/npm-reinstall ansi-styles@3.2.1 OK for: chalk@2.4.2 want: ^3.2.1
+183 silly fetch manifest color-convert@^1.9.0
+184 silly placeDep node_modules/npm-reinstall escape-string-regexp@1.0.5 OK for: chalk@2.4.2 want: ^1.0.5
+185 silly placeDep node_modules/npm-reinstall supports-color@5.5.0 OK for: chalk@2.4.2 want: ^5.3.0
+186 silly fetch manifest has-flag@^3.0.0
+187 http fetch GET 200 https://registry.npmjs.org/has-flag 38ms (cache revalidated)
+188 http fetch GET 200 https://registry.npmjs.org/color-convert 41ms (cache revalidated)
+189 timing idealTree:node_modules/npm-reinstall/node_modules/chalk Completed in 43ms
+190 silly placeDep node_modules/npm-reinstall color-convert@1.9.3 OK for: ansi-styles@3.2.1 want: ^1.9.0
+191 silly fetch manifest color-name@1.1.3
+192 http fetch GET 200 https://registry.npmjs.org/color-name 36ms (cache revalidated)
+193 timing idealTree:node_modules/npm-reinstall/node_modules/ansi-styles Completed in 37ms
+194 silly placeDep node_modules/npm-reinstall color-name@1.1.3 OK for: color-convert@1.9.3 want: 1.1.3
+195 timing idealTree:node_modules/npm-reinstall/node_modules/color-convert Completed in 1ms
+196 timing idealTree:node_modules/npm-reinstall/node_modules/color-name Completed in 0ms
+197 timing idealTree:node_modules/npm-reinstall/node_modules/commander Completed in 0ms
+198 silly placeDep node_modules/npm-reinstall @types/glob@7.2.0 OK for: del@4.1.1 want: ^7.1.1
+199 silly fetch manifest @types/minimatch@*
+200 silly fetch manifest @types/node@*
+201 silly placeDep node_modules/npm-reinstall globby@6.1.0 OK for: del@4.1.1 want: ^6.1.0
+202 silly fetch manifest array-union@^1.0.1
+203 silly fetch manifest glob@^7.0.3
+204 silly fetch manifest object-assign@^4.0.1
+205 silly fetch manifest pify@^2.0.0
+206 silly fetch manifest pinkie-promise@^2.0.0
+207 silly placeDep node_modules/npm-reinstall is-path-cwd@2.2.0 OK for: del@4.1.1 want: ^2.0.0
+208 silly placeDep node_modules/npm-reinstall is-path-in-cwd@2.1.0 OK for: del@4.1.1 want: ^2.0.0
+209 silly fetch manifest is-path-inside@^2.1.0
+210 silly placeDep node_modules/npm-reinstall p-map@2.1.0 OK for: del@4.1.1 want: ^2.0.0
+211 silly placeDep node_modules/npm-reinstall pify@4.0.1 OK for: del@4.1.1 want: ^4.0.1
+212 silly placeDep node_modules/npm-reinstall rimraf@2.7.1 OK for: del@4.1.1 want: ^2.6.3
+213 silly fetch manifest glob@^7.1.3
+214 http fetch GET 200 https://registry.npmjs.org/is-path-inside 41ms (cache miss)
+215 http fetch GET 200 https://registry.npmjs.org/object-assign 48ms (cache revalidated)
+216 http fetch GET 200 https://registry.npmjs.org/array-union 50ms (cache miss)
+217 http fetch GET 200 https://registry.npmjs.org/pinkie-promise 331ms (cache miss)
+218 http fetch GET 200 https://registry.npmjs.org/@types%2fnode 859ms (cache updated)
+219 http fetch GET 200 https://registry.npmjs.org/@types%2fminimatch 1301ms (cache miss)
+220 timing idealTree:node_modules/npm-reinstall/node_modules/del Completed in 1304ms
+221 silly placeDep node_modules/npm-reinstall @types/minimatch@5.1.2 OK for: @types/glob@7.2.0 want: *
+222 silly placeDep node_modules/npm-reinstall @types/node@20.4.5 OK for: @types/glob@7.2.0 want: *
+223 timing idealTree:node_modules/npm-reinstall/node_modules/@types/glob Completed in 1ms
+224 timing idealTree:node_modules/npm-reinstall/node_modules/@types/minimatch Completed in 0ms
+225 timing idealTree:node_modules/npm-reinstall/node_modules/@types/node Completed in 0ms
+226 timing idealTree:node_modules/npm-reinstall/node_modules/escape-string-regexp Completed in 0ms
+227 silly placeDep node_modules/npm-reinstall cross-spawn@6.0.5 OK for: execa@1.0.0 want: ^6.0.0
+228 silly fetch manifest nice-try@^1.0.4
+229 silly fetch manifest path-key@^2.0.1
+230 silly fetch manifest semver@^5.5.0
+231 silly fetch manifest shebang-command@^1.2.0
+232 silly fetch manifest which@^1.2.9
+233 silly placeDep node_modules/npm-reinstall get-stream@4.1.0 OK for: execa@1.0.0 want: ^4.0.0
+234 silly fetch manifest pump@^3.0.0
+235 silly placeDep node_modules/npm-reinstall is-stream@1.1.0 OK for: execa@1.0.0 want: ^1.1.0
+236 silly placeDep node_modules/npm-reinstall npm-run-path@2.0.2 OK for: execa@1.0.0 want: ^2.0.0
+237 silly fetch manifest path-key@^2.0.0
+238 silly placeDep node_modules/npm-reinstall p-finally@1.0.0 OK for: execa@1.0.0 want: ^1.0.0
+239 silly placeDep node_modules/npm-reinstall signal-exit@3.0.7 OK for: execa@1.0.0 want: ^3.0.0
+240 silly placeDep node_modules/npm-reinstall strip-eof@1.0.0 OK for: execa@1.0.0 want: ^1.0.0
+241 http fetch GET 200 https://registry.npmjs.org/path-key 39ms (cache revalidated)
+242 http fetch GET 200 https://registry.npmjs.org/path-key 41ms (cache revalidated)
+243 http fetch GET 200 https://registry.npmjs.org/shebang-command 40ms (cache revalidated)
+244 http fetch GET 200 https://registry.npmjs.org/which 41ms (cache revalidated)
+245 http fetch GET 200 https://registry.npmjs.org/semver 41ms (cache revalidated)
+246 http fetch GET 200 https://registry.npmjs.org/pump 477ms (cache miss)
+247 http fetch GET 200 https://registry.npmjs.org/nice-try 480ms (cache miss)
+248 timing idealTree:node_modules/npm-reinstall/node_modules/execa Completed in 481ms
+249 silly placeDep node_modules/npm-reinstall nice-try@1.0.5 OK for: cross-spawn@6.0.5 want: ^1.0.4
+250 silly placeDep node_modules/npm-reinstall path-key@2.0.1 OK for: cross-spawn@6.0.5 want: ^2.0.1
+251 silly placeDep node_modules/npm-reinstall semver@5.7.2 OK for: cross-spawn@6.0.5 want: ^5.5.0
+252 silly placeDep node_modules/npm-reinstall shebang-command@1.2.0 OK for: cross-spawn@6.0.5 want: ^1.2.0
+253 silly fetch manifest shebang-regex@^1.0.0
+254 silly placeDep node_modules/npm-reinstall which@1.3.1 OK for: cross-spawn@6.0.5 want: ^1.2.9
+255 silly fetch manifest isexe@^2.0.0
+256 http fetch GET 200 https://registry.npmjs.org/shebang-regex 35ms (cache revalidated)
+257 http fetch GET 200 https://registry.npmjs.org/isexe 35ms (cache updated)
+258 timing idealTree:node_modules/npm-reinstall/node_modules/cross-spawn Completed in 37ms
+259 timing idealTree:node_modules/npm-reinstall/node_modules/figures Completed in 0ms
+260 silly placeDep node_modules/npm-reinstall pump@3.0.0 OK for: get-stream@4.1.0 want: ^3.0.0
+261 silly fetch manifest end-of-stream@^1.1.0
+262 silly fetch manifest once@^1.3.1
+263 http fetch GET 200 https://registry.npmjs.org/once 37ms (cache revalidated)
+264 http fetch GET 200 https://registry.npmjs.org/end-of-stream 325ms (cache miss)
+265 timing idealTree:node_modules/npm-reinstall/node_modules/get-stream Completed in 327ms
+266 silly placeDep node_modules/npm-reinstall array-union@1.0.2 OK for: globby@6.1.0 want: ^1.0.1
+267 silly fetch manifest array-uniq@^1.0.1
+268 silly placeDep node_modules/npm-reinstall glob@7.2.3 OK for: globby@6.1.0 want: ^7.0.3
+269 silly fetch manifest fs.realpath@^1.0.0
+270 silly fetch manifest inflight@^1.0.4
+271 silly fetch manifest inherits@2
+272 silly fetch manifest minimatch@^3.1.1
+273 silly fetch manifest once@^1.3.0
+274 silly fetch manifest path-is-absolute@^1.0.0
+275 silly placeDep node_modules/npm-reinstall object-assign@4.1.1 OK for: globby@6.1.0 want: ^4.0.1
+276 silly placeDep node_modules/npm-reinstall/node_modules/globby pify@2.3.0 OK for: globby@6.1.0 want: ^2.0.0
+277 silly placeDep node_modules/npm-reinstall pinkie-promise@2.0.1 OK for: globby@6.1.0 want: ^2.0.0
+278 silly fetch manifest pinkie@^2.0.0
+279 http fetch GET 200 https://registry.npmjs.org/fs.realpath 47ms (cache revalidated)
+280 http fetch GET 200 https://registry.npmjs.org/minimatch 46ms (cache revalidated)
+281 http fetch GET 200 https://registry.npmjs.org/inflight 57ms (cache revalidated)
+282 http fetch GET 200 https://registry.npmjs.org/inherits 57ms (cache revalidated)
+283 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 55ms (cache updated)
+284 http fetch GET 200 https://registry.npmjs.org/array-uniq 304ms (cache miss)
+285 http fetch GET 200 https://registry.npmjs.org/pinkie 303ms (cache miss)
+286 timing idealTree:node_modules/npm-reinstall/node_modules/globby Completed in 313ms
+287 silly placeDep node_modules/npm-reinstall array-uniq@1.0.3 OK for: array-union@1.0.2 want: ^1.0.1
+288 timing idealTree:node_modules/npm-reinstall/node_modules/array-union Completed in 1ms
+289 timing idealTree:node_modules/npm-reinstall/node_modules/array-uniq Completed in 0ms
+290 silly placeDep node_modules/npm-reinstall fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+291 silly placeDep node_modules/npm-reinstall inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+292 silly fetch manifest wrappy@1
+293 silly placeDep node_modules/npm-reinstall inherits@2.0.4 OK for: glob@7.2.3 want: 2
+294 silly placeDep node_modules/npm-reinstall minimatch@3.1.2 OK for: glob@7.2.3 want: ^3.1.1
+295 silly fetch manifest brace-expansion@^1.1.7
+296 silly placeDep node_modules/npm-reinstall once@1.4.0 OK for: glob@7.2.3 want: ^1.3.0
+297 silly placeDep node_modules/npm-reinstall path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+298 http fetch GET 200 https://registry.npmjs.org/wrappy 37ms (cache revalidated)
+299 http fetch GET 200 https://registry.npmjs.org/brace-expansion 38ms (cache revalidated)
+300 timing idealTree:node_modules/npm-reinstall/node_modules/glob Completed in 42ms
+301 timing idealTree:node_modules/npm-reinstall/node_modules/fs.realpath Completed in 0ms
+302 timing idealTree:node_modules/npm-reinstall/node_modules/has-pnpm Completed in 0ms
+303 timing idealTree:node_modules/npm-reinstall/node_modules/has-yarn Completed in 0ms
+304 silly placeDep node_modules/npm-reinstall wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+305 timing idealTree:node_modules/npm-reinstall/node_modules/inflight Completed in 1ms
+306 timing idealTree:node_modules/npm-reinstall/node_modules/inherits Completed in 0ms
+307 timing idealTree:node_modules/npm-reinstall/node_modules/is-path-cwd Completed in 0ms
+308 silly placeDep node_modules/npm-reinstall is-path-inside@2.1.0 OK for: is-path-in-cwd@2.1.0 want: ^2.1.0
+309 silly fetch manifest path-is-inside@^1.0.2
+310 http fetch GET 200 https://registry.npmjs.org/path-is-inside 382ms (cache miss)
+311 timing idealTree:node_modules/npm-reinstall/node_modules/is-path-in-cwd Completed in 383ms
+312 silly placeDep node_modules/npm-reinstall path-is-inside@1.0.2 OK for: is-path-inside@2.1.0 want: ^1.0.2
+313 timing idealTree:node_modules/npm-reinstall/node_modules/is-path-inside Completed in 0ms
+314 timing idealTree:node_modules/npm-reinstall/node_modules/is-stream Completed in 0ms
+315 silly placeDep node_modules/npm-reinstall brace-expansion@1.1.11 OK for: minimatch@3.1.2 want: ^1.1.7
+316 silly fetch manifest balanced-match@^1.0.0
+317 silly fetch manifest concat-map@0.0.1
+318 http fetch GET 200 https://registry.npmjs.org/balanced-match 33ms (cache revalidated)
+319 http fetch GET 200 https://registry.npmjs.org/concat-map 34ms (cache revalidated)
+320 timing idealTree:node_modules/npm-reinstall/node_modules/minimatch Completed in 35ms
+321 silly placeDep node_modules/npm-reinstall balanced-match@1.0.2 OK for: brace-expansion@1.1.11 want: ^1.0.0
+322 silly placeDep node_modules/npm-reinstall concat-map@0.0.1 OK for: brace-expansion@1.1.11 want: 0.0.1
+323 timing idealTree:node_modules/npm-reinstall/node_modules/brace-expansion Completed in 0ms
+324 timing idealTree:node_modules/npm-reinstall/node_modules/balanced-match Completed in 0ms
+325 timing idealTree:node_modules/npm-reinstall/node_modules/concat-map Completed in 0ms
+326 timing idealTree:node_modules/npm-reinstall/node_modules/nice-try Completed in 0ms
+327 timing idealTree:node_modules/npm-reinstall/node_modules/npm-run-path Completed in 0ms
+328 timing idealTree:node_modules/npm-reinstall/node_modules/object-assign Completed in 0ms
+329 timing idealTree:node_modules/npm-reinstall/node_modules/once Completed in 0ms
+330 silly placeDep node_modules/npm-reinstall cli-cursor@2.1.0 OK for: ora@3.4.0 want: ^2.1.0
+331 silly fetch manifest restore-cursor@^2.0.0
+332 silly placeDep node_modules/npm-reinstall cli-spinners@2.9.0 OK for: ora@3.4.0 want: ^2.0.0
+333 silly placeDep node_modules/npm-reinstall log-symbols@2.2.0 OK for: ora@3.4.0 want: ^2.2.0
+334 silly placeDep node_modules/npm-reinstall strip-ansi@5.2.0 OK for: ora@3.4.0 want: ^5.2.0
+335 silly fetch manifest ansi-regex@^4.1.0
+336 silly placeDep node_modules/npm-reinstall wcwidth@1.0.1 OK for: ora@3.4.0 want: ^1.0.1
+337 silly fetch manifest defaults@^1.0.3
+338 http fetch GET 200 https://registry.npmjs.org/restore-cursor 39ms (cache revalidated)
+339 http fetch GET 200 https://registry.npmjs.org/ansi-regex 38ms (cache revalidated)
+340 http fetch GET 200 https://registry.npmjs.org/defaults 387ms (cache revalidated)
+341 timing idealTree:node_modules/npm-reinstall/node_modules/ora Completed in 389ms
+342 silly placeDep node_modules/npm-reinstall restore-cursor@2.0.0 OK for: cli-cursor@2.1.0 want: ^2.0.0
+343 silly fetch manifest onetime@^2.0.0
+344 http fetch GET 200 https://registry.npmjs.org/onetime 34ms (cache revalidated)
+345 timing idealTree:node_modules/npm-reinstall/node_modules/cli-cursor Completed in 36ms
+346 timing idealTree:node_modules/npm-reinstall/node_modules/cli-spinners Completed in 0ms
+347 timing idealTree:node_modules/npm-reinstall/node_modules/log-symbols Completed in 0ms
+348 timing idealTree:node_modules/npm-reinstall/node_modules/p-finally Completed in 0ms
+349 timing idealTree:node_modules/npm-reinstall/node_modules/p-map Completed in 0ms
+350 timing idealTree:node_modules/npm-reinstall/node_modules/path-is-absolute Completed in 0ms
+351 timing idealTree:node_modules/npm-reinstall/node_modules/path-is-inside Completed in 0ms
+352 timing idealTree:node_modules/npm-reinstall/node_modules/path-key Completed in 0ms
+353 timing idealTree:node_modules/npm-reinstall/node_modules/pify Completed in 0ms
+354 silly placeDep node_modules/npm-reinstall pinkie@2.0.4 OK for: pinkie-promise@2.0.1 want: ^2.0.0
+355 timing idealTree:node_modules/npm-reinstall/node_modules/pinkie-promise Completed in 0ms
+356 timing idealTree:node_modules/npm-reinstall/node_modules/pinkie Completed in 0ms
+357 silly placeDep node_modules/npm-reinstall end-of-stream@1.4.4 OK for: pump@3.0.0 want: ^1.1.0
+358 timing idealTree:node_modules/npm-reinstall/node_modules/pump Completed in 1ms
+359 timing idealTree:node_modules/npm-reinstall/node_modules/end-of-stream Completed in 0ms
+360 silly placeDep node_modules/npm-reinstall onetime@2.0.1 OK for: restore-cursor@2.0.0 want: ^2.0.0
+361 silly fetch manifest mimic-fn@^1.0.0
+362 http fetch GET 200 https://registry.npmjs.org/mimic-fn 32ms (cache revalidated)
+363 timing idealTree:node_modules/npm-reinstall/node_modules/restore-cursor Completed in 33ms
+364 silly placeDep node_modules/npm-reinstall mimic-fn@1.2.0 OK for: onetime@2.0.1 want: ^1.0.0
+365 timing idealTree:node_modules/npm-reinstall/node_modules/onetime Completed in 0ms
+366 timing idealTree:node_modules/npm-reinstall/node_modules/mimic-fn Completed in 0ms
+367 timing idealTree:node_modules/npm-reinstall/node_modules/rimraf Completed in 0ms
+368 timing idealTree:node_modules/npm-reinstall/node_modules/semver Completed in 0ms
+369 silly placeDep node_modules/npm-reinstall shebang-regex@1.0.0 OK for: shebang-command@1.2.0 want: ^1.0.0
+370 timing idealTree:node_modules/npm-reinstall/node_modules/shebang-command Completed in 0ms
+371 timing idealTree:node_modules/npm-reinstall/node_modules/shebang-regex Completed in 0ms
+372 silly placeDep node_modules/npm-reinstall interpret@1.4.0 OK for: shelljs@0.7.8 want: ^1.0.0
+373 silly placeDep node_modules/npm-reinstall rechoir@0.6.2 OK for: shelljs@0.7.8 want: ^0.6.2
+374 silly fetch manifest resolve@^1.1.6
+375 http fetch GET 200 https://registry.npmjs.org/resolve 33ms (cache revalidated)
+376 timing idealTree:node_modules/npm-reinstall/node_modules/shelljs Completed in 34ms
+377 timing idealTree:node_modules/npm-reinstall/node_modules/interpret Completed in 0ms
+378 silly placeDep node_modules/npm-reinstall resolve@1.22.2 OK for: rechoir@0.6.2 want: ^1.1.6
+379 silly fetch manifest is-core-module@^2.11.0
+380 silly fetch manifest path-parse@^1.0.7
+381 silly fetch manifest supports-preserve-symlinks-flag@^1.0.0
+382 http fetch GET 200 https://registry.npmjs.org/supports-preserve-symlinks-flag 35ms (cache revalidated)
+383 http fetch GET 200 https://registry.npmjs.org/path-parse 37ms (cache revalidated)
+384 http fetch GET 200 https://registry.npmjs.org/is-core-module 47ms (cache updated)
+385 timing idealTree:node_modules/npm-reinstall/node_modules/rechoir Completed in 48ms
+386 silly placeDep node_modules/npm-reinstall is-core-module@2.12.1 OK for: resolve@1.22.2 want: ^2.11.0
+387 silly fetch manifest has@^1.0.3
+388 silly placeDep node_modules/npm-reinstall path-parse@1.0.7 OK for: resolve@1.22.2 want: ^1.0.7
+389 silly placeDep node_modules/npm-reinstall supports-preserve-symlinks-flag@1.0.0 OK for: resolve@1.22.2 want: ^1.0.0
+390 http fetch GET 200 https://registry.npmjs.org/has 30ms (cache revalidated)
+391 timing idealTree:node_modules/npm-reinstall/node_modules/resolve Completed in 32ms
+392 silly placeDep node_modules/npm-reinstall has@1.0.3 OK for: is-core-module@2.12.1 want: ^1.0.3
+393 silly fetch manifest function-bind@^1.1.1
+394 http fetch GET 200 https://registry.npmjs.org/function-bind 34ms (cache updated)
+395 timing idealTree:node_modules/npm-reinstall/node_modules/is-core-module Completed in 34ms
+396 silly placeDep node_modules/npm-reinstall function-bind@1.1.1 OK for: has@1.0.3 want: ^1.1.1
+397 timing idealTree:node_modules/npm-reinstall/node_modules/has Completed in 0ms
+398 timing idealTree:node_modules/npm-reinstall/node_modules/function-bind Completed in 0ms
+399 timing idealTree:node_modules/npm-reinstall/node_modules/path-parse Completed in 0ms
+400 timing idealTree:node_modules/npm-reinstall/node_modules/signal-exit Completed in 0ms
+401 silly placeDep node_modules/npm-reinstall ansi-regex@4.1.1 OK for: strip-ansi@5.2.0 want: ^4.1.0
+402 timing idealTree:node_modules/npm-reinstall/node_modules/strip-ansi Completed in 1ms
+403 timing idealTree:node_modules/npm-reinstall/node_modules/ansi-regex Completed in 0ms
+404 timing idealTree:node_modules/npm-reinstall/node_modules/strip-eof Completed in 0ms
+405 silly placeDep node_modules/npm-reinstall has-flag@3.0.0 OK for: supports-color@5.5.0 want: ^3.0.0
+406 timing idealTree:node_modules/npm-reinstall/node_modules/supports-color Completed in 0ms
+407 timing idealTree:node_modules/npm-reinstall/node_modules/has-flag Completed in 0ms
+408 timing idealTree:node_modules/npm-reinstall/node_modules/supports-preserve-symlinks-flag Completed in 0ms
+409 silly placeDep node_modules/npm-reinstall boxen@1.3.0 OK for: update-notifier@2.5.0 want: ^1.2.1
+410 silly fetch manifest ansi-align@^2.0.0
+411 silly fetch manifest camelcase@^4.0.0
+412 silly fetch manifest cli-boxes@^1.0.0
+413 silly fetch manifest string-width@^2.0.0
+414 silly fetch manifest term-size@^1.2.0
+415 silly fetch manifest widest-line@^2.0.0
+416 silly placeDep node_modules/npm-reinstall configstore@3.1.5 OK for: update-notifier@2.5.0 want: ^3.0.0
+417 silly fetch manifest dot-prop@^4.2.1
+418 silly fetch manifest graceful-fs@^4.1.2
+419 silly fetch manifest make-dir@^1.0.0
+420 silly fetch manifest unique-string@^1.0.0
+421 silly fetch manifest write-file-atomic@^2.0.0
+422 silly placeDep node_modules/npm-reinstall import-lazy@2.1.0 OK for: update-notifier@2.5.0 want: ^2.1.0
+423 silly placeDep node_modules/npm-reinstall is-ci@1.2.1 OK for: update-notifier@2.5.0 want: ^1.0.10
+424 silly fetch manifest ci-info@^1.5.0
+425 silly placeDep node_modules/npm-reinstall is-installed-globally@0.1.0 OK for: update-notifier@2.5.0 want: ^0.1.0
+426 silly fetch manifest global-dirs@^0.1.0
+427 silly fetch manifest is-path-inside@^1.0.0
+428 silly placeDep node_modules/npm-reinstall is-npm@1.0.0 OK for: update-notifier@2.5.0 want: ^1.0.0
+429 silly placeDep node_modules/npm-reinstall latest-version@3.1.0 OK for: update-notifier@2.5.0 want: ^3.0.0
+430 silly fetch manifest package-json@^4.0.0
+431 silly placeDep node_modules/npm-reinstall semver-diff@2.1.0 OK for: update-notifier@2.5.0 want: ^2.0.0
+432 silly placeDep node_modules/npm-reinstall xdg-basedir@3.0.0 OK for: update-notifier@2.5.0 want: ^3.0.0
+433 http fetch GET 200 https://registry.npmjs.org/camelcase 54ms (cache revalidated)
+434 http fetch GET 200 https://registry.npmjs.org/write-file-atomic 49ms (cache revalidated)
+435 http fetch GET 200 https://registry.npmjs.org/graceful-fs 51ms (cache revalidated)
+436 http fetch GET 200 https://registry.npmjs.org/ci-info 51ms (cache revalidated)
+437 http fetch GET 200 https://registry.npmjs.org/make-dir 53ms (cache revalidated)
+438 http fetch GET 200 https://registry.npmjs.org/ansi-align 481ms (cache miss)
+439 http fetch GET 200 https://registry.npmjs.org/cli-boxes 481ms (cache miss)
+440 http fetch GET 200 https://registry.npmjs.org/term-size 481ms (cache miss)
+441 http fetch GET 200 https://registry.npmjs.org/widest-line 480ms (cache miss)
+442 http fetch GET 200 https://registry.npmjs.org/global-dirs 476ms (cache miss)
+443 http fetch GET 200 https://registry.npmjs.org/unique-string 1091ms (cache miss)
+444 http fetch GET 200 https://registry.npmjs.org/package-json 1093ms (cache miss)
+445 http fetch GET 200 https://registry.npmjs.org/dot-prop 1115ms (cache miss)
+446 timing idealTree:node_modules/npm-reinstall/node_modules/update-notifier Completed in 1120ms
+447 silly placeDep node_modules/npm-reinstall ansi-align@2.0.0 OK for: boxen@1.3.0 want: ^2.0.0
+448 silly placeDep node_modules/npm-reinstall camelcase@4.1.0 OK for: boxen@1.3.0 want: ^4.0.0
+449 silly placeDep node_modules/npm-reinstall cli-boxes@1.0.0 OK for: boxen@1.3.0 want: ^1.0.0
+450 silly placeDep node_modules/npm-reinstall string-width@2.1.1 OK for: boxen@1.3.0 want: ^2.0.0
+451 silly fetch manifest is-fullwidth-code-point@^2.0.0
+452 silly fetch manifest strip-ansi@^4.0.0
+453 silly placeDep node_modules/npm-reinstall term-size@1.2.0 OK for: boxen@1.3.0 want: ^1.2.0
+454 silly fetch manifest execa@^0.7.0
+455 silly placeDep node_modules/npm-reinstall widest-line@2.0.1 OK for: boxen@1.3.0 want: ^2.0.0
+456 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 326ms (cache revalidated)
+457 timing idealTree:node_modules/npm-reinstall/node_modules/boxen Completed in 329ms
+458 timing idealTree:node_modules/npm-reinstall/node_modules/ansi-align Completed in 0ms
+459 timing idealTree:node_modules/npm-reinstall/node_modules/camelcase Completed in 0ms
+460 timing idealTree:node_modules/npm-reinstall/node_modules/cli-boxes Completed in 0ms
+461 silly placeDep node_modules/npm-reinstall dot-prop@4.2.1 OK for: configstore@3.1.5 want: ^4.2.1
+462 silly fetch manifest is-obj@^1.0.0
+463 silly placeDep node_modules/npm-reinstall graceful-fs@4.2.11 OK for: configstore@3.1.5 want: ^4.1.2
+464 silly placeDep node_modules/npm-reinstall make-dir@1.3.0 OK for: configstore@3.1.5 want: ^1.0.0
+465 silly fetch manifest pify@^3.0.0
+466 silly placeDep node_modules/npm-reinstall unique-string@1.0.0 OK for: configstore@3.1.5 want: ^1.0.0
+467 silly fetch manifest crypto-random-string@^1.0.0
+468 silly placeDep node_modules/npm-reinstall write-file-atomic@2.4.3 OK for: configstore@3.1.5 want: ^2.0.0
+469 silly fetch manifest imurmurhash@^0.1.4
+470 http fetch GET 200 https://registry.npmjs.org/imurmurhash 38ms (cache revalidated)
+471 http fetch GET 200 https://registry.npmjs.org/crypto-random-string 292ms (cache miss)
+472 http fetch GET 200 https://registry.npmjs.org/is-obj 301ms (cache miss)
+473 timing idealTree:node_modules/npm-reinstall/node_modules/configstore Completed in 303ms
+474 silly placeDep node_modules/npm-reinstall is-obj@1.0.1 OK for: dot-prop@4.2.1 want: ^1.0.0
+475 timing idealTree:node_modules/npm-reinstall/node_modules/dot-prop Completed in 1ms
+476 timing idealTree:node_modules/npm-reinstall/node_modules/graceful-fs Completed in 0ms
+477 timing idealTree:node_modules/npm-reinstall/node_modules/import-lazy Completed in 0ms
+478 silly placeDep node_modules/npm-reinstall ci-info@1.6.0 OK for: is-ci@1.2.1 want: ^1.5.0
+479 timing idealTree:node_modules/npm-reinstall/node_modules/is-ci Completed in 1ms
+480 timing idealTree:node_modules/npm-reinstall/node_modules/ci-info Completed in 0ms
+481 silly placeDep node_modules/npm-reinstall global-dirs@0.1.1 OK for: is-installed-globally@0.1.0 want: ^0.1.0
+482 silly fetch manifest ini@^1.3.4
+483 silly placeDep node_modules/npm-reinstall/node_modules/is-installed-globally is-path-inside@1.0.1 OK for: is-installed-globally@0.1.0 want: ^1.0.0
+484 http fetch GET 200 https://registry.npmjs.org/ini 50ms (cache miss)
+485 timing idealTree:node_modules/npm-reinstall/node_modules/is-installed-globally Completed in 52ms
+486 silly placeDep node_modules/npm-reinstall ini@1.3.8 OK for: global-dirs@0.1.1 want: ^1.3.4
+487 timing idealTree:node_modules/npm-reinstall/node_modules/global-dirs Completed in 1ms
+488 timing idealTree:node_modules/npm-reinstall/node_modules/ini Completed in 0ms
+489 timing idealTree:node_modules/npm-reinstall/node_modules/is-npm Completed in 0ms
+490 timing idealTree:node_modules/npm-reinstall/node_modules/is-obj Completed in 0ms
+491 silly placeDep node_modules/npm-reinstall package-json@4.0.1 OK for: latest-version@3.1.0 want: ^4.0.0
+492 silly fetch manifest got@^6.7.1
+493 silly fetch manifest registry-auth-token@^3.0.1
+494 silly fetch manifest registry-url@^3.0.3
+495 http fetch GET 200 https://registry.npmjs.org/got 191ms (cache miss)
+496 http fetch GET 200 https://registry.npmjs.org/registry-url 303ms (cache miss)
+497 http fetch GET 200 https://registry.npmjs.org/registry-auth-token 330ms (cache miss)
+498 timing idealTree:node_modules/npm-reinstall/node_modules/latest-version Completed in 331ms
+499 silly placeDep node_modules/npm-reinstall/node_modules/make-dir pify@3.0.0 OK for: make-dir@1.3.0 want: ^3.0.0
+500 timing idealTree:node_modules/npm-reinstall/node_modules/make-dir Completed in 1ms
+501 silly placeDep node_modules/npm-reinstall got@6.7.1 OK for: package-json@4.0.1 want: ^6.7.1
+502 silly fetch manifest create-error-class@^3.0.0
+503 silly fetch manifest duplexer3@^0.1.4
+504 silly fetch manifest get-stream@^3.0.0
+505 silly fetch manifest is-redirect@^1.0.0
+506 silly fetch manifest is-retry-allowed@^1.0.0
+507 silly fetch manifest lowercase-keys@^1.0.0
+508 silly fetch manifest safe-buffer@^5.0.1
+509 silly fetch manifest timed-out@^4.0.0
+510 silly fetch manifest unzip-response@^2.0.1
+511 silly fetch manifest url-parse-lax@^1.0.0
+512 silly placeDep node_modules/npm-reinstall registry-auth-token@3.4.0 OK for: package-json@4.0.1 want: ^3.0.1
+513 silly fetch manifest rc@^1.1.6
+514 silly placeDep node_modules/npm-reinstall registry-url@3.1.0 OK for: package-json@4.0.1 want: ^3.0.3
+515 silly fetch manifest rc@^1.0.1
+516 http fetch GET 200 https://registry.npmjs.org/create-error-class 48ms (cache miss)
+517 http fetch GET 200 https://registry.npmjs.org/is-redirect 60ms (cache miss)
+518 http fetch GET 200 https://registry.npmjs.org/timed-out 58ms (cache miss)
+519 http fetch GET 200 https://registry.npmjs.org/duplexer3 61ms (cache miss)
+520 http fetch GET 200 https://registry.npmjs.org/unzip-response 57ms (cache miss)
+521 http fetch GET 200 https://registry.npmjs.org/lowercase-keys 60ms (cache miss)
+522 http fetch GET 200 https://registry.npmjs.org/is-retry-allowed 66ms (cache miss)
+523 http fetch GET 200 https://registry.npmjs.org/url-parse-lax 64ms (cache miss)
+524 http fetch GET 200 https://registry.npmjs.org/safe-buffer 65ms (cache updated)
+525 http fetch GET 200 https://registry.npmjs.org/rc 310ms (cache miss)
+526 http fetch GET 200 https://registry.npmjs.org/rc 369ms (cache miss)
+527 timing idealTree:node_modules/npm-reinstall/node_modules/package-json Completed in 378ms
+528 silly placeDep node_modules/npm-reinstall create-error-class@3.0.2 OK for: got@6.7.1 want: ^3.0.0
+529 silly fetch manifest capture-stack-trace@^1.0.0
+530 silly placeDep node_modules/npm-reinstall duplexer3@0.1.5 OK for: got@6.7.1 want: ^0.1.4
+531 silly placeDep node_modules/npm-reinstall/node_modules/got get-stream@3.0.0 OK for: got@6.7.1 want: ^3.0.0
+532 silly placeDep node_modules/npm-reinstall is-redirect@1.0.0 OK for: got@6.7.1 want: ^1.0.0
+533 silly placeDep node_modules/npm-reinstall is-retry-allowed@1.2.0 OK for: got@6.7.1 want: ^1.0.0
+534 silly placeDep node_modules/npm-reinstall lowercase-keys@1.0.1 OK for: got@6.7.1 want: ^1.0.0
+535 silly placeDep node_modules/npm-reinstall safe-buffer@5.2.1 OK for: got@6.7.1 want: ^5.0.1
+536 silly placeDep node_modules/npm-reinstall timed-out@4.0.1 OK for: got@6.7.1 want: ^4.0.0
+537 silly placeDep node_modules/npm-reinstall unzip-response@2.0.1 OK for: got@6.7.1 want: ^2.0.1
+538 silly placeDep node_modules/npm-reinstall url-parse-lax@1.0.0 OK for: got@6.7.1 want: ^1.0.0
+539 silly fetch manifest prepend-http@^1.0.1
+540 http fetch GET 200 https://registry.npmjs.org/capture-stack-trace 50ms (cache miss)
+541 http fetch GET 200 https://registry.npmjs.org/prepend-http 321ms (cache miss)
+542 timing idealTree:node_modules/npm-reinstall/node_modules/got Completed in 329ms
+543 silly placeDep node_modules/npm-reinstall capture-stack-trace@1.0.2 OK for: create-error-class@3.0.2 want: ^1.0.0
+544 timing idealTree:node_modules/npm-reinstall/node_modules/create-error-class Completed in 1ms
+545 timing idealTree:node_modules/npm-reinstall/node_modules/capture-stack-trace Completed in 0ms
+546 timing idealTree:node_modules/npm-reinstall/node_modules/duplexer3 Completed in 0ms
+547 timing idealTree:node_modules/npm-reinstall/node_modules/is-redirect Completed in 0ms
+548 timing idealTree:node_modules/npm-reinstall/node_modules/is-retry-allowed Completed in 0ms
+549 timing idealTree:node_modules/npm-reinstall/node_modules/lowercase-keys Completed in 0ms
+550 silly placeDep node_modules/npm-reinstall rc@1.2.8 OK for: registry-auth-token@3.4.0 want: ^1.1.6
+551 silly fetch manifest deep-extend@^0.6.0
+552 silly fetch manifest minimist@^1.2.0
+553 silly fetch manifest strip-json-comments@~2.0.1
+554 http fetch GET 200 https://registry.npmjs.org/minimist 42ms (cache revalidated)
+555 http fetch GET 200 https://registry.npmjs.org/strip-json-comments 70ms (cache miss)
+556 http fetch GET 200 https://registry.npmjs.org/deep-extend 385ms (cache miss)
+557 timing idealTree:node_modules/npm-reinstall/node_modules/registry-auth-token Completed in 388ms
+558 silly placeDep node_modules/npm-reinstall deep-extend@0.6.0 OK for: rc@1.2.8 want: ^0.6.0
+559 silly placeDep node_modules/npm-reinstall minimist@1.2.8 OK for: rc@1.2.8 want: ^1.2.0
+560 silly placeDep node_modules/npm-reinstall strip-json-comments@2.0.1 OK for: rc@1.2.8 want: ~2.0.1
+561 timing idealTree:node_modules/npm-reinstall/node_modules/rc Completed in 2ms
+562 timing idealTree:node_modules/npm-reinstall/node_modules/deep-extend Completed in 0ms
+563 timing idealTree:node_modules/npm-reinstall/node_modules/minimist Completed in 0ms
+564 timing idealTree:node_modules/npm-reinstall/node_modules/registry-url Completed in 0ms
+565 timing idealTree:node_modules/npm-reinstall/node_modules/safe-buffer Completed in 0ms
+566 timing idealTree:node_modules/npm-reinstall/node_modules/semver-diff Completed in 0ms
+567 silly placeDep node_modules/npm-reinstall is-fullwidth-code-point@2.0.0 OK for: string-width@2.1.1 want: ^2.0.0
+568 silly placeDep node_modules/npm-reinstall/node_modules/string-width strip-ansi@4.0.0 OK for: string-width@2.1.1 want: ^4.0.0
+569 silly fetch manifest ansi-regex@^3.0.0
+570 timing idealTree:node_modules/npm-reinstall/node_modules/string-width Completed in 2ms
+571 timing idealTree:node_modules/npm-reinstall/node_modules/is-fullwidth-code-point Completed in 0ms
+572 timing idealTree:node_modules/npm-reinstall/node_modules/strip-json-comments Completed in 0ms
+573 silly placeDep node_modules/npm-reinstall/node_modules/term-size execa@0.7.0 OK for: term-size@1.2.0 want: ^0.7.0
+574 silly fetch manifest cross-spawn@^5.0.1
+575 timing idealTree:node_modules/npm-reinstall/node_modules/term-size Completed in 1ms
+576 timing idealTree:node_modules/npm-reinstall/node_modules/timed-out Completed in 0ms
+577 silly placeDep node_modules/npm-reinstall crypto-random-string@1.0.0 OK for: unique-string@1.0.0 want: ^1.0.0
+578 timing idealTree:node_modules/npm-reinstall/node_modules/unique-string Completed in 1ms
+579 timing idealTree:node_modules/npm-reinstall/node_modules/crypto-random-string Completed in 0ms
+580 timing idealTree:node_modules/npm-reinstall/node_modules/unzip-response Completed in 0ms
+581 silly placeDep node_modules/npm-reinstall prepend-http@1.0.4 OK for: url-parse-lax@1.0.0 want: ^1.0.1
+582 timing idealTree:node_modules/npm-reinstall/node_modules/url-parse-lax Completed in 0ms
+583 timing idealTree:node_modules/npm-reinstall/node_modules/prepend-http Completed in 0ms
+584 silly placeDep node_modules/npm-reinstall defaults@1.0.4 OK for: wcwidth@1.0.1 want: ^1.0.3
+585 silly fetch manifest clone@^1.0.2
+586 http fetch GET 200 https://registry.npmjs.org/clone 389ms (cache updated)
+587 timing idealTree:node_modules/npm-reinstall/node_modules/wcwidth Completed in 391ms
+588 silly placeDep node_modules/npm-reinstall clone@1.0.4 OK for: defaults@1.0.4 want: ^1.0.2
+589 timing idealTree:node_modules/npm-reinstall/node_modules/defaults Completed in 1ms
+590 timing idealTree:node_modules/npm-reinstall/node_modules/clone Completed in 0ms
+591 silly placeDep node_modules/npm-reinstall isexe@2.0.0 OK for: which@1.3.1 want: ^2.0.0
+592 timing idealTree:node_modules/npm-reinstall/node_modules/which Completed in 1ms
+593 timing idealTree:node_modules/npm-reinstall/node_modules/isexe Completed in 0ms
+594 timing idealTree:node_modules/npm-reinstall/node_modules/widest-line Completed in 0ms
+595 timing idealTree:node_modules/npm-reinstall/node_modules/wrappy Completed in 0ms
+596 silly placeDep node_modules/npm-reinstall imurmurhash@0.1.4 OK for: write-file-atomic@2.4.3 want: ^0.1.4
+597 timing idealTree:node_modules/npm-reinstall/node_modules/write-file-atomic Completed in 1ms
+598 timing idealTree:node_modules/npm-reinstall/node_modules/imurmurhash Completed in 0ms
+599 timing idealTree:node_modules/npm-reinstall/node_modules/xdg-basedir Completed in 0ms
+600 silly placeDep node_modules/npm-reinstall cliui@5.0.0 OK for: yargs@13.3.2 want: ^5.0.0
+601 silly fetch manifest string-width@^3.1.0
+602 silly fetch manifest wrap-ansi@^5.1.0
+603 silly placeDep node_modules/npm-reinstall find-up@3.0.0 OK for: yargs@13.3.2 want: ^3.0.0
+604 silly fetch manifest locate-path@^3.0.0
+605 silly placeDep node_modules/npm-reinstall get-caller-file@2.0.5 OK for: yargs@13.3.2 want: ^2.0.1
+606 silly placeDep node_modules/npm-reinstall require-directory@2.1.1 OK for: yargs@13.3.2 want: ^2.1.1
+607 silly placeDep node_modules/npm-reinstall require-main-filename@2.0.0 OK for: yargs@13.3.2 want: ^2.0.0
+608 silly placeDep node_modules/npm-reinstall set-blocking@2.0.0 OK for: yargs@13.3.2 want: ^2.0.0
+609 silly placeDep node_modules/npm-reinstall/node_modules/yargs string-width@3.1.0 OK for: yargs@13.3.2 want: ^3.0.0
+610 silly fetch manifest emoji-regex@^7.0.1
+611 silly placeDep node_modules/npm-reinstall which-module@2.0.1 OK for: yargs@13.3.2 want: ^2.0.0
+612 silly placeDep node_modules/npm-reinstall y18n@4.0.3 OK for: yargs@13.3.2 want: ^4.0.0
+613 silly placeDep node_modules/npm-reinstall yargs-parser@13.1.2 OK for: yargs@13.3.2 want: ^13.1.2
+614 silly fetch manifest camelcase@^5.0.0
+615 silly fetch manifest decamelize@^1.2.0
+616 http fetch GET 200 https://registry.npmjs.org/emoji-regex 37ms (cache revalidated)
+617 http fetch GET 200 https://registry.npmjs.org/locate-path 42ms (cache revalidated)
+618 http fetch GET 200 https://registry.npmjs.org/wrap-ansi 696ms (cache revalidated)
+619 http fetch GET 200 https://registry.npmjs.org/decamelize 691ms (cache revalidated)
+620 timing idealTree:node_modules/npm-reinstall/node_modules/yargs Completed in 701ms
+621 silly placeDep node_modules/npm-reinstall/node_modules/cliui string-width@3.1.0 OK for: cliui@5.0.0 want: ^3.1.0
+622 silly placeDep node_modules/npm-reinstall wrap-ansi@5.1.0 OK for: cliui@5.0.0 want: ^5.1.0
+623 timing idealTree:node_modules/npm-reinstall/node_modules/cliui Completed in 2ms
+624 silly placeDep node_modules/npm-reinstall locate-path@3.0.0 OK for: find-up@3.0.0 want: ^3.0.0
+625 silly fetch manifest p-locate@^3.0.0
+626 silly fetch manifest path-exists@^3.0.0
+627 http fetch GET 200 https://registry.npmjs.org/p-locate 37ms (cache revalidated)
+628 http fetch GET 200 https://registry.npmjs.org/path-exists 38ms (cache revalidated)
+629 timing idealTree:node_modules/npm-reinstall/node_modules/find-up Completed in 40ms
+630 timing idealTree:node_modules/npm-reinstall/node_modules/get-caller-file Completed in 0ms
+631 silly placeDep node_modules/npm-reinstall p-locate@3.0.0 OK for: locate-path@3.0.0 want: ^3.0.0
+632 silly fetch manifest p-limit@^2.0.0
+633 silly placeDep node_modules/npm-reinstall path-exists@3.0.0 OK for: locate-path@3.0.0 want: ^3.0.0
+634 http fetch GET 200 https://registry.npmjs.org/p-limit 40ms (cache revalidated)
+635 timing idealTree:node_modules/npm-reinstall/node_modules/locate-path Completed in 43ms
+636 silly placeDep node_modules/npm-reinstall p-limit@2.3.0 OK for: p-locate@3.0.0 want: ^2.0.0
+637 silly fetch manifest p-try@^2.0.0
+638 http fetch GET 200 https://registry.npmjs.org/p-try 346ms (cache revalidated)
+639 timing idealTree:node_modules/npm-reinstall/node_modules/p-locate Completed in 348ms
+640 silly placeDep node_modules/npm-reinstall p-try@2.2.0 OK for: p-limit@2.3.0 want: ^2.0.0
+641 timing idealTree:node_modules/npm-reinstall/node_modules/p-limit Completed in 0ms
+642 timing idealTree:node_modules/npm-reinstall/node_modules/p-try Completed in 0ms
+643 timing idealTree:node_modules/npm-reinstall/node_modules/path-exists Completed in 0ms
+644 timing idealTree:node_modules/npm-reinstall/node_modules/require-directory Completed in 0ms
+645 timing idealTree:node_modules/npm-reinstall/node_modules/require-main-filename Completed in 0ms
+646 timing idealTree:node_modules/npm-reinstall/node_modules/set-blocking Completed in 0ms
+647 timing idealTree:node_modules/npm-reinstall/node_modules/which-module Completed in 0ms
+648 silly placeDep node_modules/npm-reinstall/node_modules/wrap-ansi string-width@3.1.0 OK for: wrap-ansi@5.1.0 want: ^3.0.0
+649 timing idealTree:node_modules/npm-reinstall/node_modules/wrap-ansi Completed in 1ms
+650 timing idealTree:node_modules/npm-reinstall/node_modules/y18n Completed in 0ms
+651 silly placeDep node_modules/npm-reinstall/node_modules/yargs-parser camelcase@5.3.1 OK for: yargs-parser@13.1.2 want: ^5.0.0
+652 silly placeDep node_modules/npm-reinstall decamelize@1.2.0 OK for: yargs-parser@13.1.2 want: ^1.2.0
+653 timing idealTree:node_modules/npm-reinstall/node_modules/yargs-parser Completed in 1ms
+654 timing idealTree:node_modules/npm-reinstall/node_modules/decamelize Completed in 0ms
+655 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn boxen@0.6.0 OK for: update-notifier@1.0.3 want: ^0.6.0
+656 silly fetch manifest ansi-align@^1.1.0
+657 silly fetch manifest camelcase@^2.1.0
+658 silly fetch manifest chalk@^1.1.1
+659 silly fetch manifest filled-array@^1.0.0
+660 silly fetch manifest repeating@^2.0.0
+661 silly fetch manifest string-width@^1.0.1
+662 silly fetch manifest widest-line@^1.0.0
+663 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn chalk@1.1.3 OK for: update-notifier@1.0.3 want: ^1.0.0
+664 silly fetch manifest ansi-styles@^2.2.1
+665 silly fetch manifest has-ansi@^2.0.0
+666 silly fetch manifest strip-ansi@^3.0.0
+667 silly fetch manifest supports-color@^2.0.0
+668 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn configstore@2.1.0 OK for: update-notifier@1.0.3 want: ^2.0.0
+669 silly fetch manifest dot-prop@^3.0.0
+670 silly fetch manifest mkdirp@^0.5.0
+671 silly fetch manifest os-tmpdir@^1.0.0
+672 silly fetch manifest osenv@^0.1.0
+673 silly fetch manifest uuid@^2.0.1
+674 silly fetch manifest write-file-atomic@^1.1.2
+675 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn latest-version@2.0.0 OK for: update-notifier@1.0.3 want: ^2.0.0
+676 silly fetch manifest package-json@^2.0.0
+677 silly placeDep node_modules/npm-reinstall lazy-req@1.1.0 OK for: update-notifier@1.0.3 want: ^1.1.0
+678 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn xdg-basedir@2.0.0 OK for: update-notifier@1.0.3 want: ^2.0.0
+679 silly fetch manifest os-homedir@^1.0.0
+680 http fetch GET 200 https://registry.npmjs.org/mkdirp 42ms (cache revalidated)
+681 http fetch GET 200 https://registry.npmjs.org/uuid 60ms (cache miss)
+682 http fetch GET 200 https://registry.npmjs.org/os-homedir 596ms (cache miss)
+683 http fetch GET 200 https://registry.npmjs.org/osenv 598ms (cache miss)
+684 http fetch GET 200 https://registry.npmjs.org/has-ansi 601ms (cache miss)
+685 http fetch GET 200 https://registry.npmjs.org/repeating 602ms (cache miss)
+686 http fetch GET 200 https://registry.npmjs.org/os-tmpdir 1307ms (cache miss)
+687 http fetch GET 200 https://registry.npmjs.org/filled-array 1310ms (cache miss)
+688 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/update-notifier Completed in 1311ms
+689 timing idealTree:node_modules/npm-reinstall/node_modules/lazy-req Completed in 0ms
+690 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn ansi-align@1.1.0 OK for: boxen@0.6.0 want: ^1.1.0
+691 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn camelcase@2.1.1 OK for: boxen@0.6.0 want: ^2.1.0
+692 silly placeDep node_modules/npm-reinstall filled-array@1.1.0 OK for: boxen@0.6.0 want: ^1.0.0
+693 silly placeDep node_modules/npm-reinstall repeating@2.0.1 OK for: boxen@0.6.0 want: ^2.0.0
+694 silly fetch manifest is-finite@^1.0.0
+695 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn string-width@1.0.2 OK for: boxen@0.6.0 want: ^1.0.1
+696 silly fetch manifest code-point-at@^1.0.0
+697 silly fetch manifest is-fullwidth-code-point@^1.0.0
+698 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn widest-line@1.0.0 OK for: boxen@0.6.0 want: ^1.0.0
+699 http fetch GET 200 https://registry.npmjs.org/is-finite 392ms (cache miss)
+700 http fetch GET 200 https://registry.npmjs.org/code-point-at 391ms (cache miss)
+701 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/boxen Completed in 397ms
+702 timing idealTree:node_modules/npm-reinstall/node_modules/filled-array Completed in 0ms
+703 silly placeDep node_modules/npm-reinstall is-finite@1.1.0 OK for: repeating@2.0.1 want: ^1.0.0
+704 timing idealTree:node_modules/npm-reinstall/node_modules/repeating Completed in 0ms
+705 timing idealTree:node_modules/npm-reinstall/node_modules/is-finite Completed in 0ms
+706 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-align Completed in 0ms
+707 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/camelcase Completed in 0ms
+708 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn ansi-styles@2.2.1 OK for: chalk@1.1.3 want: ^2.2.1
+709 silly placeDep node_modules/npm-reinstall has-ansi@2.0.0 OK for: chalk@1.1.3 want: ^2.0.0
+710 silly fetch manifest ansi-regex@^2.0.0
+711 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn strip-ansi@3.0.1 OK for: chalk@1.1.3 want: ^3.0.0
+712 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn supports-color@2.0.0 OK for: chalk@1.1.3 want: ^2.0.0
+713 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/chalk Completed in 1ms
+714 silly placeDep node_modules/npm-reinstall/node_modules/has-ansi ansi-regex@2.1.1 OK for: has-ansi@2.0.0 want: ^2.0.0
+715 timing idealTree:node_modules/npm-reinstall/node_modules/has-ansi Completed in 0ms
+716 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-styles Completed in 0ms
+717 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn dot-prop@3.0.0 OK for: configstore@2.1.0 want: ^3.0.0
+718 silly placeDep node_modules/npm-reinstall mkdirp@0.5.6 OK for: configstore@2.1.0 want: ^0.5.0
+719 silly placeDep node_modules/npm-reinstall os-tmpdir@1.0.2 OK for: configstore@2.1.0 want: ^1.0.0
+720 silly placeDep node_modules/npm-reinstall osenv@0.1.5 OK for: configstore@2.1.0 want: ^0.1.0
+721 silly placeDep node_modules/npm-reinstall uuid@2.0.3 OK for: configstore@2.1.0 want: ^2.0.1
+722 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn write-file-atomic@1.3.4 OK for: configstore@2.1.0 want: ^1.1.2
+723 silly fetch manifest slide@^1.1.5
+724 http fetch GET 200 https://registry.npmjs.org/slide 314ms (cache miss)
+725 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/configstore Completed in 317ms
+726 timing idealTree:node_modules/npm-reinstall/node_modules/mkdirp Completed in 0ms
+727 timing idealTree:node_modules/npm-reinstall/node_modules/os-tmpdir Completed in 0ms
+728 silly placeDep node_modules/npm-reinstall os-homedir@1.0.2 OK for: osenv@0.1.5 want: ^1.0.0
+729 timing idealTree:node_modules/npm-reinstall/node_modules/osenv Completed in 2ms
+730 timing idealTree:node_modules/npm-reinstall/node_modules/os-homedir Completed in 0ms
+731 timing idealTree:node_modules/npm-reinstall/node_modules/uuid Completed in 0ms
+732 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/dot-prop Completed in 0ms
+733 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn package-json@2.4.0 OK for: latest-version@2.0.0 want: ^2.0.0
+734 silly fetch manifest got@^5.0.0
+735 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/latest-version Completed in 3ms
+736 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn got@5.6.0 OK for: package-json@2.4.0 want: ^5.0.0
+737 silly fetch manifest duplexer2@^0.1.4
+738 silly fetch manifest is-plain-obj@^1.0.0
+739 silly fetch manifest node-status-codes@^1.0.0
+740 silly fetch manifest parse-json@^2.1.0
+741 silly fetch manifest read-all-stream@^3.0.0
+742 silly fetch manifest readable-stream@^2.0.5
+743 silly fetch manifest timed-out@^2.0.0
+744 silly fetch manifest unzip-response@^1.0.0
+745 http fetch GET 200 https://registry.npmjs.org/parse-json 46ms (cache revalidated)
+746 http fetch GET 200 https://registry.npmjs.org/readable-stream 46ms (cache revalidated)
+747 http fetch GET 200 https://registry.npmjs.org/duplexer2 51ms (cache miss)
+748 http fetch GET 200 https://registry.npmjs.org/is-plain-obj 53ms (cache miss)
+749 http fetch GET 200 https://registry.npmjs.org/read-all-stream 300ms (cache miss)
+750 http fetch GET 200 https://registry.npmjs.org/node-status-codes 312ms (cache miss)
+751 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/package-json Completed in 315ms
+752 silly placeDep node_modules/npm-reinstall duplexer2@0.1.4 OK for: got@5.6.0 want: ^0.1.4
+753 silly fetch manifest readable-stream@^2.0.2
+754 silly placeDep node_modules/npm-reinstall is-plain-obj@1.1.0 OK for: got@5.6.0 want: ^1.0.0
+755 silly placeDep node_modules/npm-reinstall node-status-codes@1.0.0 OK for: got@5.6.0 want: ^1.0.0
+756 silly placeDep node_modules/npm-reinstall parse-json@2.2.0 OK for: got@5.6.0 want: ^2.1.0
+757 silly fetch manifest error-ex@^1.2.0
+758 silly placeDep node_modules/npm-reinstall read-all-stream@3.1.0 OK for: got@5.6.0 want: ^3.0.0
+759 silly fetch manifest readable-stream@^2.0.0
+760 silly placeDep node_modules/npm-reinstall readable-stream@2.3.8 OK for: got@5.6.0 want: ^2.0.5
+761 silly fetch manifest core-util-is@~1.0.0
+762 silly fetch manifest isarray@~1.0.0
+763 silly fetch manifest process-nextick-args@~2.0.0
+764 silly fetch manifest safe-buffer@~5.1.1
+765 silly fetch manifest string_decoder@~1.1.1
+766 silly fetch manifest util-deprecate@~1.0.1
+767 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn timed-out@2.0.0 OK for: got@5.6.0 want: ^2.0.0
+768 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn unzip-response@1.0.2 OK for: got@5.6.0 want: ^1.0.0
+769 http fetch GET 200 https://registry.npmjs.org/core-util-is 57ms (cache revalidated)
+770 http fetch GET 200 https://registry.npmjs.org/util-deprecate 53ms (cache revalidated)
+771 http fetch GET 200 https://registry.npmjs.org/process-nextick-args 55ms (cache revalidated)
+772 http fetch GET 200 https://registry.npmjs.org/error-ex 60ms (cache revalidated)
+773 http fetch GET 200 https://registry.npmjs.org/isarray 59ms (cache updated)
+774 http fetch GET 200 https://registry.npmjs.org/string_decoder 57ms (cache updated)
+775 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/got Completed in 69ms
+776 timing idealTree:node_modules/npm-reinstall/node_modules/duplexer2 Completed in 0ms
+777 timing idealTree:node_modules/npm-reinstall/node_modules/is-plain-obj Completed in 0ms
+778 timing idealTree:node_modules/npm-reinstall/node_modules/node-status-codes Completed in 0ms
+779 silly placeDep node_modules/npm-reinstall error-ex@1.3.2 OK for: parse-json@2.2.0 want: ^1.2.0
+780 silly fetch manifest is-arrayish@^0.2.1
+781 http fetch GET 200 https://registry.npmjs.org/is-arrayish 39ms (cache updated)
+782 timing idealTree:node_modules/npm-reinstall/node_modules/parse-json Completed in 42ms
+783 silly placeDep node_modules/npm-reinstall is-arrayish@0.2.1 OK for: error-ex@1.3.2 want: ^0.2.1
+784 timing idealTree:node_modules/npm-reinstall/node_modules/error-ex Completed in 1ms
+785 timing idealTree:node_modules/npm-reinstall/node_modules/is-arrayish Completed in 0ms
+786 timing idealTree:node_modules/npm-reinstall/node_modules/read-all-stream Completed in 0ms
+787 silly placeDep node_modules/npm-reinstall core-util-is@1.0.3 OK for: readable-stream@2.3.8 want: ~1.0.0
+788 silly placeDep node_modules/npm-reinstall isarray@1.0.0 OK for: readable-stream@2.3.8 want: ~1.0.0
+789 silly placeDep node_modules/npm-reinstall process-nextick-args@2.0.1 OK for: readable-stream@2.3.8 want: ~2.0.0
+790 silly placeDep node_modules/npm-reinstall/node_modules/readable-stream safe-buffer@5.1.2 OK for: readable-stream@2.3.8 want: ~5.1.1
+791 silly placeDep node_modules/npm-reinstall string_decoder@1.1.1 OK for: readable-stream@2.3.8 want: ~1.1.1
+792 silly fetch manifest safe-buffer@~5.1.0
+793 silly placeDep node_modules/npm-reinstall util-deprecate@1.0.2 OK for: readable-stream@2.3.8 want: ~1.0.1
+794 timing idealTree:node_modules/npm-reinstall/node_modules/readable-stream Completed in 3ms
+795 timing idealTree:node_modules/npm-reinstall/node_modules/core-util-is Completed in 0ms
+796 timing idealTree:node_modules/npm-reinstall/node_modules/isarray Completed in 0ms
+797 timing idealTree:node_modules/npm-reinstall/node_modules/process-nextick-args Completed in 0ms
+798 silly placeDep node_modules/npm-reinstall/node_modules/string_decoder safe-buffer@5.1.2 OK for: string_decoder@1.1.1 want: ~5.1.0
+799 timing idealTree:node_modules/npm-reinstall/node_modules/string_decoder Completed in 1ms
+800 timing idealTree:node_modules/npm-reinstall/node_modules/util-deprecate Completed in 0ms
+801 silly placeDep node_modules/npm-reinstall code-point-at@1.1.0 OK for: string-width@1.0.2 want: ^1.0.0
+802 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn is-fullwidth-code-point@1.0.0 OK for: string-width@1.0.2 want: ^1.0.0
+803 silly fetch manifest number-is-nan@^1.0.0
+804 http fetch GET 200 https://registry.npmjs.org/number-is-nan 314ms (cache miss)
+805 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/string-width Completed in 316ms
+806 timing idealTree:node_modules/npm-reinstall/node_modules/code-point-at Completed in 0ms
+807 silly placeDep node_modules/npm-reinstall number-is-nan@1.0.1 OK for: is-fullwidth-code-point@1.0.0 want: ^1.0.0
+808 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/is-fullwidth-code-point Completed in 1ms
+809 timing idealTree:node_modules/npm-reinstall/node_modules/number-is-nan Completed in 0ms
+810 silly placeDep node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn ansi-regex@2.1.1 OK for: strip-ansi@3.0.1 want: ^2.0.0
+811 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/strip-ansi Completed in 0ms
+812 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-regex Completed in 0ms
+813 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/supports-color Completed in 0ms
+814 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/timed-out Completed in 0ms
+815 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/unzip-response Completed in 0ms
+816 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/widest-line Completed in 0ms
+817 silly placeDep node_modules/npm-reinstall slide@1.1.6 OK for: write-file-atomic@1.3.4 want: ^1.1.5
+818 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/write-file-atomic Completed in 0ms
+819 timing idealTree:node_modules/npm-reinstall/node_modules/slide Completed in 0ms
+820 timing idealTree:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/xdg-basedir Completed in 0ms
+821 timing idealTree:node_modules/npm-reinstall/node_modules/caniuse-pnpm/node_modules/shelljs Completed in 0ms
+822 silly placeDep node_modules/npm-reinstall emoji-regex@7.0.3 OK for: string-width@3.1.0 want: ^7.0.1
+823 timing idealTree:node_modules/npm-reinstall/node_modules/cliui/node_modules/string-width Completed in 1ms
+824 timing idealTree:node_modules/npm-reinstall/node_modules/emoji-regex Completed in 0ms
+825 timing idealTree:node_modules/npm-reinstall/node_modules/globby/node_modules/pify Completed in 0ms
+826 timing idealTree:node_modules/npm-reinstall/node_modules/got/node_modules/get-stream Completed in 0ms
+827 timing idealTree:node_modules/npm-reinstall/node_modules/has-ansi/node_modules/ansi-regex Completed in 0ms
+828 timing idealTree:node_modules/npm-reinstall/node_modules/is-installed-globally/node_modules/is-path-inside Completed in 0ms
+829 timing idealTree:node_modules/npm-reinstall/node_modules/make-dir/node_modules/pify Completed in 0ms
+830 timing idealTree:node_modules/npm-reinstall/node_modules/readable-stream/node_modules/safe-buffer Completed in 0ms
+831 timing idealTree:node_modules/npm-reinstall/node_modules/string_decoder/node_modules/safe-buffer Completed in 0ms
+832 silly placeDep node_modules/npm-reinstall/node_modules/string-width ansi-regex@3.0.1 OK for: strip-ansi@4.0.0 want: ^3.0.0
+833 timing idealTree:node_modules/npm-reinstall/node_modules/string-width/node_modules/strip-ansi Completed in 1ms
+834 timing idealTree:node_modules/npm-reinstall/node_modules/string-width/node_modules/ansi-regex Completed in 0ms
+835 silly placeDep node_modules/npm-reinstall/node_modules/term-size cross-spawn@5.1.0 OK for: execa@0.7.0 want: ^5.0.1
+836 silly fetch manifest lru-cache@^4.0.1
+837 silly placeDep node_modules/npm-reinstall/node_modules/term-size get-stream@3.0.0 OK for: execa@0.7.0 want: ^3.0.0
+838 http fetch GET 200 https://registry.npmjs.org/lru-cache 39ms (cache revalidated)
+839 timing idealTree:node_modules/npm-reinstall/node_modules/term-size/node_modules/execa Completed in 41ms
+840 silly placeDep node_modules/npm-reinstall lru-cache@4.1.5 OK for: cross-spawn@5.1.0 want: ^4.0.1
+841 silly fetch manifest pseudomap@^1.0.2
+842 silly fetch manifest yallist@^2.1.2
+843 http fetch GET 200 https://registry.npmjs.org/yallist 38ms (cache updated)
+844 http fetch GET 200 https://registry.npmjs.org/pseudomap 523ms (cache miss)
+845 timing idealTree:node_modules/npm-reinstall/node_modules/term-size/node_modules/cross-spawn Completed in 524ms
+846 silly placeDep node_modules/npm-reinstall pseudomap@1.0.2 OK for: lru-cache@4.1.5 want: ^1.0.2
+847 silly placeDep node_modules/npm-reinstall yallist@2.1.2 OK for: lru-cache@4.1.5 want: ^2.1.2
+848 timing idealTree:node_modules/npm-reinstall/node_modules/lru-cache Completed in 1ms
+849 timing idealTree:node_modules/npm-reinstall/node_modules/pseudomap Completed in 0ms
+850 timing idealTree:node_modules/npm-reinstall/node_modules/yallist Completed in 0ms
+851 timing idealTree:node_modules/npm-reinstall/node_modules/term-size/node_modules/get-stream Completed in 0ms
+852 timing idealTree:node_modules/npm-reinstall/node_modules/wrap-ansi/node_modules/string-width Completed in 0ms
+853 timing idealTree:node_modules/npm-reinstall/node_modules/yargs-parser/node_modules/camelcase Completed in 0ms
+854 timing idealTree:node_modules/npm-reinstall/node_modules/yargs/node_modules/string-width Completed in 0ms
+855 timing idealTree:buildDeps Completed in 15285ms
+856 timing idealTree:fixDepFlags Completed in 2ms
+857 timing idealTree Completed in 15292ms
+858 timing reify:loadTrees Completed in 15294ms
+859 timing reify:diffTrees Completed in 1ms
+860 silly reify moves {}
+861 timing reify:retireShallow Completed in 2ms
+862 timing reify:createSparse Completed in 9ms
+863 timing reify:loadBundles Completed in 0ms
+864 silly tarball no local data for slide@https://registry.npmjs.org/slide/-/slide-1.1.6.tgz. Extracting by manifest.
+865 silly tarball no local data for pseudomap@https://registry.npmjs.org/pseudomap/-/pseudomap-1.0.2.tgz. Extracting by manifest.
+866 silly tarball no local data for emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-7.0.3.tgz. Extracting by manifest.
+867 silly tarball no local data for lru-cache@https://registry.npmjs.org/lru-cache/-/lru-cache-4.1.5.tgz. Extracting by manifest.
+868 silly tarball no local data for code-point-at@https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz. Extracting by manifest.
+869 silly tarball no local data for number-is-nan@https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz. Extracting by manifest.
+870 silly tarball no local data for read-all-stream@https://registry.npmjs.org/read-all-stream/-/read-all-stream-3.1.0.tgz. Extracting by manifest.
+871 silly tarball no local data for is-plain-obj@https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-1.1.0.tgz. Extracting by manifest.
+872 silly tarball no local data for duplexer2@https://registry.npmjs.org/duplexer2/-/duplexer2-0.1.4.tgz. Extracting by manifest.
+873 silly tarball no local data for os-homedir@https://registry.npmjs.org/os-homedir/-/os-homedir-1.0.2.tgz. Extracting by manifest.
+874 silly tarball no local data for uuid@https://registry.npmjs.org/uuid/-/uuid-2.0.3.tgz. Extracting by manifest.
+875 silly tarball no local data for node-status-codes@https://registry.npmjs.org/node-status-codes/-/node-status-codes-1.0.0.tgz. Extracting by manifest.
+876 silly tarball no local data for osenv@https://registry.npmjs.org/osenv/-/osenv-0.1.5.tgz. Extracting by manifest.
+877 silly tarball no local data for has-ansi@https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz. Extracting by manifest.
+878 silly tarball no local data for is-finite@https://registry.npmjs.org/is-finite/-/is-finite-1.1.0.tgz. Extracting by manifest.
+879 silly tarball no local data for parse-json@https://registry.npmjs.org/parse-json/-/parse-json-2.2.0.tgz. Extracting by manifest.
+880 silly tarball no local data for lazy-req@https://registry.npmjs.org/lazy-req/-/lazy-req-1.1.0.tgz. Extracting by manifest.
+881 silly tarball no local data for ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz. Extracting by manifest.
+882 silly tarball no local data for os-tmpdir@https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz. Extracting by manifest.
+883 silly tarball no local data for filled-array@https://registry.npmjs.org/filled-array/-/filled-array-1.1.0.tgz. Extracting by manifest.
+884 silly tarball no local data for repeating@https://registry.npmjs.org/repeating/-/repeating-2.0.1.tgz. Extracting by manifest.
+885 silly tarball no local data for npm-reinstall@https://registry.npmjs.org/npm-reinstall/-/npm-reinstall-3.1.0.tgz. Extracting by manifest.
+886 silly tarball no local data for yallist@https://registry.npmjs.org/yallist/-/yallist-2.1.2.tgz. Extracting by manifest.
+887 silly tarball no local data for wrap-ansi@https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-5.1.0.tgz. Extracting by manifest.
+888 silly tarball no local data for yargs-parser@https://registry.npmjs.org/yargs-parser/-/yargs-parser-13.1.2.tgz. Extracting by manifest.
+889 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz. Extracting by manifest.
+890 silly tarball no local data for cliui@https://registry.npmjs.org/cliui/-/cliui-5.0.0.tgz. Extracting by manifest.
+891 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz. Extracting by manifest.
+892 silly tarball no local data for prepend-http@https://registry.npmjs.org/prepend-http/-/prepend-http-1.0.4.tgz. Extracting by manifest.
+893 silly tarball no local data for crypto-random-string@https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-1.0.0.tgz. Extracting by manifest.
+894 silly tarball no local data for rc@https://registry.npmjs.org/rc/-/rc-1.2.8.tgz. Extracting by manifest.
+895 silly tarball no local data for deep-extend@https://registry.npmjs.org/deep-extend/-/deep-extend-0.6.0.tgz. Extracting by manifest.
+896 silly tarball no local data for strip-json-comments@https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz. Extracting by manifest.
+897 silly tarball no local data for timed-out@https://registry.npmjs.org/timed-out/-/timed-out-4.0.1.tgz. Extracting by manifest.
+898 silly tarball no local data for capture-stack-trace@https://registry.npmjs.org/capture-stack-trace/-/capture-stack-trace-1.0.2.tgz. Extracting by manifest.
+899 silly tarball no local data for unzip-response@https://registry.npmjs.org/unzip-response/-/unzip-response-2.0.1.tgz. Extracting by manifest.
+900 silly tarball no local data for create-error-class@https://registry.npmjs.org/create-error-class/-/create-error-class-3.0.2.tgz. Extracting by manifest.
+901 silly tarball no local data for url-parse-lax@https://registry.npmjs.org/url-parse-lax/-/url-parse-lax-1.0.0.tgz. Extracting by manifest.
+902 silly tarball no local data for lowercase-keys@https://registry.npmjs.org/lowercase-keys/-/lowercase-keys-1.0.1.tgz. Extracting by manifest.
+903 silly tarball no local data for is-retry-allowed@https://registry.npmjs.org/is-retry-allowed/-/is-retry-allowed-1.2.0.tgz. Extracting by manifest.
+904 silly tarball no local data for package-json@https://registry.npmjs.org/package-json/-/package-json-4.0.1.tgz. Extracting by manifest.
+905 silly tarball no local data for get-stream@https://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz. Extracting by manifest.
+906 silly tarball no local data for is-redirect@https://registry.npmjs.org/is-redirect/-/is-redirect-1.0.0.tgz. Extracting by manifest.
+907 silly tarball no local data for got@https://registry.npmjs.org/got/-/got-6.7.1.tgz. Extracting by manifest.
+908 silly tarball no local data for duplexer3@https://registry.npmjs.org/duplexer3/-/duplexer3-0.1.5.tgz. Extracting by manifest.
+909 silly tarball no local data for registry-auth-token@https://registry.npmjs.org/registry-auth-token/-/registry-auth-token-3.4.0.tgz. Extracting by manifest.
+910 silly tarball no local data for ini@https://registry.npmjs.org/ini/-/ini-1.3.8.tgz. Extracting by manifest.
+911 silly tarball no local data for global-dirs@https://registry.npmjs.org/global-dirs/-/global-dirs-0.1.1.tgz. Extracting by manifest.
+912 silly tarball no local data for ci-info@https://registry.npmjs.org/ci-info/-/ci-info-1.6.0.tgz. Extracting by manifest.
+913 silly tarball no local data for widest-line@https://registry.npmjs.org/widest-line/-/widest-line-2.0.1.tgz. Extracting by manifest.
+914 silly tarball no local data for unique-string@https://registry.npmjs.org/unique-string/-/unique-string-1.0.0.tgz. Extracting by manifest.
+915 silly tarball no local data for is-obj@https://registry.npmjs.org/is-obj/-/is-obj-1.0.1.tgz. Extracting by manifest.
+916 silly tarball no local data for registry-url@https://registry.npmjs.org/registry-url/-/registry-url-3.1.0.tgz. Extracting by manifest.
+917 silly tarball no local data for make-dir@https://registry.npmjs.org/make-dir/-/make-dir-1.3.0.tgz. Extracting by manifest.
+918 silly tarball no local data for dot-prop@https://registry.npmjs.org/dot-prop/-/dot-prop-4.2.1.tgz. Extracting by manifest.
+919 silly tarball no local data for execa@https://registry.npmjs.org/execa/-/execa-0.7.0.tgz. Extracting by manifest.
+920 silly tarball no local data for term-size@https://registry.npmjs.org/term-size/-/term-size-1.2.0.tgz. Extracting by manifest.
+921 silly tarball no local data for pify@https://registry.npmjs.org/pify/-/pify-3.0.0.tgz. Extracting by manifest.
+922 silly tarball no local data for get-stream@https://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz. Extracting by manifest.
+923 silly tarball no local data for ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-3.0.1.tgz. Extracting by manifest.
+924 silly tarball no local data for cross-spawn@https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz. Extracting by manifest.
+925 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-2.1.1.tgz. Extracting by manifest.
+926 silly tarball no local data for camelcase@https://registry.npmjs.org/camelcase/-/camelcase-4.1.0.tgz. Extracting by manifest.
+927 silly tarball no local data for strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-4.0.0.tgz. Extracting by manifest.
+928 silly tarball no local data for semver-diff@https://registry.npmjs.org/semver-diff/-/semver-diff-2.1.0.tgz. Extracting by manifest.
+929 silly tarball no local data for cli-boxes@https://registry.npmjs.org/cli-boxes/-/cli-boxes-1.0.0.tgz. Extracting by manifest.
+930 silly tarball no local data for latest-version@https://registry.npmjs.org/latest-version/-/latest-version-3.1.0.tgz. Extracting by manifest.
+931 silly tarball no local data for is-ci@https://registry.npmjs.org/is-ci/-/is-ci-1.2.1.tgz. Extracting by manifest.
+932 silly tarball no local data for is-installed-globally@https://registry.npmjs.org/is-installed-globally/-/is-installed-globally-0.1.0.tgz. Extracting by manifest.
+933 silly tarball no local data for import-lazy@https://registry.npmjs.org/import-lazy/-/import-lazy-2.1.0.tgz. Extracting by manifest.
+934 silly tarball no local data for xdg-basedir@https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-3.0.0.tgz. Extracting by manifest.
+935 silly tarball no local data for ansi-align@https://registry.npmjs.org/ansi-align/-/ansi-align-2.0.0.tgz. Extracting by manifest.
+936 silly tarball no local data for is-npm@https://registry.npmjs.org/is-npm/-/is-npm-1.0.0.tgz. Extracting by manifest.
+937 silly tarball no local data for configstore@https://registry.npmjs.org/configstore/-/configstore-3.1.5.tgz. Extracting by manifest.
+938 silly tarball no local data for boxen@https://registry.npmjs.org/boxen/-/boxen-1.3.0.tgz. Extracting by manifest.
+939 silly tarball no local data for interpret@https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz. Extracting by manifest.
+940 silly tarball no local data for shebang-regex@https://registry.npmjs.org/shebang-regex/-/shebang-regex-1.0.0.tgz. Extracting by manifest.
+941 silly tarball no local data for is-path-inside@https://registry.npmjs.org/is-path-inside/-/is-path-inside-1.0.1.tgz. Extracting by manifest.
+942 silly tarball no local data for end-of-stream@https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.4.tgz. Extracting by manifest.
+943 silly tarball no local data for onetime@https://registry.npmjs.org/onetime/-/onetime-2.0.1.tgz. Extracting by manifest.
+944 silly tarball no local data for pinkie@https://registry.npmjs.org/pinkie/-/pinkie-2.0.4.tgz. Extracting by manifest.
+945 silly tarball no local data for mimic-fn@https://registry.npmjs.org/mimic-fn/-/mimic-fn-1.2.0.tgz. Extracting by manifest.
+946 silly tarball no local data for restore-cursor@https://registry.npmjs.org/restore-cursor/-/restore-cursor-2.0.0.tgz. Extracting by manifest.
+947 silly tarball no local data for log-symbols@https://registry.npmjs.org/log-symbols/-/log-symbols-2.2.0.tgz. Extracting by manifest.
+948 silly tarball no local data for is-path-inside@https://registry.npmjs.org/is-path-inside/-/is-path-inside-2.1.0.tgz. Extracting by manifest.
+949 silly tarball no local data for cli-cursor@https://registry.npmjs.org/cli-cursor/-/cli-cursor-2.1.0.tgz. Extracting by manifest.
+950 silly tarball no local data for rechoir@https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz. Extracting by manifest.
+951 silly tarball no local data for path-is-inside@https://registry.npmjs.org/path-is-inside/-/path-is-inside-1.0.2.tgz. Extracting by manifest.
+952 silly tarball no local data for array-uniq@https://registry.npmjs.org/array-uniq/-/array-uniq-1.0.3.tgz. Extracting by manifest.
+953 silly tarball no local data for which@https://registry.npmjs.org/which/-/which-1.3.1.tgz. Extracting by manifest.
+954 silly tarball no local data for pinkie-promise@https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz. Extracting by manifest.
+955 silly tarball no local data for pump@https://registry.npmjs.org/pump/-/pump-3.0.0.tgz. Extracting by manifest.
+956 silly tarball no local data for shebang-command@https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz. Extracting by manifest.
+957 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-5.7.2.tgz. Extracting by manifest.
+958 silly tarball no local data for array-union@https://registry.npmjs.org/array-union/-/array-union-1.0.2.tgz. Extracting by manifest.
+959 silly tarball no local data for strip-eof@https://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz. Extracting by manifest.
+960 silly tarball no local data for path-key@https://registry.npmjs.org/path-key/-/path-key-2.0.1.tgz. Extracting by manifest.
+961 silly tarball no local data for is-stream@https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz. Extracting by manifest.
+962 silly tarball no local data for get-stream@https://registry.npmjs.org/get-stream/-/get-stream-4.1.0.tgz. Extracting by manifest.
+963 silly tarball no local data for p-finally@https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz. Extracting by manifest.
+964 silly tarball no local data for npm-run-path@https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz. Extracting by manifest.
+965 silly tarball no local data for nice-try@https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz. Extracting by manifest.
+966 silly tarball no local data for p-map@https://registry.npmjs.org/p-map/-/p-map-2.1.0.tgz. Extracting by manifest.
+967 silly tarball no local data for rimraf@https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz. Extracting by manifest.
+968 silly tarball no local data for is-path-cwd@https://registry.npmjs.org/is-path-cwd/-/is-path-cwd-2.2.0.tgz. Extracting by manifest.
+969 silly tarball no local data for cross-spawn@https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.5.tgz. Extracting by manifest.
+970 silly tarball no local data for is-path-in-cwd@https://registry.npmjs.org/is-path-in-cwd/-/is-path-in-cwd-2.1.0.tgz. Extracting by manifest.
+971 silly tarball no local data for @types/minimatch@https://registry.npmjs.org/@types/minimatch/-/minimatch-5.1.2.tgz. Extracting by manifest.
+972 silly tarball no local data for @types/node@https://registry.npmjs.org/@types/node/-/node-20.4.5.tgz. Extracting by manifest.
+973 silly tarball no local data for pify@https://registry.npmjs.org/pify/-/pify-2.3.0.tgz. Extracting by manifest.
+974 silly tarball no local data for figures@https://registry.npmjs.org/figures/-/figures-3.2.0.tgz. Extracting by manifest.
+975 silly tarball no local data for @types/glob@https://registry.npmjs.org/@types/glob/-/glob-7.2.0.tgz. Extracting by manifest.
+976 silly tarball no local data for globby@https://registry.npmjs.org/globby/-/globby-6.1.0.tgz. Extracting by manifest.
+977 silly tarball no local data for update-notifier@https://registry.npmjs.org/update-notifier/-/update-notifier-2.5.0.tgz. Extracting by manifest.
+978 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz. Extracting by manifest.
+979 silly tarball no local data for ora@https://registry.npmjs.org/ora/-/ora-3.4.0.tgz. Extracting by manifest.
+980 silly tarball no local data for shelljs@https://registry.npmjs.org/shelljs/-/shelljs-0.7.8.tgz. Extracting by manifest.
+981 silly tarball no local data for execa@https://registry.npmjs.org/execa/-/execa-1.0.0.tgz. Extracting by manifest.
+982 silly tarball no local data for del@https://registry.npmjs.org/del/-/del-4.1.1.tgz. Extracting by manifest.
+983 silly tarball no local data for yargs@https://registry.npmjs.org/yargs/-/yargs-13.3.2.tgz. Extracting by manifest.
+984 silly tarball no local data for shelljs@https://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz. Extracting by manifest.
+985 silly tarball no local data for caniuse-pnpm@https://registry.npmjs.org/caniuse-pnpm/-/caniuse-pnpm-1.1.0.tgz. Extracting by manifest.
+986 silly tarball no local data for has-pnpm@https://registry.npmjs.org/has-pnpm/-/has-pnpm-1.1.1.tgz. Extracting by manifest.
+987 silly tarball no local data for timed-out@https://registry.npmjs.org/timed-out/-/timed-out-2.0.0.tgz. Extracting by manifest.
+988 silly tarball no local data for @danielbayerlein/caniuse-yarn@https://registry.npmjs.org/@danielbayerlein/caniuse-yarn/-/caniuse-yarn-1.1.0.tgz. Extracting by manifest.
+989 silly tarball no local data for is-fullwidth-code-point@https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz. Extracting by manifest.
+990 silly tarball no local data for package-json@https://registry.npmjs.org/package-json/-/package-json-2.4.0.tgz. Extracting by manifest.
+991 silly tarball no local data for write-file-atomic@https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-1.3.4.tgz. Extracting by manifest.
+992 silly tarball no local data for ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz. Extracting by manifest.
+993 silly tarball no local data for dot-prop@https://registry.npmjs.org/dot-prop/-/dot-prop-3.0.0.tgz. Extracting by manifest.
+994 silly tarball no local data for strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz. Extracting by manifest.
+995 silly tarball no local data for supports-color@https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz. Extracting by manifest.
+996 silly tarball no local data for ansi-styles@https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz. Extracting by manifest.
+997 silly tarball no local data for ansi-align@https://registry.npmjs.org/ansi-align/-/ansi-align-1.1.0.tgz. Extracting by manifest.
+998 silly tarball no local data for widest-line@https://registry.npmjs.org/widest-line/-/widest-line-1.0.0.tgz. Extracting by manifest.
+999 silly tarball no local data for got@https://registry.npmjs.org/got/-/got-5.6.0.tgz. Extracting by manifest.
+1000 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz. Extracting by manifest.
+1001 silly tarball no local data for unzip-response@https://registry.npmjs.org/unzip-response/-/unzip-response-1.0.2.tgz. Extracting by manifest.
+1002 silly tarball no local data for camelcase@https://registry.npmjs.org/camelcase/-/camelcase-2.1.1.tgz. Extracting by manifest.
+1003 silly tarball no local data for boxen@https://registry.npmjs.org/boxen/-/boxen-0.6.0.tgz. Extracting by manifest.
+1004 silly tarball no local data for latest-version@https://registry.npmjs.org/latest-version/-/latest-version-2.0.0.tgz. Extracting by manifest.
+1005 silly tarball no local data for update-notifier@https://registry.npmjs.org/update-notifier/-/update-notifier-1.0.3.tgz. Extracting by manifest.
+1006 silly tarball no local data for chalk@https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz. Extracting by manifest.
+1007 silly tarball no local data for has-yarn@https://registry.npmjs.org/has-yarn/-/has-yarn-2.1.0.tgz. Extracting by manifest.
+1008 silly tarball no local data for configstore@https://registry.npmjs.org/configstore/-/configstore-2.1.0.tgz. Extracting by manifest.
+1009 silly tarball no local data for xdg-basedir@https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-2.0.0.tgz. Extracting by manifest.
+1010 timing reifyNode:node_modules/npm-reinstall/node_modules/process-nextick-args Completed in 161ms
+1011 timing reifyNode:node_modules/npm-reinstall/node_modules/error-ex Completed in 161ms
+1012 timing reifyNode:node_modules/npm-reinstall/node_modules/decamelize Completed in 162ms
+1013 timing reifyNode:node_modules/npm-reinstall/node_modules/path-exists Completed in 162ms
+1014 timing reifyNode:node_modules/npm-reinstall/node_modules/locate-path Completed in 162ms
+1015 timing reifyNode:node_modules/npm-reinstall/node_modules/find-up Completed in 162ms
+1016 timing reifyNode:node_modules/npm-reinstall/node_modules/p-locate Completed in 162ms
+1017 timing reifyNode:node_modules/npm-reinstall/node_modules/which-module Completed in 162ms
+1018 timing reifyNode:node_modules/npm-reinstall/node_modules/imurmurhash Completed in 162ms
+1019 timing reifyNode:node_modules/npm-reinstall/node_modules/is-fullwidth-code-point Completed in 162ms
+1020 timing reifyNode:node_modules/npm-reinstall/node_modules/has-flag Completed in 162ms
+1021 timing reifyNode:node_modules/npm-reinstall/node_modules/ansi-regex Completed in 162ms
+1022 timing reifyNode:node_modules/npm-reinstall/node_modules/path-parse Completed in 162ms
+1023 timing reifyNode:node_modules/npm-reinstall/node_modules/wrappy Completed in 161ms
+1024 timing reifyNode:node_modules/npm-reinstall/node_modules/once Completed in 161ms
+1025 timing reifyNode:node_modules/npm-reinstall/node_modules/inflight Completed in 161ms
+1026 timing reifyNode:node_modules/npm-reinstall/node_modules/brace-expansion Completed in 161ms
+1027 timing reifyNode:node_modules/npm-reinstall/node_modules/object-assign Completed in 161ms
+1028 timing reifyNode:node_modules/npm-reinstall/node_modules/path-is-absolute Completed in 161ms
+1029 timing reifyNode:node_modules/npm-reinstall/node_modules/pify Completed in 161ms
+1030 timing reifyNode:node_modules/npm-reinstall/node_modules/ansi-styles Completed in 161ms
+1031 timing reifyNode:node_modules/npm-reinstall/node_modules/escape-string-regexp Completed in 161ms
+1032 timing reifyNode:node_modules/npm-reinstall/node_modules/core-util-is Completed in 164ms
+1033 timing reifyNode:node_modules/npm-reinstall/node_modules/p-limit Completed in 164ms
+1034 timing reifyNode:node_modules/npm-reinstall/node_modules/p-try Completed in 164ms
+1035 timing reifyNode:node_modules/npm-reinstall/node_modules/require-main-filename Completed in 164ms
+1036 timing reifyNode:node_modules/npm-reinstall/node_modules/y18n Completed in 165ms
+1037 timing reifyNode:node_modules/npm-reinstall/node_modules/set-blocking Completed in 165ms
+1038 timing reifyNode:node_modules/npm-reinstall/node_modules/yargs-parser/node_modules/camelcase Completed in 165ms
+1039 timing reifyNode:node_modules/npm-reinstall/node_modules/defaults Completed in 164ms
+1040 timing reifyNode:node_modules/npm-reinstall/node_modules/write-file-atomic Completed in 164ms
+1041 timing reifyNode:node_modules/npm-reinstall/node_modules/strip-ansi Completed in 163ms
+1042 timing reifyNode:node_modules/npm-reinstall/node_modules/inherits Completed in 164ms
+1043 timing reifyNode:node_modules/npm-reinstall/node_modules/signal-exit Completed in 163ms
+1044 timing reifyNode:node_modules/npm-reinstall/node_modules/supports-color Completed in 163ms
+1045 timing reifyNode:node_modules/npm-reinstall/node_modules/util-deprecate Completed in 166ms
+1046 timing reifyNode:node_modules/npm-reinstall/node_modules/get-caller-file Completed in 166ms
+1047 timing reifyNode:node_modules/npm-reinstall/node_modules/clone Completed in 165ms
+1048 timing reifyNode:node_modules/npm-reinstall/node_modules/balanced-match Completed in 165ms
+1049 timing reifyNode:node_modules/npm-reinstall/node_modules/fs.realpath Completed in 165ms
+1050 timing reifyNode:node_modules/npm-reinstall/node_modules/string_decoder Completed in 167ms
+1051 timing reifyNode:node_modules/npm-reinstall/node_modules/mkdirp Completed in 167ms
+1052 timing reifyNode:node_modules/npm-reinstall/node_modules/string_decoder/node_modules/safe-buffer Completed in 167ms
+1053 timing reifyNode:node_modules/npm-reinstall/node_modules/readable-stream/node_modules/safe-buffer Completed in 167ms
+1054 timing reifyNode:node_modules/npm-reinstall/node_modules/graceful-fs Completed in 169ms
+1055 timing reifyNode:node_modules/npm-reinstall/node_modules/has Completed in 169ms
+1056 timing reifyNode:node_modules/npm-reinstall/node_modules/minimatch Completed in 168ms
+1057 timing reifyNode:node_modules/npm-reinstall/node_modules/color-name Completed in 167ms
+1058 timing reifyNode:node_modules/npm-reinstall/node_modules/is-arrayish Completed in 170ms
+1059 timing reifyNode:node_modules/npm-reinstall/node_modules/isarray Completed in 170ms
+1060 timing reifyNode:node_modules/npm-reinstall/node_modules/require-directory Completed in 170ms
+1061 timing reifyNode:node_modules/npm-reinstall/node_modules/safe-buffer Completed in 170ms
+1062 timing reifyNode:node_modules/npm-reinstall/node_modules/concat-map Completed in 169ms
+1063 timing reifyNode:node_modules/npm-reinstall/node_modules/color-convert Completed in 168ms
+1064 timing reifyNode:node_modules/npm-reinstall/node_modules/isexe Completed in 171ms
+1065 timing reifyNode:node_modules/npm-reinstall/node_modules/chalk Completed in 169ms
+1066 timing reifyNode:node_modules/npm-reinstall/node_modules/cli-spinners Completed in 170ms
+1067 http fetch GET 200 https://registry.npmjs.org/emoji-regex/-/emoji-regex-7.0.3.tgz 140ms (cache miss)
+1068 timing reifyNode:node_modules/npm-reinstall/node_modules/glob Completed in 171ms
+1069 timing reifyNode:node_modules/npm-reinstall/node_modules/wcwidth Completed in 171ms
+1070 timing reifyNode:node_modules/npm-reinstall/node_modules/commander Completed in 170ms
+1071 http fetch GET 200 https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-1.1.0.tgz 139ms (cache miss)
+1072 timing reifyNode:node_modules/npm-reinstall/node_modules/is-plain-obj Completed in 174ms
+1073 http fetch GET 200 https://registry.npmjs.org/duplexer2/-/duplexer2-0.1.4.tgz 139ms (cache miss)
+1074 timing reifyNode:node_modules/npm-reinstall/node_modules/duplexer2 Completed in 174ms
+1075 timing reifyNode:node_modules/npm-reinstall/node_modules/supports-preserve-symlinks-flag Completed in 173ms
+1076 http fetch GET 200 https://registry.npmjs.org/os-homedir/-/os-homedir-1.0.2.tgz 138ms (cache miss)
+1077 timing reifyNode:node_modules/npm-reinstall/node_modules/os-homedir Completed in 174ms
+1078 http fetch GET 200 https://registry.npmjs.org/is-finite/-/is-finite-1.1.0.tgz 137ms (cache miss)
+1079 timing reifyNode:node_modules/npm-reinstall/node_modules/is-finite Completed in 174ms
+1080 http fetch GET 200 https://registry.npmjs.org/slide/-/slide-1.1.6.tgz 142ms (cache miss)
+1081 timing reifyNode:node_modules/npm-reinstall/node_modules/slide Completed in 174ms
+1082 timing reifyNode:node_modules/npm-reinstall/node_modules/emoji-regex Completed in 174ms
+1083 http fetch GET 200 https://registry.npmjs.org/pseudomap/-/pseudomap-1.0.2.tgz 141ms (cache miss)
+1084 timing reifyNode:node_modules/npm-reinstall/node_modules/pseudomap Completed in 174ms
+1085 http fetch GET 200 https://registry.npmjs.org/code-point-at/-/code-point-at-1.1.0.tgz 140ms (cache miss)
+1086 timing reifyNode:node_modules/npm-reinstall/node_modules/code-point-at Completed in 174ms
+1087 http fetch GET 200 https://registry.npmjs.org/number-is-nan/-/number-is-nan-1.0.1.tgz 141ms (cache miss)
+1088 timing reifyNode:node_modules/npm-reinstall/node_modules/number-is-nan Completed in 175ms
+1089 http fetch GET 200 https://registry.npmjs.org/has-ansi/-/has-ansi-2.0.0.tgz 138ms (cache miss)
+1090 timing reifyNode:node_modules/npm-reinstall/node_modules/has-ansi Completed in 175ms
+1091 timing reifyNode:node_modules/npm-reinstall/node_modules/is-core-module Completed in 174ms
+1092 http fetch GET 200 https://registry.npmjs.org/osenv/-/osenv-0.1.5.tgz 138ms (cache miss)
+1093 timing reifyNode:node_modules/npm-reinstall/node_modules/osenv Completed in 175ms
+1094 timing reifyNode:node_modules/npm-reinstall/node_modules/function-bind Completed in 174ms
+1095 http fetch GET 200 https://registry.npmjs.org/lru-cache/-/lru-cache-4.1.5.tgz 145ms (cache miss)
+1096 timing reifyNode:node_modules/npm-reinstall/node_modules/lru-cache Completed in 178ms
+1097 http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 142ms (cache miss)
+1098 timing reifyNode:node_modules/npm-reinstall/node_modules/has-ansi/node_modules/ansi-regex Completed in 180ms
+1099 http fetch GET 200 https://registry.npmjs.org/uuid/-/uuid-2.0.3.tgz 145ms (cache miss)
+1100 warn deprecated uuid@2.0.3: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+1101 timing reifyNode:node_modules/npm-reinstall/node_modules/uuid Completed in 182ms
+1102 http fetch GET 200 https://registry.npmjs.org/repeating/-/repeating-2.0.1.tgz 144ms (cache miss)
+1103 timing reifyNode:node_modules/npm-reinstall/node_modules/repeating Completed in 183ms
+1104 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz 144ms (cache miss)
+1105 timing reifyNode:node_modules/npm-reinstall/node_modules/cliui/node_modules/string-width Completed in 183ms
+1106 timing reifyNode:node_modules/npm-reinstall/node_modules/minimist Completed in 183ms
+1107 http fetch GET 200 https://registry.npmjs.org/yallist/-/yallist-2.1.2.tgz 146ms (cache miss)
+1108 timing reifyNode:node_modules/npm-reinstall/node_modules/yallist Completed in 185ms
+1109 timing reifyNode:node_modules/npm-reinstall/node_modules/readable-stream Completed in 186ms
+1110 http fetch GET 200 https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz 148ms (cache miss)
+1111 timing reifyNode:node_modules/npm-reinstall/node_modules/os-tmpdir Completed in 186ms
+1112 http fetch GET 200 https://registry.npmjs.org/yargs-parser/-/yargs-parser-13.1.2.tgz 148ms (cache miss)
+1113 timing reifyNode:node_modules/npm-reinstall/node_modules/yargs-parser Completed in 187ms
+1114 http fetch GET 200 https://registry.npmjs.org/cliui/-/cliui-5.0.0.tgz 151ms (cache miss)
+1115 timing reifyNode:node_modules/npm-reinstall/node_modules/cliui Completed in 192ms
+1116 http fetch GET 200 https://registry.npmjs.org/parse-json/-/parse-json-2.2.0.tgz 155ms (cache miss)
+1117 timing reifyNode:node_modules/npm-reinstall/node_modules/parse-json Completed in 192ms
+1118 timing reifyNode:node_modules/npm-reinstall/node_modules/resolve Completed in 197ms
+1119 http fetch GET 200 https://registry.npmjs.org/prepend-http/-/prepend-http-1.0.4.tgz 161ms (cache miss)
+1120 timing reifyNode:node_modules/npm-reinstall/node_modules/prepend-http Completed in 201ms
+1121 http fetch GET 200 https://registry.npmjs.org/timed-out/-/timed-out-4.0.1.tgz 186ms (cache miss)
+1122 timing reifyNode:node_modules/npm-reinstall/node_modules/timed-out Completed in 227ms
+1123 http fetch GET 200 https://registry.npmjs.org/crypto-random-string/-/crypto-random-string-1.0.0.tgz 187ms (cache miss)
+1124 timing reifyNode:node_modules/npm-reinstall/node_modules/crypto-random-string Completed in 227ms
+1125 http fetch GET 200 https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-2.0.1.tgz 187ms (cache miss)
+1126 timing reifyNode:node_modules/npm-reinstall/node_modules/strip-json-comments Completed in 228ms
+1127 http fetch GET 200 https://registry.npmjs.org/rc/-/rc-1.2.8.tgz 188ms (cache miss)
+1128 timing reifyNode:node_modules/npm-reinstall/node_modules/rc Completed in 228ms
+1129 http fetch GET 200 https://registry.npmjs.org/capture-stack-trace/-/capture-stack-trace-1.0.2.tgz 188ms (cache miss)
+1130 timing reifyNode:node_modules/npm-reinstall/node_modules/capture-stack-trace Completed in 229ms
+1131 http fetch GET 200 https://registry.npmjs.org/deep-extend/-/deep-extend-0.6.0.tgz 189ms (cache miss)
+1132 timing reifyNode:node_modules/npm-reinstall/node_modules/deep-extend Completed in 229ms
+1133 http fetch GET 200 https://registry.npmjs.org/unzip-response/-/unzip-response-2.0.1.tgz 188ms (cache miss)
+1134 timing reifyNode:node_modules/npm-reinstall/node_modules/unzip-response Completed in 229ms
+1135 http fetch GET 200 https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-5.1.0.tgz 191ms (cache miss)
+1136 timing reifyNode:node_modules/npm-reinstall/node_modules/wrap-ansi Completed in 230ms
+1137 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz 196ms (cache miss)
+1138 timing reifyNode:node_modules/npm-reinstall/node_modules/wrap-ansi/node_modules/string-width Completed in 236ms
+1139 http fetch GET 200 https://registry.npmjs.org/create-error-class/-/create-error-class-3.0.2.tgz 193ms (cache miss)
+1140 timing reifyNode:node_modules/npm-reinstall/node_modules/create-error-class Completed in 235ms
+1141 http fetch GET 200 https://registry.npmjs.org/lowercase-keys/-/lowercase-keys-1.0.1.tgz 222ms (cache miss)
+1142 timing reifyNode:node_modules/npm-reinstall/node_modules/lowercase-keys Completed in 266ms
+1143 http fetch GET 200 https://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz 221ms (cache miss)
+1144 timing reifyNode:node_modules/npm-reinstall/node_modules/got/node_modules/get-stream Completed in 266ms
+1145 http fetch GET 200 https://registry.npmjs.org/is-retry-allowed/-/is-retry-allowed-1.2.0.tgz 222ms (cache miss)
+1146 timing reifyNode:node_modules/npm-reinstall/node_modules/is-retry-allowed Completed in 267ms
+1147 http fetch GET 200 https://registry.npmjs.org/got/-/got-6.7.1.tgz 232ms (cache miss)
+1148 timing reifyNode:node_modules/npm-reinstall/node_modules/got Completed in 278ms
+1149 http fetch GET 200 https://registry.npmjs.org/is-redirect/-/is-redirect-1.0.0.tgz 233ms (cache miss)
+1150 timing reifyNode:node_modules/npm-reinstall/node_modules/is-redirect Completed in 278ms
+1151 http fetch GET 200 https://registry.npmjs.org/duplexer3/-/duplexer3-0.1.5.tgz 232ms (cache miss)
+1152 timing reifyNode:node_modules/npm-reinstall/node_modules/duplexer3 Completed in 278ms
+1153 http fetch GET 200 https://registry.npmjs.org/ini/-/ini-1.3.8.tgz 232ms (cache miss)
+1154 timing reifyNode:node_modules/npm-reinstall/node_modules/ini Completed in 278ms
+1155 http fetch GET 200 https://registry.npmjs.org/registry-auth-token/-/registry-auth-token-3.4.0.tgz 233ms (cache miss)
+1156 timing reifyNode:node_modules/npm-reinstall/node_modules/registry-auth-token Completed in 279ms
+1157 http fetch GET 200 https://registry.npmjs.org/global-dirs/-/global-dirs-0.1.1.tgz 249ms (cache miss)
+1158 timing reifyNode:node_modules/npm-reinstall/node_modules/global-dirs Completed in 295ms
+1159 http fetch GET 200 https://registry.npmjs.org/is-obj/-/is-obj-1.0.1.tgz 279ms (cache miss)
+1160 timing reifyNode:node_modules/npm-reinstall/node_modules/is-obj Completed in 327ms
+1161 http fetch GET 200 https://registry.npmjs.org/make-dir/-/make-dir-1.3.0.tgz 279ms (cache miss)
+1162 timing reifyNode:node_modules/npm-reinstall/node_modules/make-dir Completed in 327ms
+1163 http fetch GET 200 https://registry.npmjs.org/widest-line/-/widest-line-2.0.1.tgz 281ms (cache miss)
+1164 timing reifyNode:node_modules/npm-reinstall/node_modules/widest-line Completed in 328ms
+1165 http fetch GET 200 https://registry.npmjs.org/registry-url/-/registry-url-3.1.0.tgz 280ms (cache miss)
+1166 timing reifyNode:node_modules/npm-reinstall/node_modules/registry-url Completed in 328ms
+1167 http fetch GET 200 https://registry.npmjs.org/ci-info/-/ci-info-1.6.0.tgz 281ms (cache miss)
+1168 timing reifyNode:node_modules/npm-reinstall/node_modules/ci-info Completed in 328ms
+1169 http fetch GET 200 https://registry.npmjs.org/unique-string/-/unique-string-1.0.0.tgz 281ms (cache miss)
+1170 timing reifyNode:node_modules/npm-reinstall/node_modules/unique-string Completed in 328ms
+1171 http fetch GET 200 https://registry.npmjs.org/dot-prop/-/dot-prop-4.2.1.tgz 280ms (cache miss)
+1172 timing reifyNode:node_modules/npm-reinstall/node_modules/dot-prop Completed in 328ms
+1173 http fetch GET 200 https://registry.npmjs.org/url-parse-lax/-/url-parse-lax-1.0.0.tgz 296ms (cache miss)
+1174 timing reifyNode:node_modules/npm-reinstall/node_modules/url-parse-lax Completed in 340ms
+1175 http fetch GET 200 https://registry.npmjs.org/execa/-/execa-0.7.0.tgz 291ms (cache miss)
+1176 timing reifyNode:node_modules/npm-reinstall/node_modules/term-size/node_modules/execa Completed in 340ms
+1177 http fetch GET 200 https://registry.npmjs.org/get-stream/-/get-stream-3.0.0.tgz 306ms (cache miss)
+1178 timing reifyNode:node_modules/npm-reinstall/node_modules/term-size/node_modules/get-stream Completed in 358ms
+1179 http fetch GET 200 https://registry.npmjs.org/pify/-/pify-3.0.0.tgz 306ms (cache miss)
+1180 timing reifyNode:node_modules/npm-reinstall/node_modules/make-dir/node_modules/pify Completed in 358ms
+1181 http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-3.0.1.tgz 305ms (cache miss)
+1182 timing reifyNode:node_modules/npm-reinstall/node_modules/string-width/node_modules/ansi-regex Completed in 358ms
+1183 http fetch GET 200 https://registry.npmjs.org/term-size/-/term-size-1.2.0.tgz 313ms (cache miss)
+1184 http fetch GET 200 https://registry.npmjs.org/camelcase/-/camelcase-4.1.0.tgz 312ms (cache miss)
+1185 timing reifyNode:node_modules/npm-reinstall/node_modules/camelcase Completed in 365ms
+1186 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-2.1.1.tgz 312ms (cache miss)
+1187 timing reifyNode:node_modules/npm-reinstall/node_modules/string-width Completed in 365ms
+1188 timing reifyNode:node_modules/npm-reinstall/node_modules/term-size Completed in 365ms
+1189 http fetch GET 200 https://registry.npmjs.org/cross-spawn/-/cross-spawn-5.1.0.tgz 332ms (cache miss)
+1190 http fetch GET 200 https://registry.npmjs.org/semver-diff/-/semver-diff-2.1.0.tgz 331ms (cache miss)
+1191 timing reifyNode:node_modules/npm-reinstall/node_modules/semver-diff Completed in 385ms
+1192 http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-4.0.0.tgz 331ms (cache miss)
+1193 timing reifyNode:node_modules/npm-reinstall/node_modules/string-width/node_modules/strip-ansi Completed in 385ms
+1194 http fetch GET 200 https://registry.npmjs.org/node-status-codes/-/node-status-codes-1.0.0.tgz 350ms (cache miss)
+1195 timing reifyNode:node_modules/npm-reinstall/node_modules/node-status-codes Completed in 386ms
+1196 timing reifyNode:node_modules/npm-reinstall/node_modules/term-size/node_modules/cross-spawn Completed in 385ms
+1197 http fetch GET 200 https://registry.npmjs.org/is-ci/-/is-ci-1.2.1.tgz 346ms (cache miss)
+1198 timing reifyNode:node_modules/npm-reinstall/node_modules/is-ci Completed in 401ms
+1199 http fetch GET 200 https://registry.npmjs.org/cli-boxes/-/cli-boxes-1.0.0.tgz 347ms (cache miss)
+1200 timing reifyNode:node_modules/npm-reinstall/node_modules/cli-boxes Completed in 401ms
+1201 http fetch GET 200 https://registry.npmjs.org/latest-version/-/latest-version-3.1.0.tgz 347ms (cache miss)
+1202 timing reifyNode:node_modules/npm-reinstall/node_modules/latest-version Completed in 401ms
+1203 http fetch GET 200 https://registry.npmjs.org/import-lazy/-/import-lazy-2.1.0.tgz 346ms (cache miss)
+1204 timing reifyNode:node_modules/npm-reinstall/node_modules/import-lazy Completed in 401ms
+1205 http fetch GET 200 https://registry.npmjs.org/is-installed-globally/-/is-installed-globally-0.1.0.tgz 347ms (cache miss)
+1206 timing reifyNode:node_modules/npm-reinstall/node_modules/is-installed-globally Completed in 402ms
+1207 http fetch GET 200 https://registry.npmjs.org/read-all-stream/-/read-all-stream-3.1.0.tgz 378ms (cache miss)
+1208 timing reifyNode:node_modules/npm-reinstall/node_modules/read-all-stream Completed in 413ms
+1209 http fetch GET 200 https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-3.0.0.tgz 357ms (cache miss)
+1210 timing reifyNode:node_modules/npm-reinstall/node_modules/xdg-basedir Completed in 412ms
+1211 http fetch GET 200 https://registry.npmjs.org/is-npm/-/is-npm-1.0.0.tgz 357ms (cache miss)
+1212 timing reifyNode:node_modules/npm-reinstall/node_modules/is-npm Completed in 413ms
+1213 http fetch GET 200 https://registry.npmjs.org/configstore/-/configstore-3.1.5.tgz 357ms (cache miss)
+1214 timing reifyNode:node_modules/npm-reinstall/node_modules/configstore Completed in 413ms
+1215 http fetch GET 200 https://registry.npmjs.org/ansi-align/-/ansi-align-2.0.0.tgz 368ms (cache miss)
+1216 timing reifyNode:node_modules/npm-reinstall/node_modules/ansi-align Completed in 424ms
+1217 http fetch GET 200 https://registry.npmjs.org/boxen/-/boxen-1.3.0.tgz 369ms (cache miss)
+1218 timing reifyNode:node_modules/npm-reinstall/node_modules/boxen Completed in 425ms
+1219 http fetch GET 200 https://registry.npmjs.org/is-path-inside/-/is-path-inside-1.0.1.tgz 391ms (cache miss)
+1220 timing reifyNode:node_modules/npm-reinstall/node_modules/is-installed-globally/node_modules/is-path-inside Completed in 448ms
+1221 http fetch GET 200 https://registry.npmjs.org/shebang-regex/-/shebang-regex-1.0.0.tgz 391ms (cache miss)
+1222 timing reifyNode:node_modules/npm-reinstall/node_modules/shebang-regex Completed in 447ms
+1223 http fetch GET 200 https://registry.npmjs.org/interpret/-/interpret-1.4.0.tgz 391ms (cache miss)
+1224 timing reifyNode:node_modules/npm-reinstall/node_modules/interpret Completed in 447ms
+1225 http fetch GET 200 https://registry.npmjs.org/end-of-stream/-/end-of-stream-1.4.4.tgz 391ms (cache miss)
+1226 timing reifyNode:node_modules/npm-reinstall/node_modules/end-of-stream Completed in 448ms
+1227 http fetch GET 200 https://registry.npmjs.org/onetime/-/onetime-2.0.1.tgz 391ms (cache miss)
+1228 timing reifyNode:node_modules/npm-reinstall/node_modules/onetime Completed in 448ms
+1229 http fetch GET 200 https://registry.npmjs.org/restore-cursor/-/restore-cursor-2.0.0.tgz 391ms (cache miss)
+1230 timing reifyNode:node_modules/npm-reinstall/node_modules/restore-cursor Completed in 448ms
+1231 http fetch GET 200 https://registry.npmjs.org/mimic-fn/-/mimic-fn-1.2.0.tgz 391ms (cache miss)
+1232 timing reifyNode:node_modules/npm-reinstall/node_modules/mimic-fn Completed in 448ms
+1233 http fetch GET 200 https://registry.npmjs.org/log-symbols/-/log-symbols-2.2.0.tgz 399ms (cache miss)
+1234 timing reifyNode:node_modules/npm-reinstall/node_modules/log-symbols Completed in 457ms
+1235 http fetch GET 200 https://registry.npmjs.org/pinkie/-/pinkie-2.0.4.tgz 400ms (cache miss)
+1236 timing reifyNode:node_modules/npm-reinstall/node_modules/pinkie Completed in 457ms
+1237 http fetch GET 200 https://registry.npmjs.org/lazy-req/-/lazy-req-1.1.0.tgz 422ms (cache miss)
+1238 timing reifyNode:node_modules/npm-reinstall/node_modules/lazy-req Completed in 460ms
+1239 http fetch GET 200 https://registry.npmjs.org/is-path-inside/-/is-path-inside-2.1.0.tgz 402ms (cache miss)
+1240 timing reifyNode:node_modules/npm-reinstall/node_modules/is-path-inside Completed in 460ms
+1241 http fetch GET 200 https://registry.npmjs.org/cli-cursor/-/cli-cursor-2.1.0.tgz 402ms (cache miss)
+1242 timing reifyNode:node_modules/npm-reinstall/node_modules/cli-cursor Completed in 460ms
+1243 http fetch GET 200 https://registry.npmjs.org/npm-reinstall/-/npm-reinstall-3.1.0.tgz 437ms (cache miss)
+1244 timing reifyNode:node_modules/npm-reinstall Completed in 477ms
+1245 http fetch GET 200 https://registry.npmjs.org/array-uniq/-/array-uniq-1.0.3.tgz 429ms (cache miss)
+1246 timing reifyNode:node_modules/npm-reinstall/node_modules/array-uniq Completed in 488ms
+1247 http fetch GET 200 https://registry.npmjs.org/which/-/which-1.3.1.tgz 429ms (cache miss)
+1248 timing reifyNode:node_modules/npm-reinstall/node_modules/which Completed in 487ms
+1249 http fetch GET 200 https://registry.npmjs.org/pinkie-promise/-/pinkie-promise-2.0.1.tgz 429ms (cache miss)
+1250 timing reifyNode:node_modules/npm-reinstall/node_modules/pinkie-promise Completed in 488ms
+1251 http fetch GET 200 https://registry.npmjs.org/path-is-inside/-/path-is-inside-1.0.2.tgz 429ms (cache miss)
+1252 timing reifyNode:node_modules/npm-reinstall/node_modules/path-is-inside Completed in 488ms
+1253 http fetch GET 200 https://registry.npmjs.org/rechoir/-/rechoir-0.6.2.tgz 430ms (cache miss)
+1254 timing reifyNode:node_modules/npm-reinstall/node_modules/rechoir Completed in 488ms
+1255 http fetch GET 200 https://registry.npmjs.org/pump/-/pump-3.0.0.tgz 434ms (cache miss)
+1256 timing reifyNode:node_modules/npm-reinstall/node_modules/pump Completed in 493ms
+1257 http fetch GET 200 https://registry.npmjs.org/shebang-command/-/shebang-command-1.2.0.tgz 434ms (cache miss)
+1258 timing reifyNode:node_modules/npm-reinstall/node_modules/shebang-command Completed in 493ms
+1259 http fetch GET 200 https://registry.npmjs.org/is-stream/-/is-stream-1.1.0.tgz 431ms (cache miss)
+1260 timing reifyNode:node_modules/npm-reinstall/node_modules/is-stream Completed in 493ms
+1261 http fetch GET 200 https://registry.npmjs.org/filled-array/-/filled-array-1.1.0.tgz 474ms (cache miss)
+1262 timing reifyNode:node_modules/npm-reinstall/node_modules/filled-array Completed in 512ms
+1263 http fetch GET 200 https://registry.npmjs.org/path-key/-/path-key-2.0.1.tgz 449ms (cache miss)
+1264 timing reifyNode:node_modules/npm-reinstall/node_modules/path-key Completed in 510ms
+1265 http fetch GET 200 https://registry.npmjs.org/strip-eof/-/strip-eof-1.0.0.tgz 451ms (cache miss)
+1266 timing reifyNode:node_modules/npm-reinstall/node_modules/strip-eof Completed in 510ms
+1267 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-5.7.2.tgz 451ms (cache miss)
+1268 timing reifyNode:node_modules/npm-reinstall/node_modules/semver Completed in 510ms
+1269 http fetch GET 200 https://registry.npmjs.org/array-union/-/array-union-1.0.2.tgz 451ms (cache miss)
+1270 timing reifyNode:node_modules/npm-reinstall/node_modules/array-union Completed in 510ms
+1271 http fetch GET 200 https://registry.npmjs.org/get-stream/-/get-stream-4.1.0.tgz 448ms (cache miss)
+1272 timing reifyNode:node_modules/npm-reinstall/node_modules/get-stream Completed in 510ms
+1273 http fetch GET 200 https://registry.npmjs.org/p-finally/-/p-finally-1.0.0.tgz 462ms (cache miss)
+1274 timing reifyNode:node_modules/npm-reinstall/node_modules/p-finally Completed in 525ms
+1275 http fetch GET 200 https://registry.npmjs.org/nice-try/-/nice-try-1.0.5.tgz 462ms (cache miss)
+1276 timing reifyNode:node_modules/npm-reinstall/node_modules/nice-try Completed in 525ms
+1277 http fetch GET 200 https://registry.npmjs.org/npm-run-path/-/npm-run-path-2.0.2.tgz 462ms (cache miss)
+1278 timing reifyNode:node_modules/npm-reinstall/node_modules/npm-run-path Completed in 525ms
+1279 http fetch GET 200 https://registry.npmjs.org/p-map/-/p-map-2.1.0.tgz 462ms (cache miss)
+1280 timing reifyNode:node_modules/npm-reinstall/node_modules/p-map Completed in 525ms
+1281 http fetch GET 200 https://registry.npmjs.org/is-path-cwd/-/is-path-cwd-2.2.0.tgz 482ms (cache miss)
+1282 timing reifyNode:node_modules/npm-reinstall/node_modules/is-path-cwd Completed in 546ms
+1283 http fetch GET 200 https://registry.npmjs.org/package-json/-/package-json-4.0.1.tgz 503ms (cache miss)
+1284 timing reifyNode:node_modules/npm-reinstall/node_modules/package-json Completed in 548ms
+1285 http fetch GET 200 https://registry.npmjs.org/pify/-/pify-2.3.0.tgz 481ms (cache miss)
+1286 timing reifyNode:node_modules/npm-reinstall/node_modules/globby/node_modules/pify Completed in 546ms
+1287 http fetch GET 200 https://registry.npmjs.org/rimraf/-/rimraf-2.7.1.tgz 483ms (cache miss)
+1288 timing reifyNode:node_modules/npm-reinstall/node_modules/rimraf Completed in 546ms
+1289 http fetch GET 200 https://registry.npmjs.org/cross-spawn/-/cross-spawn-6.0.5.tgz 482ms (cache miss)
+1290 http fetch GET 200 https://registry.npmjs.org/is-path-in-cwd/-/is-path-in-cwd-2.1.0.tgz 483ms (cache miss)
+1291 timing reifyNode:node_modules/npm-reinstall/node_modules/is-path-in-cwd Completed in 547ms
+1292 http fetch GET 200 https://registry.npmjs.org/globby/-/globby-6.1.0.tgz 481ms (cache miss)
+1293 timing reifyNode:node_modules/npm-reinstall/node_modules/globby Completed in 547ms
+1294 timing reifyNode:node_modules/npm-reinstall/node_modules/cross-spawn Completed in 547ms
+1295 http fetch GET 200 https://registry.npmjs.org/figures/-/figures-3.2.0.tgz 482ms (cache miss)
+1296 timing reifyNode:node_modules/npm-reinstall/node_modules/figures Completed in 547ms
+1297 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz 491ms (cache miss)
+1298 timing reifyNode:node_modules/npm-reinstall/node_modules/yargs/node_modules/string-width Completed in 557ms
+1299 http fetch GET 200 https://registry.npmjs.org/ora/-/ora-3.4.0.tgz 522ms (cache miss)
+1300 timing reifyNode:node_modules/npm-reinstall/node_modules/ora Completed in 588ms
+1301 http fetch GET 200 https://registry.npmjs.org/del/-/del-4.1.1.tgz 521ms (cache miss)
+1302 timing reifyNode:node_modules/npm-reinstall/node_modules/del Completed in 588ms
+1303 http fetch GET 200 https://registry.npmjs.org/update-notifier/-/update-notifier-2.5.0.tgz 522ms (cache miss)
+1304 timing reifyNode:node_modules/npm-reinstall/node_modules/update-notifier Completed in 588ms
+1305 http fetch GET 200 https://registry.npmjs.org/shelljs/-/shelljs-0.7.8.tgz 527ms (cache miss)
+1306 timing reifyNode:node_modules/npm-reinstall/node_modules/shelljs Completed in 594ms
+1307 http fetch GET 200 https://registry.npmjs.org/execa/-/execa-1.0.0.tgz 528ms (cache miss)
+1308 timing reifyNode:node_modules/npm-reinstall/node_modules/execa Completed in 595ms
+1309 http fetch GET 200 https://registry.npmjs.org/timed-out/-/timed-out-2.0.0.tgz 543ms (cache miss)
+1310 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/timed-out Completed in 614ms
+1311 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-1.0.0.tgz 543ms (cache miss)
+1312 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/is-fullwidth-code-point Completed in 614ms
+1313 http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-2.1.1.tgz 548ms (cache miss)
+1314 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-regex Completed in 621ms
+1315 http fetch GET 200 https://registry.npmjs.org/package-json/-/package-json-2.4.0.tgz 550ms (cache miss)
+1316 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/package-json Completed in 621ms
+1317 http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-3.0.1.tgz 554ms (cache miss)
+1318 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/strip-ansi Completed in 626ms
+1319 http fetch GET 200 https://registry.npmjs.org/supports-color/-/supports-color-2.0.0.tgz 574ms (cache miss)
+1320 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/supports-color Completed in 646ms
+1321 http fetch GET 200 https://registry.npmjs.org/ansi-styles/-/ansi-styles-2.2.1.tgz 580ms (cache miss)
+1322 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-styles Completed in 652ms
+1323 http fetch GET 200 https://registry.npmjs.org/widest-line/-/widest-line-1.0.0.tgz 580ms (cache miss)
+1324 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/widest-line Completed in 652ms
+1325 http fetch GET 200 https://registry.npmjs.org/shelljs/-/shelljs-0.8.5.tgz 589ms (cache miss)
+1326 timing reifyNode:node_modules/npm-reinstall/node_modules/caniuse-pnpm/node_modules/shelljs Completed in 657ms
+1327 http fetch GET 200 https://registry.npmjs.org/got/-/got-5.6.0.tgz 589ms (cache miss)
+1328 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/got Completed in 662ms
+1329 http fetch GET 200 https://registry.npmjs.org/yargs/-/yargs-13.3.2.tgz 595ms (cache miss)
+1330 timing reifyNode:node_modules/npm-reinstall/node_modules/yargs Completed in 662ms
+1331 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-1.0.2.tgz 611ms (cache miss)
+1332 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/string-width Completed in 684ms
+1333 http fetch GET 200 https://registry.npmjs.org/camelcase/-/camelcase-2.1.1.tgz 615ms (cache miss)
+1334 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/camelcase Completed in 688ms
+1335 http fetch GET 200 https://registry.npmjs.org/unzip-response/-/unzip-response-1.0.2.tgz 615ms (cache miss)
+1336 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/unzip-response Completed in 689ms
+1337 http fetch GET 200 https://registry.npmjs.org/chalk/-/chalk-1.1.3.tgz 643ms (cache miss)
+1338 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/chalk Completed in 717ms
+1339 http fetch GET 200 https://registry.npmjs.org/has-yarn/-/has-yarn-2.1.0.tgz 650ms (cache miss)
+1340 timing reifyNode:node_modules/npm-reinstall/node_modules/has-yarn Completed in 725ms
+1341 http fetch GET 200 https://registry.npmjs.org/configstore/-/configstore-2.1.0.tgz 651ms (cache miss)
+1342 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/configstore Completed in 725ms
+1343 http fetch GET 200 https://registry.npmjs.org/xdg-basedir/-/xdg-basedir-2.0.0.tgz 679ms (cache miss)
+1344 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/xdg-basedir Completed in 754ms
+1345 http fetch GET 200 https://registry.npmjs.org/@types/glob/-/glob-7.2.0.tgz 764ms (cache miss)
+1346 timing reifyNode:node_modules/npm-reinstall/node_modules/@types/glob Completed in 830ms
+1347 http fetch GET 200 https://registry.npmjs.org/@types/minimatch/-/minimatch-5.1.2.tgz 767ms (cache miss)
+1348 timing reifyNode:node_modules/npm-reinstall/node_modules/@types/minimatch Completed in 831ms
+1349 http fetch GET 200 https://registry.npmjs.org/has-pnpm/-/has-pnpm-1.1.1.tgz 828ms (cache miss)
+1350 timing reifyNode:node_modules/npm-reinstall/node_modules/has-pnpm Completed in 898ms
+1351 http fetch GET 200 https://registry.npmjs.org/caniuse-pnpm/-/caniuse-pnpm-1.1.0.tgz 856ms (cache miss)
+1352 timing reifyNode:node_modules/npm-reinstall/node_modules/caniuse-pnpm Completed in 926ms
+1353 http fetch GET 200 https://registry.npmjs.org/write-file-atomic/-/write-file-atomic-1.3.4.tgz 863ms (cache miss)
+1354 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/write-file-atomic Completed in 935ms
+1355 http fetch GET 200 https://registry.npmjs.org/dot-prop/-/dot-prop-3.0.0.tgz 871ms (cache miss)
+1356 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/dot-prop Completed in 944ms
+1357 http fetch GET 200 https://registry.npmjs.org/update-notifier/-/update-notifier-1.0.3.tgz 924ms (cache miss)
+1358 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/update-notifier Completed in 998ms
+1359 http fetch GET 200 https://registry.npmjs.org/@types/node/-/node-20.4.5.tgz 1058ms (cache miss)
+1360 timing reifyNode:node_modules/npm-reinstall/node_modules/@types/node Completed in 1123ms
+1361 http fetch GET 200 https://registry.npmjs.org/ansi-align/-/ansi-align-1.1.0.tgz 1601ms (cache miss)
+1362 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-align Completed in 1673ms
+1363 http fetch GET 200 https://registry.npmjs.org/boxen/-/boxen-0.6.0.tgz 1610ms (cache miss)
+1364 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/boxen Completed in 1684ms
+1365 http fetch GET 200 https://registry.npmjs.org/latest-version/-/latest-version-2.0.0.tgz 1617ms (cache miss)
+1366 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/latest-version Completed in 1691ms
+1367 http fetch GET 200 https://registry.npmjs.org/@danielbayerlein/caniuse-yarn/-/caniuse-yarn-1.1.0.tgz 2849ms (cache miss)
+1368 timing reifyNode:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn Completed in 2920ms
+1369 timing reify:unpack Completed in 2924ms
+1370 timing reify:unretire Completed in 1ms
+1371 timing build:queue Completed in 5ms
+1372 timing build:link:node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn Completed in 3ms
+1373 timing build:link:node_modules/npm-reinstall/node_modules/caniuse-pnpm/node_modules/shelljs Completed in 2ms
+1374 timing build:link:node_modules/npm-reinstall/node_modules/is-ci Completed in 3ms
+1375 timing build:link:node_modules/npm-reinstall/node_modules/mkdirp Completed in 4ms
+1376 timing build:link:node_modules/npm-reinstall/node_modules/rc Completed in 4ms
+1377 timing build:link:node_modules/npm-reinstall/node_modules/semver Completed in 4ms
+1378 timing build:link:node_modules/npm-reinstall/node_modules/resolve Completed in 4ms
+1379 timing build:link:node_modules/npm-reinstall/node_modules/rimraf Completed in 4ms
+1380 timing build:link:node_modules/npm-reinstall/node_modules/which Completed in 4ms
+1381 timing build:link:node_modules/npm-reinstall/node_modules/shelljs Completed in 4ms
+1382 timing build:link:node_modules/npm-reinstall/node_modules/has-pnpm Completed in 44ms
+1383 timing build:link:node_modules/npm-reinstall/node_modules/caniuse-pnpm Completed in 44ms
+1384 timing build:link:node_modules/npm-reinstall Completed in 53ms
+1385 timing build:link Completed in 58ms
+1386 timing build:deps Completed in 63ms
+1387 timing build Completed in 64ms
+1388 timing reify:build Completed in 64ms
+1389 timing reify:trash Completed in 0ms
+1390 timing reify Completed in 18304ms
+1391 silly ADD node_modules/npm-reinstall
+1392 silly ADD node_modules/npm-reinstall/node_modules/yallist
+1393 silly ADD node_modules/npm-reinstall/node_modules/pseudomap
+1394 silly ADD node_modules/npm-reinstall/node_modules/lru-cache
+1395 silly ADD node_modules/npm-reinstall/node_modules/emoji-regex
+1396 silly ADD node_modules/npm-reinstall/node_modules/slide
+1397 silly ADD node_modules/npm-reinstall/node_modules/number-is-nan
+1398 silly ADD node_modules/npm-reinstall/node_modules/code-point-at
+1399 silly ADD node_modules/npm-reinstall/node_modules/util-deprecate
+1400 silly ADD node_modules/npm-reinstall/node_modules/string_decoder
+1401 silly ADD node_modules/npm-reinstall/node_modules/string_decoder/node_modules/safe-buffer
+1402 silly ADD node_modules/npm-reinstall/node_modules/process-nextick-args
+1403 silly ADD node_modules/npm-reinstall/node_modules/isarray
+1404 silly ADD node_modules/npm-reinstall/node_modules/core-util-is
+1405 silly ADD node_modules/npm-reinstall/node_modules/is-arrayish
+1406 silly ADD node_modules/npm-reinstall/node_modules/error-ex
+1407 silly ADD node_modules/npm-reinstall/node_modules/readable-stream
+1408 silly ADD node_modules/npm-reinstall/node_modules/readable-stream/node_modules/safe-buffer
+1409 silly ADD node_modules/npm-reinstall/node_modules/read-all-stream
+1410 silly ADD node_modules/npm-reinstall/node_modules/parse-json
+1411 silly ADD node_modules/npm-reinstall/node_modules/node-status-codes
+1412 silly ADD node_modules/npm-reinstall/node_modules/is-plain-obj
+1413 silly ADD node_modules/npm-reinstall/node_modules/duplexer2
+1414 silly ADD node_modules/npm-reinstall/node_modules/os-homedir
+1415 silly ADD node_modules/npm-reinstall/node_modules/uuid
+1416 silly ADD node_modules/npm-reinstall/node_modules/osenv
+1417 silly ADD node_modules/npm-reinstall/node_modules/os-tmpdir
+1418 silly ADD node_modules/npm-reinstall/node_modules/mkdirp
+1419 silly ADD node_modules/npm-reinstall/node_modules/has-ansi
+1420 silly ADD node_modules/npm-reinstall/node_modules/has-ansi/node_modules/ansi-regex
+1421 silly ADD node_modules/npm-reinstall/node_modules/is-finite
+1422 silly ADD node_modules/npm-reinstall/node_modules/repeating
+1423 silly ADD node_modules/npm-reinstall/node_modules/filled-array
+1424 silly ADD node_modules/npm-reinstall/node_modules/lazy-req
+1425 silly ADD node_modules/npm-reinstall/node_modules/decamelize
+1426 silly ADD node_modules/npm-reinstall/node_modules/p-try
+1427 silly ADD node_modules/npm-reinstall/node_modules/p-limit
+1428 silly ADD node_modules/npm-reinstall/node_modules/path-exists
+1429 silly ADD node_modules/npm-reinstall/node_modules/p-locate
+1430 silly ADD node_modules/npm-reinstall/node_modules/locate-path
+1431 silly ADD node_modules/npm-reinstall/node_modules/wrap-ansi
+1432 silly ADD node_modules/npm-reinstall/node_modules/wrap-ansi/node_modules/string-width
+1433 silly ADD node_modules/npm-reinstall/node_modules/yargs-parser
+1434 silly ADD node_modules/npm-reinstall/node_modules/yargs-parser/node_modules/camelcase
+1435 silly ADD node_modules/npm-reinstall/node_modules/y18n
+1436 silly ADD node_modules/npm-reinstall/node_modules/which-module
+1437 silly ADD node_modules/npm-reinstall/node_modules/set-blocking
+1438 silly ADD node_modules/npm-reinstall/node_modules/require-main-filename
+1439 silly ADD node_modules/npm-reinstall/node_modules/require-directory
+1440 silly ADD node_modules/npm-reinstall/node_modules/get-caller-file
+1441 silly ADD node_modules/npm-reinstall/node_modules/find-up
+1442 silly ADD node_modules/npm-reinstall/node_modules/cliui
+1443 silly ADD node_modules/npm-reinstall/node_modules/cliui/node_modules/string-width
+1444 silly ADD node_modules/npm-reinstall/node_modules/imurmurhash
+1445 silly ADD node_modules/npm-reinstall/node_modules/isexe
+1446 silly ADD node_modules/npm-reinstall/node_modules/clone
+1447 silly ADD node_modules/npm-reinstall/node_modules/defaults
+1448 silly ADD node_modules/npm-reinstall/node_modules/prepend-http
+1449 silly ADD node_modules/npm-reinstall/node_modules/crypto-random-string
+1450 silly ADD node_modules/npm-reinstall/node_modules/is-fullwidth-code-point
+1451 silly ADD node_modules/npm-reinstall/node_modules/strip-json-comments
+1452 silly ADD node_modules/npm-reinstall/node_modules/minimist
+1453 silly ADD node_modules/npm-reinstall/node_modules/deep-extend
+1454 silly ADD node_modules/npm-reinstall/node_modules/rc
+1455 silly ADD node_modules/npm-reinstall/node_modules/capture-stack-trace
+1456 silly ADD node_modules/npm-reinstall/node_modules/url-parse-lax
+1457 silly ADD node_modules/npm-reinstall/node_modules/unzip-response
+1458 silly ADD node_modules/npm-reinstall/node_modules/timed-out
+1459 silly ADD node_modules/npm-reinstall/node_modules/safe-buffer
+1460 silly ADD node_modules/npm-reinstall/node_modules/lowercase-keys
+1461 silly ADD node_modules/npm-reinstall/node_modules/is-retry-allowed
+1462 silly ADD node_modules/npm-reinstall/node_modules/is-redirect
+1463 silly ADD node_modules/npm-reinstall/node_modules/duplexer3
+1464 silly ADD node_modules/npm-reinstall/node_modules/create-error-class
+1465 silly ADD node_modules/npm-reinstall/node_modules/registry-url
+1466 silly ADD node_modules/npm-reinstall/node_modules/registry-auth-token
+1467 silly ADD node_modules/npm-reinstall/node_modules/got
+1468 silly ADD node_modules/npm-reinstall/node_modules/got/node_modules/get-stream
+1469 silly ADD node_modules/npm-reinstall/node_modules/package-json
+1470 silly ADD node_modules/npm-reinstall/node_modules/ini
+1471 silly ADD node_modules/npm-reinstall/node_modules/global-dirs
+1472 silly ADD node_modules/npm-reinstall/node_modules/ci-info
+1473 silly ADD node_modules/npm-reinstall/node_modules/is-obj
+1474 silly ADD node_modules/npm-reinstall/node_modules/write-file-atomic
+1475 silly ADD node_modules/npm-reinstall/node_modules/unique-string
+1476 silly ADD node_modules/npm-reinstall/node_modules/make-dir
+1477 silly ADD node_modules/npm-reinstall/node_modules/make-dir/node_modules/pify
+1478 silly ADD node_modules/npm-reinstall/node_modules/graceful-fs
+1479 silly ADD node_modules/npm-reinstall/node_modules/dot-prop
+1480 silly ADD node_modules/npm-reinstall/node_modules/widest-line
+1481 silly ADD node_modules/npm-reinstall/node_modules/term-size
+1482 silly ADD node_modules/npm-reinstall/node_modules/term-size/node_modules/get-stream
+1483 silly ADD node_modules/npm-reinstall/node_modules/term-size/node_modules/cross-spawn
+1484 silly ADD node_modules/npm-reinstall/node_modules/term-size/node_modules/execa
+1485 silly ADD node_modules/npm-reinstall/node_modules/string-width
+1486 silly ADD node_modules/npm-reinstall/node_modules/string-width/node_modules/ansi-regex
+1487 silly ADD node_modules/npm-reinstall/node_modules/string-width/node_modules/strip-ansi
+1488 silly ADD node_modules/npm-reinstall/node_modules/cli-boxes
+1489 silly ADD node_modules/npm-reinstall/node_modules/camelcase
+1490 silly ADD node_modules/npm-reinstall/node_modules/ansi-align
+1491 silly ADD node_modules/npm-reinstall/node_modules/xdg-basedir
+1492 silly ADD node_modules/npm-reinstall/node_modules/semver-diff
+1493 silly ADD node_modules/npm-reinstall/node_modules/latest-version
+1494 silly ADD node_modules/npm-reinstall/node_modules/is-npm
+1495 silly ADD node_modules/npm-reinstall/node_modules/is-installed-globally
+1496 silly ADD node_modules/npm-reinstall/node_modules/is-installed-globally/node_modules/is-path-inside
+1497 silly ADD node_modules/npm-reinstall/node_modules/is-ci
+1498 silly ADD node_modules/npm-reinstall/node_modules/import-lazy
+1499 silly ADD node_modules/npm-reinstall/node_modules/configstore
+1500 silly ADD node_modules/npm-reinstall/node_modules/boxen
+1501 silly ADD node_modules/npm-reinstall/node_modules/has-flag
+1502 silly ADD node_modules/npm-reinstall/node_modules/ansi-regex
+1503 silly ADD node_modules/npm-reinstall/node_modules/function-bind
+1504 silly ADD node_modules/npm-reinstall/node_modules/has
+1505 silly ADD node_modules/npm-reinstall/node_modules/supports-preserve-symlinks-flag
+1506 silly ADD node_modules/npm-reinstall/node_modules/path-parse
+1507 silly ADD node_modules/npm-reinstall/node_modules/is-core-module
+1508 silly ADD node_modules/npm-reinstall/node_modules/resolve
+1509 silly ADD node_modules/npm-reinstall/node_modules/rechoir
+1510 silly ADD node_modules/npm-reinstall/node_modules/interpret
+1511 silly ADD node_modules/npm-reinstall/node_modules/shebang-regex
+1512 silly ADD node_modules/npm-reinstall/node_modules/mimic-fn
+1513 silly ADD node_modules/npm-reinstall/node_modules/onetime
+1514 silly ADD node_modules/npm-reinstall/node_modules/end-of-stream
+1515 silly ADD node_modules/npm-reinstall/node_modules/pinkie
+1516 silly ADD node_modules/npm-reinstall/node_modules/restore-cursor
+1517 silly ADD node_modules/npm-reinstall/node_modules/wcwidth
+1518 silly ADD node_modules/npm-reinstall/node_modules/strip-ansi
+1519 silly ADD node_modules/npm-reinstall/node_modules/log-symbols
+1520 silly ADD node_modules/npm-reinstall/node_modules/cli-spinners
+1521 silly ADD node_modules/npm-reinstall/node_modules/cli-cursor
+1522 silly ADD node_modules/npm-reinstall/node_modules/concat-map
+1523 silly ADD node_modules/npm-reinstall/node_modules/balanced-match
+1524 silly ADD node_modules/npm-reinstall/node_modules/brace-expansion
+1525 silly ADD node_modules/npm-reinstall/node_modules/path-is-inside
+1526 silly ADD node_modules/npm-reinstall/node_modules/is-path-inside
+1527 silly ADD node_modules/npm-reinstall/node_modules/wrappy
+1528 silly ADD node_modules/npm-reinstall/node_modules/path-is-absolute
+1529 silly ADD node_modules/npm-reinstall/node_modules/once
+1530 silly ADD node_modules/npm-reinstall/node_modules/minimatch
+1531 silly ADD node_modules/npm-reinstall/node_modules/inherits
+1532 silly ADD node_modules/npm-reinstall/node_modules/inflight
+1533 silly ADD node_modules/npm-reinstall/node_modules/fs.realpath
+1534 silly ADD node_modules/npm-reinstall/node_modules/array-uniq
+1535 silly ADD node_modules/npm-reinstall/node_modules/pinkie-promise
+1536 silly ADD node_modules/npm-reinstall/node_modules/object-assign
+1537 silly ADD node_modules/npm-reinstall/node_modules/glob
+1538 silly ADD node_modules/npm-reinstall/node_modules/array-union
+1539 silly ADD node_modules/npm-reinstall/node_modules/pump
+1540 silly ADD node_modules/npm-reinstall/node_modules/which
+1541 silly ADD node_modules/npm-reinstall/node_modules/shebang-command
+1542 silly ADD node_modules/npm-reinstall/node_modules/semver
+1543 silly ADD node_modules/npm-reinstall/node_modules/path-key
+1544 silly ADD node_modules/npm-reinstall/node_modules/nice-try
+1545 silly ADD node_modules/npm-reinstall/node_modules/strip-eof
+1546 silly ADD node_modules/npm-reinstall/node_modules/signal-exit
+1547 silly ADD node_modules/npm-reinstall/node_modules/p-finally
+1548 silly ADD node_modules/npm-reinstall/node_modules/npm-run-path
+1549 silly ADD node_modules/npm-reinstall/node_modules/is-stream
+1550 silly ADD node_modules/npm-reinstall/node_modules/get-stream
+1551 silly ADD node_modules/npm-reinstall/node_modules/cross-spawn
+1552 silly ADD node_modules/npm-reinstall/node_modules/@types/node
+1553 silly ADD node_modules/npm-reinstall/node_modules/@types/minimatch
+1554 silly ADD node_modules/npm-reinstall/node_modules/rimraf
+1555 silly ADD node_modules/npm-reinstall/node_modules/pify
+1556 silly ADD node_modules/npm-reinstall/node_modules/p-map
+1557 silly ADD node_modules/npm-reinstall/node_modules/is-path-in-cwd
+1558 silly ADD node_modules/npm-reinstall/node_modules/is-path-cwd
+1559 silly ADD node_modules/npm-reinstall/node_modules/globby
+1560 silly ADD node_modules/npm-reinstall/node_modules/globby/node_modules/pify
+1561 silly ADD node_modules/npm-reinstall/node_modules/@types/glob
+1562 silly ADD node_modules/npm-reinstall/node_modules/color-name
+1563 silly ADD node_modules/npm-reinstall/node_modules/color-convert
+1564 silly ADD node_modules/npm-reinstall/node_modules/supports-color
+1565 silly ADD node_modules/npm-reinstall/node_modules/escape-string-regexp
+1566 silly ADD node_modules/npm-reinstall/node_modules/ansi-styles
+1567 silly ADD node_modules/npm-reinstall/node_modules/figures
+1568 silly ADD node_modules/npm-reinstall/node_modules/shelljs
+1569 silly ADD node_modules/npm-reinstall/node_modules/commander
+1570 silly ADD node_modules/npm-reinstall/node_modules/yargs
+1571 silly ADD node_modules/npm-reinstall/node_modules/yargs/node_modules/string-width
+1572 silly ADD node_modules/npm-reinstall/node_modules/update-notifier
+1573 silly ADD node_modules/npm-reinstall/node_modules/ora
+1574 silly ADD node_modules/npm-reinstall/node_modules/has-yarn
+1575 silly ADD node_modules/npm-reinstall/node_modules/has-pnpm
+1576 silly ADD node_modules/npm-reinstall/node_modules/execa
+1577 silly ADD node_modules/npm-reinstall/node_modules/del
+1578 silly ADD node_modules/npm-reinstall/node_modules/chalk
+1579 silly ADD node_modules/npm-reinstall/node_modules/caniuse-pnpm
+1580 silly ADD node_modules/npm-reinstall/node_modules/caniuse-pnpm/node_modules/shelljs
+1581 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn
+1582 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-regex
+1583 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/is-fullwidth-code-point
+1584 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/unzip-response
+1585 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/timed-out
+1586 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/got
+1587 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/package-json
+1588 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/write-file-atomic
+1589 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/dot-prop
+1590 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/supports-color
+1591 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/strip-ansi
+1592 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-styles
+1593 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/widest-line
+1594 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/string-width
+1595 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/camelcase
+1596 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/ansi-align
+1597 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/xdg-basedir
+1598 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/latest-version
+1599 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/configstore
+1600 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/chalk
+1601 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/boxen
+1602 silly ADD node_modules/npm-reinstall/node_modules/@danielbayerlein/caniuse-yarn/node_modules/update-notifier
+1603 timing command:install Completed in 18313ms
+1604 verbose exit 0
+1605 timing npm Completed in 18434ms
+1606 info ok

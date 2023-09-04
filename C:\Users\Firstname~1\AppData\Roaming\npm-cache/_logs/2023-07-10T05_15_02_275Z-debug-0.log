@@ -1,0 +1,1196 @@
+0 verbose cli /opt/homebrew/Cellar/node/20.4.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@9.7.2
+2 info using node@v20.4.0
+3 timing npm:load:whichnode Completed in 1ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/arunakumari/Desktop/TestProject/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 0ms
+11 timing config:load:file:/Users/arunakumari/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 1ms
+13 timing config:load:file:/opt/homebrew/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 5ms
+17 timing npm:load:configload Completed in 5ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 0ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install react-native-webview
+22 verbose argv "install" "react-native-webview"
+23 timing npm:load:setTitle Completed in 3ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:/Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-10T05_15_02_275Z-
+26 verbose logfile /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-10T05_15_02_275Z-debug-0.log
+27 timing npm:load:logFile Completed in 6ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 23ms
+31 timing arborist:ctor Completed in 1ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 181ms
+34 timing idealTree:userRequests Completed in 2ms
+35 silly idealTree buildDeps
+36 silly fetch manifest react-native-webview@^13.2.2
+37 timing arborist:ctor Completed in 0ms
+38 http fetch GET 200 https://registry.npmjs.org/react-native-webview 432ms (cache revalidated)
+39 silly fetch manifest react@18.2.0
+40 http fetch GET 200 https://registry.npmjs.org/react 107ms (cache revalidated)
+41 silly fetch manifest react-native@0.72.1
+42 http fetch GET 200 https://registry.npmjs.org/react-native 109ms (cache revalidated)
+43 silly placeDep ROOT react-native-webview@13.2.2 REPLACE for: TestProject@0.0.1 want: ^13.2.2
+44 timing idealTree:#root Completed in 678ms
+45 timing idealTree:node_modules/react-native-webview Completed in 0ms
+46 timing idealTree:buildDeps Completed in 678ms
+47 timing idealTree:fixDepFlags Completed in 2ms
+48 timing idealTree Completed in 868ms
+49 timing reify:loadTrees Completed in 868ms
+50 timing reify:diffTrees Completed in 6ms
+51 silly reify moves {}
+52 timing reify:retireShallow Completed in 1ms
+53 timing reify:createSparse Completed in 0ms
+54 timing reify:loadBundles Completed in 0ms
+55 silly audit bulk request {
+55 silly audit   '@aashutoshrathi/word-wrap': [ '1.2.6' ],
+55 silly audit   '@ampproject/remapping': [ '2.2.1' ],
+55 silly audit   '@babel/code-frame': [ '7.22.5' ],
+55 silly audit   '@babel/compat-data': [ '7.22.6' ],
+55 silly audit   '@babel/core': [ '7.22.8' ],
+55 silly audit   '@babel/eslint-parser': [ '7.22.7' ],
+55 silly audit   'eslint-visitor-keys': [ '2.1.0', '3.4.1' ],
+55 silly audit   '@babel/generator': [ '7.22.7' ],
+55 silly audit   '@babel/helper-annotate-as-pure': [ '7.22.5' ],
+55 silly audit   '@babel/helper-builder-binary-assignment-operator-visitor': [ '7.22.5' ],
+55 silly audit   '@babel/helper-compilation-targets': [ '7.22.6' ],
+55 silly audit   '@babel/helper-create-class-features-plugin': [ '7.22.6' ],
+55 silly audit   '@babel/helper-create-regexp-features-plugin': [ '7.22.6' ],
+55 silly audit   '@babel/helper-define-polyfill-provider': [ '0.4.1' ],
+55 silly audit   '@babel/helper-environment-visitor': [ '7.22.5' ],
+55 silly audit   '@babel/helper-function-name': [ '7.22.5' ],
+55 silly audit   '@babel/helper-hoist-variables': [ '7.22.5' ],
+55 silly audit   '@babel/helper-member-expression-to-functions': [ '7.22.5' ],
+55 silly audit   '@babel/helper-module-imports': [ '7.22.5' ],
+55 silly audit   '@babel/helper-module-transforms': [ '7.22.5' ],
+55 silly audit   '@babel/helper-optimise-call-expression': [ '7.22.5' ],
+55 silly audit   '@babel/helper-plugin-utils': [ '7.22.5' ],
+55 silly audit   '@babel/helper-remap-async-to-generator': [ '7.22.5' ],
+55 silly audit   '@babel/helper-replace-supers': [ '7.22.5' ],
+55 silly audit   '@babel/helper-simple-access': [ '7.22.5' ],
+55 silly audit   '@babel/helper-skip-transparent-expression-wrappers': [ '7.22.5' ],
+55 silly audit   '@babel/helper-split-export-declaration': [ '7.22.6' ],
+55 silly audit   '@babel/helper-string-parser': [ '7.22.5' ],
+55 silly audit   '@babel/helper-validator-identifier': [ '7.22.5' ],
+55 silly audit   '@babel/helper-validator-option': [ '7.22.5' ],
+55 silly audit   '@babel/helper-wrap-function': [ '7.22.5' ],
+55 silly audit   '@babel/helpers': [ '7.22.6' ],
+55 silly audit   '@babel/highlight': [ '7.22.5' ],
+55 silly audit   'ansi-styles': [ '3.2.1', '4.3.0', '5.2.0' ],
+55 silly audit   chalk: [ '2.4.2', '4.1.2' ],
+55 silly audit   'color-convert': [ '1.9.3', '2.0.1' ],
+55 silly audit   'color-name': [ '1.1.3', '1.1.4' ],
+55 silly audit   'has-flag': [ '3.0.0', '4.0.0' ],
+55 silly audit   'supports-color': [ '5.5.0', '8.1.1', '7.2.0' ],
+55 silly audit   '@babel/parser': [ '7.22.7' ],
+55 silly audit   '@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-proposal-async-generator-functions': [ '7.20.7' ],
+55 silly audit   '@babel/plugin-proposal-class-properties': [ '7.18.6' ],
+55 silly audit   '@babel/plugin-proposal-export-default-from': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-proposal-nullish-coalescing-operator': [ '7.18.6' ],
+55 silly audit   '@babel/plugin-proposal-numeric-separator': [ '7.18.6' ],
+55 silly audit   '@babel/plugin-proposal-object-rest-spread': [ '7.20.7' ],
+55 silly audit   '@babel/plugin-proposal-optional-catch-binding': [ '7.18.6' ],
+55 silly audit   '@babel/plugin-proposal-optional-chaining': [ '7.21.0' ],
+55 silly audit   '@babel/plugin-proposal-private-property-in-object': [ '7.21.0-placeholder-for-preset-env.2' ],
+55 silly audit   '@babel/plugin-proposal-unicode-property-regex': [ '7.18.6' ],
+55 silly audit   '@babel/plugin-syntax-async-generators': [ '7.8.4' ],
+55 silly audit   '@babel/plugin-syntax-bigint': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-class-properties': [ '7.12.13' ],
+55 silly audit   '@babel/plugin-syntax-class-static-block': [ '7.14.5' ],
+55 silly audit   '@babel/plugin-syntax-dynamic-import': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-export-default-from': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-syntax-export-namespace-from': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-flow': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-syntax-import-assertions': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-syntax-import-attributes': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-syntax-import-meta': [ '7.10.4' ],
+55 silly audit   '@babel/plugin-syntax-json-strings': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-jsx': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-syntax-logical-assignment-operators': [ '7.10.4' ],
+55 silly audit   '@babel/plugin-syntax-nullish-coalescing-operator': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-numeric-separator': [ '7.10.4' ],
+55 silly audit   '@babel/plugin-syntax-object-rest-spread': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-optional-catch-binding': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-optional-chaining': [ '7.8.3' ],
+55 silly audit   '@babel/plugin-syntax-private-property-in-object': [ '7.14.5' ],
+55 silly audit   '@babel/plugin-syntax-top-level-await': [ '7.14.5' ],
+55 silly audit   '@babel/plugin-syntax-typescript': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-syntax-unicode-sets-regex': [ '7.18.6' ],
+55 silly audit   '@babel/plugin-transform-arrow-functions': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-async-generator-functions': [ '7.22.7' ],
+55 silly audit   '@babel/plugin-transform-async-to-generator': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-block-scoped-functions': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-block-scoping': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-class-properties': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-class-static-block': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-classes': [ '7.22.6' ],
+55 silly audit   '@babel/plugin-transform-computed-properties': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-destructuring': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-dotall-regex': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-duplicate-keys': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-dynamic-import': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-exponentiation-operator': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-export-namespace-from': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-flow-strip-types': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-for-of': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-function-name': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-json-strings': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-literals': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-logical-assignment-operators': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-member-expression-literals': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-modules-amd': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-modules-commonjs': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-modules-systemjs': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-modules-umd': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-named-capturing-groups-regex': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-new-target': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-nullish-coalescing-operator': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-numeric-separator': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-object-assign': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-object-rest-spread': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-object-super': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-optional-catch-binding': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-optional-chaining': [ '7.22.6' ],
+55 silly audit   '@babel/plugin-transform-parameters': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-private-methods': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-private-property-in-object': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-property-literals': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-react-display-name': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-react-jsx': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-react-jsx-self': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-react-jsx-source': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-regenerator': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-reserved-words': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-runtime': [ '7.22.7' ],
+55 silly audit   '@babel/plugin-transform-shorthand-properties': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-spread': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-sticky-regex': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-template-literals': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-typeof-symbol': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-typescript': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-unicode-escapes': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-unicode-property-regex': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-unicode-regex': [ '7.22.5' ],
+55 silly audit   '@babel/plugin-transform-unicode-sets-regex': [ '7.22.5' ],
+55 silly audit   '@babel/preset-env': [ '7.22.7' ],
+55 silly audit   '@babel/preset-flow': [ '7.22.5' ],
+55 silly audit   '@babel/preset-modules': [ '0.1.5' ],
+55 silly audit   '@babel/preset-typescript': [ '7.22.5' ],
+55 silly audit   '@babel/register': [ '7.22.5' ],
+55 silly audit   '@babel/regjsgen': [ '0.8.0' ],
+55 silly audit   '@babel/runtime': [ '7.22.6' ],
+55 silly audit   '@babel/template': [ '7.22.5' ],
+55 silly audit   '@babel/traverse': [ '7.22.8' ],
+55 silly audit   '@babel/types': [ '7.22.5' ],
+55 silly audit   '@bcoe/v8-coverage': [ '0.2.3' ],
+55 silly audit   '@egjs/hammerjs': [ '2.0.17' ],
+55 silly audit   '@eslint-community/eslint-utils': [ '4.4.0' ],
+55 silly audit   '@eslint-community/regexpp': [ '4.5.1' ],
+55 silly audit   '@eslint/eslintrc': [ '2.1.0' ],
+55 silly audit   argparse: [ '2.0.1', '1.0.10' ],
+55 silly audit   globals: [ '13.20.0', '11.12.0' ],
+55 silly audit   'js-yaml': [ '4.1.0', '3.14.1' ],
+55 silly audit   '@eslint/js': [ '8.44.0' ],
+55 silly audit   '@hapi/hoek': [ '9.3.0' ],
+55 silly audit   '@hapi/topo': [ '5.1.0' ],
+55 silly audit   '@humanwhocodes/config-array': [ '0.11.10' ],
+55 silly audit   '@humanwhocodes/module-importer': [ '1.0.1' ],
+55 silly audit   '@humanwhocodes/object-schema': [ '1.2.1' ],
+55 silly audit   '@istanbuljs/load-nyc-config': [ '1.1.0' ],
+55 silly audit   '@istanbuljs/schema': [ '0.1.3' ],
+55 silly audit   '@jest/console': [ '29.6.1' ],
+55 silly audit   '@jest/core': [ '29.6.1' ],
+55 silly audit   '@jest/create-cache-key-function': [ '29.6.1' ],
+55 silly audit   '@jest/environment': [ '29.6.1' ],
+55 silly audit   '@jest/expect': [ '29.6.1' ],
+55 silly audit   '@jest/expect-utils': [ '29.6.1' ],
+55 silly audit   '@jest/fake-timers': [ '29.6.1' ],
+55 silly audit   '@jest/globals': [ '29.6.1' ],
+55 silly audit   '@jest/reporters': [ '29.6.1' ],
+55 silly audit   'jest-worker': [ '29.6.1', '27.5.1' ],
+55 silly audit   '@jest/schemas': [ '29.6.0' ],
+55 silly audit   '@jest/source-map': [ '29.6.0' ],
+55 silly audit   '@jest/test-result': [ '29.6.1' ],
+55 silly audit   '@jest/test-sequencer': [ '29.6.1' ],
+55 silly audit   '@jest/transform': [ '29.6.1' ],
+55 silly audit   'convert-source-map': [ '2.0.0', '1.9.0' ],
+55 silly audit   '@jest/types': [ '29.6.1', '26.6.2', '27.5.1' ],
+55 silly audit   '@jridgewell/gen-mapping': [ '0.3.3' ],
+55 silly audit   '@jridgewell/sourcemap-codec': [ '1.4.15', '1.4.14' ],
+55 silly audit   '@jridgewell/resolve-uri': [ '3.1.0' ],
+55 silly audit   '@jridgewell/set-array': [ '1.1.2' ],
+55 silly audit   '@jridgewell/source-map': [ '0.3.5' ],
+55 silly audit   '@jridgewell/trace-mapping': [ '0.3.18' ],
+55 silly audit   '@nicolo-ribaudo/eslint-scope-5-internals': [ '5.1.1-v1' ],
+55 silly audit   '@nicolo-ribaudo/semver-v6': [ '6.3.3' ],
+55 silly audit   '@nodelib/fs.scandir': [ '2.1.5' ],
+55 silly audit   '@nodelib/fs.stat': [ '2.0.5' ],
+55 silly audit   '@nodelib/fs.walk': [ '1.2.8' ],
+55 silly audit   '@react-native-community/cli': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-clean': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-config': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-debugger-ui': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-doctor': [ '11.3.3' ],
+55 silly audit   'ansi-regex': [ '4.1.1', '5.0.1' ],
+55 silly audit   'strip-ansi': [ '5.2.0', '6.0.1' ],
+55 silly audit   '@react-native-community/cli-hermes': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-platform-android': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-platform-ios': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-plugin-metro': [ '11.3.3' ],
+55 silly audit   '@react-native-community/cli-server-api': [ '11.3.3' ],
+55 silly audit   '@types/yargs': [ '15.0.15', '16.0.5', '17.0.24' ],
+55 silly audit   'pretty-format': [ '26.6.2', '29.6.1' ],
+55 silly audit   'react-is': [ '17.0.2', '16.13.1', '18.2.0' ],
+55 silly audit   '@react-native-community/cli-tools': [ '11.3.3' ],
+55 silly audit   'find-up': [ '5.0.0', '3.0.0', '4.1.0' ],
+55 silly audit   'locate-path': [ '6.0.0', '3.0.0', '5.0.0' ],
+55 silly audit   'p-locate': [ '5.0.0', '3.0.0', '4.1.0' ],
+55 silly audit   '@react-native-community/cli-types': [ '11.3.3' ],
+55 silly audit   '@react-native-community/masked-view': [ '0.1.11' ],
+55 silly audit   '@react-native/assets-registry': [ '0.72.0' ],
+55 silly audit   '@react-native/codegen': [ '0.72.6' ],
+55 silly audit   '@react-native/eslint-config': [ '0.72.2' ],
+55 silly audit   '@react-native/eslint-plugin': [ '0.72.0' ],
+55 silly audit   '@react-native/gradle-plugin': [ '0.72.11' ],
+55 silly audit   '@react-native/js-polyfills': [ '0.72.1' ],
+55 silly audit   '@react-native/metro-config': [ '0.72.7' ],
+55 silly audit   '@react-native/normalize-color': [ '2.1.0' ],
+55 silly audit   '@react-native/normalize-colors': [ '0.72.0', '0.73.0' ],
+55 silly audit   '@react-native/virtualized-lists': [ '0.72.6' ],
+55 silly audit   '@react-navigation/core': [ '6.4.9' ],
+55 silly audit   'escape-string-regexp': [ '4.0.0', '1.0.5', '2.0.0' ],
+55 silly audit   '@react-navigation/drawer': [ '6.6.3' ],
+55 silly audit   '@react-navigation/elements': [ '1.3.18' ],
+55 silly audit   '@react-navigation/native': [ '6.1.7' ],
+55 silly audit   '@react-navigation/routers': [ '6.1.9' ],
+55 silly audit   '@react-navigation/stack': [ '6.3.17' ],
+55 silly audit   '@sideway/address': [ '4.1.4' ],
+55 silly audit   '@sideway/formula': [ '3.0.1' ],
+55 silly audit   '@sideway/pinpoint': [ '2.0.0' ],
+55 silly audit   '@sinclair/typebox': [ '0.27.8' ],
+55 silly audit   '@sinonjs/commons': [ '3.0.0' ],
+55 silly audit   '@sinonjs/fake-timers': [ '10.3.0' ],
+55 silly audit   '@tsconfig/react-native': [ '3.0.2' ],
+55 silly audit   '@types/babel__core': [ '7.20.1' ],
+55 silly audit   '@types/babel__generator': [ '7.6.4' ],
+55 silly audit   '@types/babel__template': [ '7.4.1' ],
+55 silly audit   '@types/babel__traverse': [ '7.20.1' ],
+55 silly audit   '@types/graceful-fs': [ '4.1.6' ],
+55 silly audit   '@types/hammerjs': [ '2.0.41' ],
+55 silly audit   '@types/istanbul-lib-coverage': [ '2.0.4' ],
+55 silly audit   '@types/istanbul-lib-report': [ '3.0.0' ],
+55 silly audit   '@types/istanbul-reports': [ '3.0.1' ],
+55 silly audit   '@types/json-schema': [ '7.0.12' ],
+55 silly audit   '@types/metro-config': [ '0.76.3' ],
+55 silly audit   'ci-info': [ '2.0.0', '3.8.0' ],
+55 silly audit   debug: [ '2.6.9', '4.3.4' ],
+55 silly audit   'hermes-estree': [ '0.14.0', '0.8.0' ],
+55 silly audit   'hermes-parser': [ '0.14.0', '0.8.0' ],
+55 silly audit   'jest-regex-util': [ '27.5.1', '29.4.3' ],
+55 silly audit   'jest-util': [ '27.5.1', '29.6.1' ],
+55 silly audit   metro: [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-babel-transformer': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-cache': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-cache-key': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-config': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-core': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-file-map': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-inspector-proxy': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-minify-terser': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-resolver': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-runtime': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-source-map': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-symbolicate': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-transform-plugins': [ '0.77.0', '0.76.5' ],
+55 silly audit   'metro-transform-worker': [ '0.77.0', '0.76.5' ],
+55 silly audit   ms: [ '2.0.0', '2.1.2', '2.1.3' ],
+55 silly audit   ob1: [ '0.77.0', '0.76.5' ],
+55 silly audit   '@types/node': [ '20.4.0' ],
+55 silly audit   '@types/prettier': [ '2.7.3' ],
+55 silly audit   '@types/prop-types': [ '15.7.5' ],
+55 silly audit   '@types/react': [ '18.2.14' ],
+55 silly audit   '@types/react-test-renderer': [ '18.0.0' ],
+55 silly audit   '@types/scheduler': [ '0.16.3' ],
+55 silly audit   '@types/semver': [ '7.5.0' ],
+55 silly audit   '@types/stack-utils': [ '2.0.1' ],
+55 silly audit   '@types/yargs-parser': [ '21.0.0' ],
+55 silly audit   '@typescript-eslint/eslint-plugin': [ '5.61.0' ],
+55 silly audit   'lru-cache': [ '6.0.0', '5.1.1' ],
+55 silly audit   semver: [ '7.5.3', '5.7.1', '6.3.0' ],
+55 silly audit   yallist: [ '4.0.0', '3.1.1' ],
+55 silly audit   '@typescript-eslint/parser': [ '5.61.0' ],
+55 silly audit   '@typescript-eslint/scope-manager': [ '5.61.0' ],
+55 silly audit   '@typescript-eslint/type-utils': [ '5.61.0' ],
+55 silly audit   '@typescript-eslint/types': [ '5.61.0' ],
+55 silly audit   '@typescript-eslint/typescript-estree': [ '5.61.0' ],
+55 silly audit   '@typescript-eslint/utils': [ '5.61.0' ],
+55 silly audit   '@typescript-eslint/visitor-keys': [ '5.61.0' ],
+55 silly audit   'abort-controller': [ '3.0.0' ],
+55 silly audit   accepts: [ '1.3.8' ],
+55 silly audit   acorn: [ '8.10.0' ],
+55 silly audit   'acorn-jsx': [ '5.3.2' ],
+55 silly audit   ajv: [ '6.12.6' ],
+55 silly audit   anser: [ '1.4.10' ],
+55 silly audit   'ansi-escapes': [ '4.3.2' ],
+55 silly audit   'type-fest': [ '0.21.3', '0.7.1', '0.20.2' ],
+55 silly audit   'ansi-fragments': [ '0.2.1' ],
+55 silly audit   anymatch: [ '3.1.3' ],
+55 silly audit   appdirsjs: [ '1.2.7' ],
+55 silly audit   'array-buffer-byte-length': [ '1.0.0' ],
+55 silly audit   'array-includes': [ '3.1.6' ],
+55 silly audit   'array-union': [ '2.1.0' ],
+55 silly audit   'array.prototype.flat': [ '1.3.1' ],
+55 silly audit   'array.prototype.flatmap': [ '1.3.1' ],
+55 silly audit   'array.prototype.tosorted': [ '1.1.1' ],
+55 silly audit   asap: [ '2.0.6' ],
+55 silly audit   'ast-types': [ '0.15.2' ],
+55 silly audit   'astral-regex': [ '1.0.0' ],
+55 silly audit   async: [ '3.2.4' ],
+55 silly audit   'async-limiter': [ '1.0.1' ],
+55 silly audit   'available-typed-arrays': [ '1.0.5' ],
+55 silly audit   'babel-core': [ '7.0.0-bridge.0' ],
+55 silly audit   'babel-jest': [ '29.6.1' ],
+55 silly audit   'babel-plugin-istanbul': [ '6.1.1' ],
+55 silly audit   'babel-plugin-jest-hoist': [ '29.5.0' ],
+55 silly audit   'babel-plugin-polyfill-corejs2': [ '0.4.4' ],
+55 silly audit   'babel-plugin-polyfill-corejs3': [ '0.8.2' ],
+55 silly audit   'babel-plugin-polyfill-regenerator': [ '0.5.1' ],
+55 silly audit   'babel-plugin-syntax-trailing-function-commas': [ '7.0.0-beta.0' ],
+55 silly audit   'babel-plugin-transform-flow-enums': [ '0.0.2' ],
+55 silly audit   'babel-preset-current-node-syntax': [ '1.0.1' ],
+55 silly audit   'babel-preset-fbjs': [ '3.4.0' ],
+55 silly audit   'babel-preset-jest': [ '29.5.0' ],
+55 silly audit   'balanced-match': [ '1.0.2' ],
+55 silly audit   'base64-js': [ '1.5.1' ],
+55 silly audit   bl: [ '4.1.0' ],
+55 silly audit   'readable-stream': [ '3.6.2', '2.3.8' ],
+55 silly audit   'safe-buffer': [ '5.2.1', '5.1.2' ],
+55 silly audit   string_decoder: [ '1.3.0', '1.1.1' ],
+55 silly audit   'brace-expansion': [ '1.1.11' ],
+55 silly audit   braces: [ '3.0.2' ],
+55 silly audit   browserslist: [ '4.21.9' ],
+55 silly audit   bser: [ '2.1.1' ],
+55 silly audit   buffer: [ '5.7.1' ],
+55 silly audit   'buffer-from': [ '1.1.2' ],
+55 silly audit   bytes: [ '3.0.0' ],
+55 silly audit   'call-bind': [ '1.0.2' ],
+55 silly audit   'caller-callsite': [ '2.0.0' ],
+55 silly audit   callsites: [ '2.0.0', '3.1.0' ],
+55 silly audit   'caller-path': [ '2.0.0' ],
+55 silly audit   camelcase: [ '5.3.1', '6.3.0' ],
+55 silly audit   'caniuse-lite': [ '1.0.30001513' ],
+55 silly audit   'char-regex': [ '1.0.2' ],
+55 silly audit   'cjs-module-lexer': [ '1.2.3' ],
+55 silly audit   'cli-cursor': [ '3.1.0' ],
+55 silly audit   'cli-spinners': [ '2.9.0' ],
+55 silly audit   cliui: [ '8.0.1', '6.0.0' ],
+55 silly audit   clone: [ '1.0.4' ],
+55 silly audit   'clone-deep': [ '4.0.1' ],
+55 silly audit   co: [ '4.6.0' ],
+55 silly audit   'collect-v8-coverage': [ '1.0.2' ],
+55 silly audit   color: [ '4.2.3' ],
+55 silly audit   'color-string': [ '1.9.1' ],
+55 silly audit   colorette: [ '1.4.0' ],
+55 silly audit   'command-exists': [ '1.2.9' ],
+55 silly audit   commander: [ '9.5.0', '2.20.3', '2.13.0' ],
+55 silly audit   commondir: [ '1.0.1' ],
+55 silly audit   compressible: [ '2.0.18' ],
+55 silly audit   compression: [ '1.7.4' ],
+55 silly audit   'concat-map': [ '0.0.1' ],
+55 silly audit   connect: [ '3.7.0' ],
+55 silly audit   'core-js-compat': [ '3.31.1' ],
+55 silly audit   'core-util-is': [ '1.0.3' ],
+55 silly audit   cosmiconfig: [ '5.2.1' ],
+55 silly audit   'import-fresh': [ '2.0.0', '3.3.0' ],
+55 silly audit   'resolve-from': [ '3.0.0', '4.0.0', '5.0.0' ],
+55 silly audit   'cross-spawn': [ '7.0.3' ],
+55 silly audit   csstype: [ '3.1.2' ],
+55 silly audit   dayjs: [ '1.11.9' ],
+55 silly audit   decamelize: [ '1.2.0' ],
+55 silly audit   'decode-uri-component': [ '0.2.2' ],
+55 silly audit   dedent: [ '0.7.0' ],
+55 silly audit   'deep-is': [ '0.1.4' ],
+55 silly audit   deepmerge: [ '4.3.1' ],
+55 silly audit   defaults: [ '1.0.4' ],
+55 silly audit   'define-properties': [ '1.2.0' ],
+55 silly audit   denodeify: [ '1.2.1' ],
+55 silly audit   depd: [ '2.0.0' ],
+55 silly audit   'deprecated-react-native-prop-types': [ '4.1.0', '2.3.0' ],
+55 silly audit   destroy: [ '1.2.0' ],
+55 silly audit   'detect-newline': [ '3.1.0' ],
+55 silly audit   'diff-sequences': [ '29.4.3' ],
+55 silly audit   'dir-glob': [ '3.0.1' ],
+55 silly audit   doctrine: [ '3.0.0', '2.1.0' ],
+55 silly audit   'ee-first': [ '1.1.1' ],
+55 silly audit   'electron-to-chromium': [ '1.4.453' ],
+55 silly audit   emittery: [ '0.13.1' ],
+55 silly audit   'emoji-regex': [ '8.0.0' ],
+55 silly audit   encodeurl: [ '1.0.2' ],
+55 silly audit   envinfo: [ '7.10.0' ],
+55 silly audit   'error-ex': [ '1.3.2' ],
+55 silly audit   'error-stack-parser': [ '2.1.4' ],
+55 silly audit   errorhandler: [ '1.5.1' ],
+55 silly audit   'es-abstract': [ '1.21.2' ],
+55 silly audit   'es-set-tostringtag': [ '2.0.1' ],
+55 silly audit   'es-shim-unscopables': [ '1.0.0' ],
+55 silly audit   'es-to-primitive': [ '1.2.1' ],
+55 silly audit   escalade: [ '3.1.1' ],
+55 silly audit   'escape-html': [ '1.0.3' ],
+55 silly audit   eslint: [ '8.44.0' ],
+55 silly audit   'eslint-config-prettier': [ '8.8.0' ],
+55 silly audit   'eslint-plugin-eslint-comments': [ '3.2.0' ],
+55 silly audit   'eslint-plugin-ft-flow': [ '2.0.3' ],
+55 silly audit   'eslint-plugin-jest': [ '26.9.0' ],
+55 silly audit   'eslint-plugin-prettier': [ '4.2.1' ],
+55 silly audit   'eslint-plugin-react': [ '7.32.2' ],
+55 silly audit   'eslint-plugin-react-hooks': [ '4.6.0' ],
+55 silly audit   'eslint-plugin-react-native': [ '4.0.0' ],
+55 silly audit   'eslint-plugin-react-native-globals': [ '0.1.2' ],
+55 silly audit   resolve: [ '2.0.0-next.4', '1.22.2' ],
+55 silly audit   'eslint-scope': [ '5.1.1', '7.2.0' ],
+55 silly audit   estraverse: [ '4.3.0', '5.3.0' ],
+55 silly audit   espree: [ '9.6.0' ],
+55 silly audit   esprima: [ '4.0.1' ],
+55 silly audit   esquery: [ '1.5.0' ],
+55 silly audit   esrecurse: [ '4.3.0' ],
+55 silly audit   esutils: [ '2.0.3' ],
+55 silly audit   etag: [ '1.8.1' ],
+55 silly audit   'event-target-shim': [ '5.0.1' ],
+55 silly audit   execa: [ '5.1.1' ],
+55 silly audit   exit: [ '0.1.2' ],
+55 silly audit   expect: [ '29.6.1' ],
+55 silly audit   'fast-deep-equal': [ '3.1.3' ],
+55 silly audit   'fast-diff': [ '1.3.0' ],
+55 silly audit   'fast-glob': [ '3.3.0' ],
+55 silly audit   'glob-parent': [ '5.1.2', '6.0.2' ],
+55 silly audit   'fast-json-stable-stringify': [ '2.1.0' ],
+55 silly audit   'fast-levenshtein': [ '2.0.6' ],
+55 silly audit   'fast-xml-parser': [ '4.2.5' ],
+55 silly audit   fastq: [ '1.15.0' ],
+55 silly audit   'fb-watchman': [ '2.0.2' ],
+55 silly audit   'file-entry-cache': [ '6.0.1' ],
+55 silly audit   'fill-range': [ '7.0.1' ],
+55 silly audit   'filter-obj': [ '1.1.0' ],
+55 silly audit   finalhandler: [ '1.1.2' ],
+55 silly audit   statuses: [ '1.5.0', '2.0.1' ],
+55 silly audit   'find-cache-dir': [ '2.1.0' ],
+55 silly audit   'p-limit': [ '2.3.0', '3.1.0' ],
+55 silly audit   'path-exists': [ '3.0.0', '4.0.0' ],
+55 silly audit   'pkg-dir': [ '3.0.0', '4.2.0' ],
+55 silly audit   'flat-cache': [ '3.0.4' ],
+55 silly audit   flatted: [ '3.2.7' ],
+55 silly audit   'flow-enums-runtime': [ '0.0.5' ],
+55 silly audit   'flow-parser': [ '0.206.0', '0.211.0' ],
+55 silly audit   'for-each': [ '0.3.3' ],
+55 silly audit   fresh: [ '0.5.2' ],
+55 silly audit   'fs-extra': [ '8.1.0' ],
+55 silly audit   'fs.realpath': [ '1.0.0' ],
+55 silly audit   fsevents: [ '2.3.2' ],
+55 silly audit   'function-bind': [ '1.1.1' ],
+55 silly audit   'function.prototype.name': [ '1.1.5' ],
+55 silly audit   'functions-have-names': [ '1.2.3' ],
+55 silly audit   gensync: [ '1.0.0-beta.2' ],
+55 silly audit   'get-caller-file': [ '2.0.5' ],
+55 silly audit   'get-intrinsic': [ '1.2.1' ],
+55 silly audit   'get-package-type': [ '0.1.0' ],
+55 silly audit   'get-stream': [ '6.0.1' ],
+55 silly audit   'get-symbol-description': [ '1.0.0' ],
+55 silly audit   glob: [ '7.2.3' ],
+55 silly audit   globalthis: [ '1.0.3' ],
+55 silly audit   globby: [ '11.1.0' ],
+55 silly audit   gopd: [ '1.0.1' ],
+55 silly audit   'graceful-fs': [ '4.2.11' ],
+55 silly audit   graphemer: [ '1.4.0' ],
+55 silly audit   has: [ '1.0.3' ],
+55 silly audit   'has-bigints': [ '1.0.2' ],
+55 silly audit   'has-property-descriptors': [ '1.0.0' ],
+55 silly audit   'has-proto': [ '1.0.1' ],
+55 silly audit   'has-symbols': [ '1.0.3' ],
+55 silly audit   'has-tostringtag': [ '1.0.0' ],
+55 silly audit   'hermes-profile-transformer': [ '0.0.6' ],
+55 silly audit   'source-map': [ '0.7.4', '0.6.1', '0.5.7' ],
+55 silly audit   'hoist-non-react-statics': [ '3.3.2' ],
+55 silly audit   'html-escaper': [ '2.0.2' ],
+55 silly audit   'http-errors': [ '2.0.0' ],
+55 silly audit   'human-signals': [ '2.1.0' ],
+55 silly audit   ieee754: [ '1.2.1' ],
+55 silly audit   ignore: [ '5.2.4' ],
+55 silly audit   'image-size': [ '1.0.2' ],
+55 silly audit   'import-local': [ '3.1.0' ],
+55 silly audit   imurmurhash: [ '0.1.4' ],
+55 silly audit   inflight: [ '1.0.6' ],
+55 silly audit   inherits: [ '2.0.4' ],
+55 silly audit   'internal-slot': [ '1.0.5' ],
+55 silly audit   invariant: [ '2.2.4' ],
+55 silly audit   ip: [ '1.1.8' ],
+55 silly audit   'is-array-buffer': [ '3.0.2' ],
+55 silly audit   'is-arrayish': [ '0.2.1', '0.3.2' ],
+55 silly audit   'is-bigint': [ '1.0.4' ],
+55 silly audit   'is-boolean-object': [ '1.1.2' ],
+55 silly audit   'is-callable': [ '1.2.7' ],
+55 silly audit   'is-core-module': [ '2.12.1' ],
+55 silly audit   'is-date-object': [ '1.0.5' ],
+55 silly audit   'is-directory': [ '0.3.1' ],
+55 silly audit   'is-extglob': [ '2.1.1' ],
+55 silly audit   'is-fullwidth-code-point': [ '3.0.0', '2.0.0' ],
+55 silly audit   'is-generator-fn': [ '2.1.0' ],
+55 silly audit   'is-glob': [ '4.0.3' ],
+55 silly audit   'is-interactive': [ '1.0.0' ],
+55 silly audit   'is-negative-zero': [ '2.0.2' ],
+55 silly audit   'is-number': [ '7.0.0' ],
+55 silly audit   'is-number-object': [ '1.0.7' ],
+55 silly audit   'is-path-inside': [ '3.0.3' ],
+55 silly audit   'is-plain-object': [ '2.0.4' ],
+55 silly audit   'is-regex': [ '1.1.4' ],
+55 silly audit   'is-shared-array-buffer': [ '1.0.2' ],
+55 silly audit   'is-stream': [ '2.0.1' ],
+55 silly audit   'is-string': [ '1.0.7' ],
+55 silly audit   'is-symbol': [ '1.0.4' ],
+55 silly audit   'is-typed-array': [ '1.1.10' ],
+55 silly audit   'is-unicode-supported': [ '0.1.0' ],
+55 silly audit   'is-weakref': [ '1.0.2' ],
+55 silly audit   'is-wsl': [ '1.1.0' ],
+55 silly audit   isarray: [ '1.0.0' ],
+55 silly audit   isexe: [ '2.0.0' ],
+55 silly audit   isobject: [ '3.0.1' ],
+55 silly audit   'istanbul-lib-coverage': [ '3.2.0' ],
+55 silly audit   'istanbul-lib-instrument': [ '5.2.1' ],
+55 silly audit   'istanbul-lib-report': [ '3.0.0' ],
+55 silly audit   'make-dir': [ '3.1.0', '2.1.0' ],
+55 silly audit   'istanbul-lib-source-maps': [ '4.0.1' ],
+55 silly audit   'istanbul-reports': [ '3.1.5' ],
+55 silly audit   jest: [ '29.6.1' ],
+55 silly audit   'jest-changed-files': [ '29.5.0' ],
+55 silly audit   'jest-circus': [ '29.6.1' ],
+55 silly audit   'jest-cli': [ '29.6.1' ],
+55 silly audit   'jest-config': [ '29.6.1' ],
+55 silly audit   'parse-json': [ '5.2.0', '4.0.0' ],
+55 silly audit   'jest-diff': [ '29.6.1' ],
+55 silly audit   'jest-docblock': [ '29.4.3' ],
+55 silly audit   'jest-each': [ '29.6.1' ],
+55 silly audit   'jest-environment-node': [ '29.6.1' ],
+55 silly audit   'jest-get-type': [ '29.4.3' ],
+55 silly audit   'jest-haste-map': [ '29.6.1' ],
+55 silly audit   'jest-leak-detector': [ '29.6.1' ],
+55 silly audit   'jest-matcher-utils': [ '29.6.1' ],
+55 silly audit   'jest-message-util': [ '29.6.1' ],
+55 silly audit   'jest-mock': [ '29.6.1' ],
+55 silly audit   'jest-pnp-resolver': [ '1.2.3' ],
+55 silly audit   'jest-resolve': [ '29.6.1' ],
+55 silly audit   'jest-resolve-dependencies': [ '29.6.1' ],
+55 silly audit   'jest-runner': [ '29.6.1' ],
+55 silly audit   'source-map-support': [ '0.5.13', '0.5.21' ],
+55 silly audit   'jest-runtime': [ '29.6.1' ],
+55 silly audit   'jest-snapshot': [ '29.6.1' ],
+55 silly audit   'jest-validate': [ '29.6.1' ],
+55 silly audit   'jest-watcher': [ '29.6.1' ],
+55 silly audit   joi: [ '17.9.2' ],
+55 silly audit   'js-tokens': [ '4.0.0' ],
+55 silly audit   'jsc-android': [ '250231.0.0' ],
+55 silly audit   'jsc-safe-url': [ '0.2.4' ],
+55 silly audit   jscodeshift: [ '0.14.0' ],
+55 silly audit   'write-file-atomic': [ '2.4.3', '4.0.2' ],
+55 silly audit   jsesc: [ '2.5.2', '0.5.0' ],
+55 silly audit   'json-parse-better-errors': [ '1.0.2' ],
+55 silly audit   'json-parse-even-better-errors': [ '2.3.1' ],
+55 silly audit   'json-schema-traverse': [ '0.4.1' ],
+55 silly audit   'json-stable-stringify-without-jsonify': [ '1.0.1' ],
+55 silly audit   json5: [ '2.2.3' ],
+55 silly audit   jsonfile: [ '4.0.0' ],
+55 silly audit   'jsx-ast-utils': [ '3.3.4' ],
+55 silly audit   'kind-of': [ '6.0.3' ],
+55 silly audit   kleur: [ '3.0.3' ],
+55 silly audit   leven: [ '3.1.0' ],
+55 silly audit   levn: [ '0.4.1' ],
+55 silly audit   'lines-and-columns': [ '1.2.4' ],
+55 silly audit   lodash: [ '4.17.21' ],
+55 silly audit   'lodash.debounce': [ '4.0.8' ],
+55 silly audit   'lodash.merge': [ '4.6.2' ],
+55 silly audit   'lodash.throttle': [ '4.1.1' ],
+55 silly audit   'log-symbols': [ '4.1.0' ],
+55 silly audit   logkitty: [ '0.7.1' ],
+55 silly audit   'wrap-ansi': [ '6.2.0', '7.0.0' ],
+55 silly audit   y18n: [ '4.0.3', '5.0.8' ],
+55 silly audit   yargs: [ '15.4.1', '17.7.2' ],
+55 silly audit   'yargs-parser': [ '18.1.3', '21.1.1' ],
+55 silly audit   'loose-envify': [ '1.4.0' ],
+55 silly audit   makeerror: [ '1.0.12' ],
+55 silly audit   'memoize-one': [ '5.2.1' ],
+55 silly audit   'merge-stream': [ '2.0.0' ],
+55 silly audit   merge2: [ '1.4.1' ],
+55 silly audit   'metro-minify-uglify': [ '0.76.5' ],
+55 silly audit   'metro-react-native-babel-preset': [ '0.76.5' ],
+55 silly audit   'metro-react-native-babel-transformer': [ '0.76.5' ],
+55 silly audit   micromatch: [ '4.0.5' ],
+55 silly audit   mime: [ '2.6.0', '1.6.0' ],
+55 silly audit   'mime-db': [ '1.52.0' ],
+55 silly audit   'mime-types': [ '2.1.35' ],
+55 silly audit   'mimic-fn': [ '2.1.0' ],
+55 silly audit   minimatch: [ '3.1.2' ],
+55 silly audit   minimist: [ '1.2.8' ],
+55 silly audit   mkdirp: [ '0.5.6' ],
+55 silly audit   nanoid: [ '3.3.6' ],
+55 silly audit   'natural-compare': [ '1.4.0' ],
+55 silly audit   'natural-compare-lite': [ '1.4.0' ],
+55 silly audit   negotiator: [ '0.6.3' ],
+55 silly audit   'neo-async': [ '2.6.2' ],
+55 silly audit   nocache: [ '3.0.4' ],
+55 silly audit   'node-abort-controller': [ '3.1.1' ],
+55 silly audit   'node-dir': [ '0.1.17' ],
+55 silly audit   'node-fetch': [ '2.6.12' ],
+55 silly audit   'node-int64': [ '0.4.0' ],
+55 silly audit   'node-releases': [ '2.0.13' ],
+55 silly audit   'node-stream-zip': [ '1.15.0' ],
+55 silly audit   'normalize-path': [ '3.0.0' ],
+55 silly audit   'npm-run-path': [ '4.0.1' ],
+55 silly audit   nullthrows: [ '1.1.1' ],
+55 silly audit   'object-assign': [ '4.1.1' ],
+55 silly audit   'object-inspect': [ '1.12.3' ],
+55 silly audit   'object-keys': [ '1.1.1' ],
+55 silly audit   'object.assign': [ '4.1.4' ],
+55 silly audit   'object.entries': [ '1.1.6' ],
+55 silly audit   'object.fromentries': [ '2.0.6' ],
+55 silly audit   'object.hasown': [ '1.1.2' ],
+55 silly audit   'object.values': [ '1.1.6' ],
+55 silly audit   'on-finished': [ '2.3.0', '2.4.1' ],
+55 silly audit   'on-headers': [ '1.0.2' ],
+55 silly audit   once: [ '1.4.0' ],
+55 silly audit   onetime: [ '5.1.2' ],
+55 silly audit   open: [ '6.4.0' ],
+55 silly audit   optionator: [ '0.9.3' ],
+55 silly audit   ora: [ '5.4.1' ],
+55 silly audit   'p-try': [ '2.2.0' ],
+55 silly audit   'parent-module': [ '1.0.1' ],
+55 silly audit   parseurl: [ '1.3.3' ],
+55 silly audit   'path-is-absolute': [ '1.0.1' ],
+55 silly audit   'path-key': [ '3.1.1' ],
+55 silly audit   'path-parse': [ '1.0.7' ],
+55 silly audit   'path-type': [ '4.0.0' ],
+55 silly audit   picocolors: [ '1.0.0' ],
+55 silly audit   picomatch: [ '2.3.1' ],
+55 silly audit   pify: [ '4.0.1' ],
+55 silly audit   pirates: [ '4.0.6' ],
+55 silly audit   'prelude-ls': [ '1.2.1' ],
+55 silly audit   prettier: [ '2.8.8' ],
+55 silly audit   'prettier-linter-helpers': [ '1.0.0' ],
+55 silly audit   'process-nextick-args': [ '2.0.1' ],
+55 silly audit   promise: [ '8.3.0' ],
+55 silly audit   prompts: [ '2.4.2' ],
+55 silly audit   'prop-types': [ '15.8.1' ],
+55 silly audit   punycode: [ '2.3.0' ],
+55 silly audit   'pure-rand': [ '6.0.2' ],
+55 silly audit   'query-string': [ '7.1.3' ],
+55 silly audit   queue: [ '6.0.2' ],
+55 silly audit   'queue-microtask': [ '1.2.3' ],
+55 silly audit   'range-parser': [ '1.2.1' ],
+55 silly audit   react: [ '18.2.0' ],
+55 silly audit   'react-devtools-core': [ '4.27.8' ],
+55 silly audit   'react-freeze': [ '1.0.3' ],
+55 silly audit   'react-native': [ '0.72.1' ],
+55 silly audit   'react-native-autoheight-webview': [ '1.6.5' ],
+55 silly audit   'react-native-gesture-handler': [ '2.12.0' ],
+55 silly audit   'react-native-reanimated': [ '3.3.0' ],
+55 silly audit   'react-native-safe-area-context': [ '4.6.4' ],
+55 silly audit   'react-native-screens': [ '3.22.1' ],
+55 silly audit   ws: [ '6.2.2', '7.5.9' ],
+55 silly audit   'react-refresh': [ '0.4.3' ],
+55 silly audit   'react-shallow-renderer': [ '16.15.0' ],
+55 silly audit   'react-test-renderer': [ '18.2.0' ],
+55 silly audit   scheduler: [ '0.23.0', '0.24.0-canary-efb381bbf-20230505' ],
+55 silly audit   readline: [ '1.3.0' ],
+55 silly audit   recast: [ '0.21.5' ],
+55 silly audit   regenerate: [ '1.4.2' ],
+55 silly audit   'regenerate-unicode-properties': [ '10.1.0' ],
+55 silly audit   'regenerator-runtime': [ '0.13.11' ],
+55 silly audit   'regenerator-transform': [ '0.15.1' ],
+55 silly audit   'regexp.prototype.flags': [ '1.5.0' ],
+55 silly audit   'regexpu-core': [ '5.3.2' ],
+55 silly audit   regjsparser: [ '0.9.1' ],
+55 silly audit   'require-directory': [ '2.1.1' ],
+55 silly audit   'require-main-filename': [ '2.0.0' ],
+55 silly audit   'resolve-cwd': [ '3.0.0' ],
+55 silly audit   'resolve.exports': [ '2.0.2' ],
+55 silly audit   'restore-cursor': [ '3.1.0' ],
+55 silly audit   reusify: [ '1.0.4' ],
+55 silly audit   rimraf: [ '3.0.2', '2.6.3' ],
+55 silly audit   'run-parallel': [ '1.2.0' ],
+55 silly audit   'safe-regex-test': [ '1.0.0' ],
+55 silly audit   send: [ '0.18.0' ],
+55 silly audit   'serialize-error': [ '2.1.0' ],
+55 silly audit   'serve-static': [ '1.15.0' ],
+55 silly audit   'set-blocking': [ '2.0.0' ],
+55 silly audit   setprototypeof: [ '1.2.0' ],
+55 silly audit   'shallow-clone': [ '3.0.1' ],
+55 silly audit   'shebang-command': [ '2.0.0' ],
+55 silly audit   'shebang-regex': [ '3.0.0' ],
+55 silly audit   'shell-quote': [ '1.8.1' ],
+55 silly audit   'side-channel': [ '1.0.4' ],
+55 silly audit   'signal-exit': [ '3.0.7' ],
+55 silly audit   'simple-swizzle': [ '0.2.2' ],
+55 silly audit   sisteransi: [ '1.0.5' ],
+55 silly audit   slash: [ '3.0.0' ],
+55 silly audit   'slice-ansi': [ '2.1.0' ],
+55 silly audit   'split-on-first': [ '1.1.0' ],
+55 silly audit   'sprintf-js': [ '1.0.3' ],
+55 silly audit   'stack-utils': [ '2.0.6' ],
+55 silly audit   stackframe: [ '1.3.4' ],
+55 silly audit   'stacktrace-parser': [ '0.1.10' ],
+55 silly audit   'strict-uri-encode': [ '2.0.0' ],
+55 silly audit   'string-length': [ '4.0.2' ],
+55 silly audit   'string-natural-compare': [ '3.0.1' ],
+55 silly audit   'string-width': [ '4.2.3' ],
+55 silly audit   'string.prototype.matchall': [ '4.0.8' ],
+55 silly audit   'string.prototype.trim': [ '1.2.7' ],
+55 silly audit   'string.prototype.trimend': [ '1.0.6' ],
+55 silly audit   'string.prototype.trimstart': [ '1.0.6' ],
+55 silly audit   'strip-bom': [ '4.0.0' ],
+55 silly audit   'strip-final-newline': [ '2.0.0' ],
+55 silly audit   'strip-json-comments': [ '3.1.1' ],
+55 silly audit   strnum: [ '1.0.5' ],
+55 silly audit   'sudo-prompt': [ '9.2.1' ],
+55 silly audit   'supports-preserve-symlinks-flag': [ '1.0.0' ],
+55 silly audit   temp: [ '0.8.4' ],
+55 silly audit   terser: [ '5.18.2' ],
+55 silly audit   'test-exclude': [ '6.0.0' ],
+55 silly audit   'text-table': [ '0.2.0' ],
+55 silly audit   throat: [ '5.0.0' ],
+55 silly audit   through2: [ '2.0.5' ],
+55 silly audit   tmpl: [ '1.0.5' ],
+55 silly audit   'to-fast-properties': [ '2.0.0' ],
+55 silly audit   'to-regex-range': [ '5.0.1' ],
+55 silly audit   toidentifier: [ '1.0.1' ],
+55 silly audit   tr46: [ '0.0.3' ],
+55 silly audit   tslib: [ '2.6.0', '1.14.1' ],
+55 silly audit   tsutils: [ '3.21.0' ],
+55 silly audit   'type-check': [ '0.4.0' ],
+55 silly audit   'type-detect': [ '4.0.8' ],
+55 silly audit   'typed-array-length': [ '1.0.4' ],
+55 silly audit   typescript: [ '4.8.4' ],
+55 silly audit   'uglify-es': [ '3.3.9' ],
+55 silly audit   'unbox-primitive': [ '1.0.2' ],
+55 silly audit   'unicode-canonical-property-names-ecmascript': [ '2.0.0' ],
+55 silly audit   'unicode-match-property-ecmascript': [ '2.0.0' ],
+55 silly audit   'unicode-match-property-value-ecmascript': [ '2.1.0' ],
+55 silly audit   'unicode-property-aliases-ecmascript': [ '2.1.0' ],
+55 silly audit   universalify: [ '0.1.2' ],
+55 silly audit   unpipe: [ '1.0.0' ],
+55 silly audit   'update-browserslist-db': [ '1.0.11' ],
+55 silly audit   'uri-js': [ '4.4.1' ],
+55 silly audit   'use-latest-callback': [ '0.1.6' ],
+55 silly audit   'use-sync-external-store': [ '1.2.0' ],
+55 silly audit   'util-deprecate': [ '1.0.2' ],
+55 silly audit   'utils-merge': [ '1.0.1' ],
+55 silly audit   'v8-to-istanbul': [ '9.1.0' ],
+55 silly audit   vary: [ '1.1.2' ],
+55 silly audit   vlq: [ '1.0.1' ],
+55 silly audit   walker: [ '1.0.8' ],
+55 silly audit   'warn-once': [ '0.1.1' ],
+55 silly audit   wcwidth: [ '1.0.1' ],
+55 silly audit   'webidl-conversions': [ '3.0.1' ],
+55 silly audit   'whatwg-fetch': [ '3.6.2' ],
+55 silly audit   'whatwg-url': [ '5.0.0' ],
+55 silly audit   which: [ '2.0.2' ],
+55 silly audit   'which-boxed-primitive': [ '1.0.2' ],
+55 silly audit   'which-module': [ '2.0.1' ],
+55 silly audit   'which-typed-array': [ '1.1.9' ],
+55 silly audit   wrappy: [ '1.0.2' ],
+55 silly audit   xtend: [ '4.0.2' ],
+55 silly audit   yaml: [ '2.3.1' ],
+55 silly audit   'yocto-queue': [ '0.1.0' ],
+55 silly audit   'react-native-webview': [ '13.2.2' ]
+55 silly audit }
+56 timing reify:unpack Completed in 0ms
+57 timing reify:unretire Completed in 0ms
+58 timing build:queue Completed in 0ms
+59 timing build:deps Completed in 1ms
+60 timing build Completed in 1ms
+61 timing reify:build Completed in 1ms
+62 timing reify:trash Completed in 0ms
+63 timing reify:save Completed in 123ms
+64 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 362ms
+65 timing auditReport:getReport Completed in 366ms
+66 silly audit report {
+66 silly audit report   semver: [
+66 silly audit report     {
+66 silly audit report       id: 1092413,
+66 silly audit report       url: 'https://github.com/advisories/GHSA-c2qf-rxjj-qqgw',
+66 silly audit report       title: 'semver vulnerable to Regular Expression Denial of Service',
+66 silly audit report       severity: 'moderate',
+66 silly audit report       vulnerable_versions: '<7.5.2',
+66 silly audit report       cwe: [Array],
+66 silly audit report       cvss: [Object]
+66 silly audit report     }
+66 silly audit report   ]
+66 silly audit report }
+67 timing metavuln:cache:get:security-advisory:semver:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 1ms
+68 http fetch GET 200 https://registry.npmjs.org/semver 83ms (cache revalidated)
+69 timing metavuln:packument:semver Completed in 84ms
+70 timing metavuln:load:security-advisory:semver:1092413 Completed in 0ms
+71 timing metavuln:calculate:security-advisory:semver:1092413 Completed in 85ms
+72 timing metavuln:cache:get:security-advisory:make-dir:LpLTIZH/72/LtQj4XjnMXAbbPDytbA8o9dpxXJiuVp6qko2GKhBedfzY0s/OMqTennsFAv5/BjWJl1nlveRVTA== Completed in 3ms
+73 timing metavuln:cache:get:security-advisory:@react-native-community/cli:GPfUD89AeMPsdwIM0sXXpy6AODnAS1K099ND0YVLfpjDTsecuLCQwkDqzGiaK9WCH7u3iJVt/PdRGJQzhi62qw== Completed in 4ms
+74 timing metavuln:cache:get:security-advisory:@react-native-community/cli-tools:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 4ms
+75 timing metavuln:cache:get:security-advisory:eslint-plugin-react:cypBCrib+1uzFkXCicW+QyRyQaMoo9d6U8Gq05yRNQJOQLzRccS09pVsIetV71e4NNzPDBvz0Wh5Pyr+XYTazg== Completed in 4ms
+76 timing metavuln:cache:get:security-advisory:istanbul-lib-instrument:5o3uxOc/tbQ9QdlxAxaMBUencozTvWX06d+kNb419hN1hzKqOKFss/EFNSt7Kow+51hk6oFBFEgYEGavteOLFA== Completed in 3ms
+77 timing metavuln:cache:get:security-advisory:@react-native-community/cli-doctor:WGC4UZQLDtI1uCOELoab5eHHt2ozGcqvcgwKYZEH92B3ArLOFVUWiSGT6WZBPXkA1jCEwPQDsbaf4LO4m98VYg== Completed in 4ms
+78 http fetch GET 200 https://registry.npmjs.org/make-dir 83ms (cache revalidated)
+79 timing metavuln:packument:make-dir Completed in 83ms
+80 timing metavuln:load:security-advisory:make-dir:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 0ms
+81 timing metavuln:calculate:security-advisory:make-dir:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 83ms
+82 http fetch GET 200 https://registry.npmjs.org/eslint-plugin-react 242ms (cache revalidated)
+83 timing metavuln:packument:eslint-plugin-react Completed in 246ms
+84 timing metavuln:load:security-advisory:eslint-plugin-react:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 1ms
+85 timing metavuln:calculate:security-advisory:eslint-plugin-react:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 247ms
+86 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-tools 273ms (cache revalidated)
+87 timing metavuln:packument:@react-native-community/cli-tools Completed in 274ms
+88 timing metavuln:load:security-advisory:@react-native-community/cli-tools:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 1ms
+89 timing metavuln:calculate:security-advisory:@react-native-community/cli-tools:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 275ms
+90 http fetch GET 200 https://registry.npmjs.org/istanbul-lib-instrument 328ms (cache revalidated)
+91 timing metavuln:packument:istanbul-lib-instrument Completed in 329ms
+92 timing metavuln:load:security-advisory:istanbul-lib-instrument:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 1ms
+93 timing metavuln:calculate:security-advisory:istanbul-lib-instrument:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 330ms
+94 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli 351ms (cache revalidated)
+95 timing metavuln:packument:@react-native-community/cli Completed in 356ms
+96 timing metavuln:load:security-advisory:@react-native-community/cli:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 2ms
+97 timing metavuln:calculate:security-advisory:@react-native-community/cli:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 358ms
+98 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-doctor 366ms (cache revalidated)
+99 timing metavuln:packument:@react-native-community/cli-doctor Completed in 366ms
+100 timing metavuln:load:security-advisory:@react-native-community/cli-doctor:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 1ms
+101 timing metavuln:calculate:security-advisory:@react-native-community/cli-doctor:bd0TtqvWdSKcA5Zk2R/AF8NmWKGccDX2Sd7aKCejrYlLoteTbCOgXtLB2hGmHmZAFTkYY6ONWxeEFGCebJ90Dg== Completed in 367ms
+102 timing metavuln:cache:get:security-advisory:istanbul-lib-report:sPKSma7tpZHj89OuRXx+eiYUKG8scXHq/1fGfiLZaTyyaOCkFQCuW889ROFeQfZ7dlBC9pVZIuDiVKSjy/hWTw== Completed in 4ms
+103 timing metavuln:cache:get:security-advisory:@babel/register:h9XTjeBfyIiG2Yi1oke4vatk5dW5T6MkCtoYxc65aXbkvBaHYgXjCyaYNU+jnLS1NuxIeIHNdunrdA3muUwfRg== Completed in 3ms
+104 timing metavuln:cache:get:security-advisory:find-cache-dir:zzFNK4I28boVkanfj1D/N9okLf0qKOG4FLPKjQqNkwB9bFpaYp9ccUkhLtSxggzr/ja36jjoGwr8EaDrVlPU5g== Completed in 3ms
+105 http fetch GET 200 https://registry.npmjs.org/istanbul-lib-report 94ms (cache revalidated)
+106 timing metavuln:packument:istanbul-lib-report Completed in 96ms
+107 timing metavuln:load:security-advisory:istanbul-lib-report:LpLTIZH/72/LtQj4XjnMXAbbPDytbA8o9dpxXJiuVp6qko2GKhBedfzY0s/OMqTennsFAv5/BjWJl1nlveRVTA== Completed in 0ms
+108 timing metavuln:calculate:security-advisory:istanbul-lib-report:LpLTIZH/72/LtQj4XjnMXAbbPDytbA8o9dpxXJiuVp6qko2GKhBedfzY0s/OMqTennsFAv5/BjWJl1nlveRVTA== Completed in 96ms
+109 http fetch GET 200 https://registry.npmjs.org/find-cache-dir 106ms (cache revalidated)
+110 timing metavuln:packument:find-cache-dir Completed in 107ms
+111 timing metavuln:load:security-advisory:find-cache-dir:LpLTIZH/72/LtQj4XjnMXAbbPDytbA8o9dpxXJiuVp6qko2GKhBedfzY0s/OMqTennsFAv5/BjWJl1nlveRVTA== Completed in 0ms
+112 timing metavuln:calculate:security-advisory:find-cache-dir:LpLTIZH/72/LtQj4XjnMXAbbPDytbA8o9dpxXJiuVp6qko2GKhBedfzY0s/OMqTennsFAv5/BjWJl1nlveRVTA== Completed in 107ms
+113 http fetch GET 200 https://registry.npmjs.org/@babel%2fregister 131ms (cache revalidated)
+114 timing metavuln:packument:@babel/register Completed in 133ms
+115 timing metavuln:load:security-advisory:@babel/register:LpLTIZH/72/LtQj4XjnMXAbbPDytbA8o9dpxXJiuVp6qko2GKhBedfzY0s/OMqTennsFAv5/BjWJl1nlveRVTA== Completed in 0ms
+116 timing metavuln:calculate:security-advisory:@babel/register:LpLTIZH/72/LtQj4XjnMXAbbPDytbA8o9dpxXJiuVp6qko2GKhBedfzY0s/OMqTennsFAv5/BjWJl1nlveRVTA== Completed in 133ms
+117 timing metavuln:cache:get:security-advisory:@react-native/eslint-config:EVAbYadS9lCQY870swK2HpFzaNXQY+0jm5RuDJHyOwn2AeijTVd8YI49SMlR9PIWrfDBFS0rDO/Lt7QbXuCDdw== Completed in 2ms
+118 http fetch GET 200 https://registry.npmjs.org/@react-native%2feslint-config 326ms (cache revalidated)
+119 timing metavuln:packument:@react-native/eslint-config Completed in 327ms
+120 timing metavuln:load:security-advisory:@react-native/eslint-config:cypBCrib+1uzFkXCicW+QyRyQaMoo9d6U8Gq05yRNQJOQLzRccS09pVsIetV71e4NNzPDBvz0Wh5Pyr+XYTazg== Completed in 1ms
+121 timing metavuln:calculate:security-advisory:@react-native/eslint-config:cypBCrib+1uzFkXCicW+QyRyQaMoo9d6U8Gq05yRNQJOQLzRccS09pVsIetV71e4NNzPDBvz0Wh5Pyr+XYTazg== Completed in 328ms
+122 timing metavuln:cache:get:security-advisory:@react-native-community/cli:RFJzXyRP6s5qXIDCZgp4f+Ax07JbjTXDfB9mX/GRWyZuAEkT2A63UQWD7wTX6ukY5yzbT1lNiQ+LmKDkdTKZkg== Completed in 6ms
+123 timing metavuln:load:security-advisory:@react-native-community/cli:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 1ms
+124 timing metavuln:calculate:security-advisory:@react-native-community/cli:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 7ms
+125 timing metavuln:cache:get:security-advisory:@react-native-community/cli-clean:ZwzDnFlSnkji8Ifa6ONh1ZHpryoz7iWXb2I/Ow8Q+FP3iYm547yVp7bogzjMQp4LDvGxe1rMiffklZLQS6RbYg== Completed in 7ms
+126 timing metavuln:cache:get:security-advisory:@react-native-community/cli-config:stnuCBw0cCFybB5OJlyo0dFKYFuRA10BnfGz9MJ49WXHFGheInkVjVKtMUh3WjEKeHQx7lsCCJo3I6RNl73inA== Completed in 7ms
+127 timing metavuln:cache:get:security-advisory:@react-native-community/cli-hermes:N/hTy4lSxfkgKXbLl7NE0A/MFylf2umxAF+5UCXjt6vwy4AZNLDjprYmwVtij3w/AZdv6JC105AEE3Voe1NcaA== Completed in 7ms
+128 timing metavuln:cache:get:security-advisory:@react-native-community/cli-platform-android:tZ9+gsReeKL02+k6u8+Z01nLzRYqEVgsV8iwvbp1JSo20fJhk5xBL9B4BAAuc4ONZeHfrUwjmZ43h8I3xaYgcQ== Completed in 7ms
+129 timing metavuln:cache:get:security-advisory:@react-native-community/cli-plugin-metro:BPcpNDHkgPe0MUfVWFL+exuAu1GaVkUM/4f69aSGnwBHNKv+mWZi5DRG/9lGwFUke/yYO8Aw975R1f4lz79QDg== Completed in 6ms
+130 timing metavuln:cache:get:security-advisory:@react-native-community/cli-server-api:jznnWQb21SIrOlfs/UMiY+Qjrr6mvO9/5uqkCMbyt9fx23uTutptI4foYHL0iJ6QcBZeorKqc0KyD0JZwrJciA== Completed in 6ms
+131 timing metavuln:cache:get:security-advisory:@react-native-community/cli-doctor:Bg+Msb2YcbDFhnB+zIInHwSvSaZtw/H5ke/CkRXRGov0sDfE40+AnXN3skc9Qgt8PaMwTFEh4OrvO0oY3R9Z7A== Completed in 7ms
+132 timing metavuln:load:security-advisory:@react-native-community/cli-doctor:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 1ms
+133 timing metavuln:calculate:security-advisory:@react-native-community/cli-doctor:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 8ms
+134 timing metavuln:cache:get:security-advisory:@react-native-community/cli-platform-ios:lomY0AQ6SszNujHLJ+jJ7G6AGcI7jC8I3i+kvLXhePezvtRBgnf8KfPM8CiZjRN05v4KTmoCAjNpA5/AQYUXWA== Completed in 7ms
+135 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-platform-android 122ms (cache revalidated)
+136 timing metavuln:packument:@react-native-community/cli-platform-android Completed in 123ms
+137 timing metavuln:load:security-advisory:@react-native-community/cli-platform-android:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 1ms
+138 timing metavuln:calculate:security-advisory:@react-native-community/cli-platform-android:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 124ms
+139 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-clean 138ms (cache revalidated)
+140 timing metavuln:packument:@react-native-community/cli-clean Completed in 138ms
+141 timing metavuln:load:security-advisory:@react-native-community/cli-clean:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 0ms
+142 timing metavuln:calculate:security-advisory:@react-native-community/cli-clean:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 138ms
+143 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-hermes 138ms (cache revalidated)
+144 timing metavuln:packument:@react-native-community/cli-hermes Completed in 138ms
+145 timing metavuln:load:security-advisory:@react-native-community/cli-hermes:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 1ms
+146 timing metavuln:calculate:security-advisory:@react-native-community/cli-hermes:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 139ms
+147 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-plugin-metro 147ms (cache revalidated)
+148 timing metavuln:packument:@react-native-community/cli-plugin-metro Completed in 147ms
+149 timing metavuln:load:security-advisory:@react-native-community/cli-plugin-metro:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 0ms
+150 timing metavuln:calculate:security-advisory:@react-native-community/cli-plugin-metro:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 147ms
+151 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-server-api 151ms (cache revalidated)
+152 timing metavuln:packument:@react-native-community/cli-server-api Completed in 151ms
+153 timing metavuln:load:security-advisory:@react-native-community/cli-server-api:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 0ms
+154 timing metavuln:calculate:security-advisory:@react-native-community/cli-server-api:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 152ms
+155 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-config 428ms (cache revalidated)
+156 timing metavuln:packument:@react-native-community/cli-config Completed in 429ms
+157 timing metavuln:load:security-advisory:@react-native-community/cli-config:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 0ms
+158 timing metavuln:calculate:security-advisory:@react-native-community/cli-config:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 429ms
+159 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fcli-platform-ios 1013ms (cache revalidated)
+160 timing metavuln:packument:@react-native-community/cli-platform-ios Completed in 1014ms
+161 timing metavuln:load:security-advisory:@react-native-community/cli-platform-ios:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 0ms
+162 timing metavuln:calculate:security-advisory:@react-native-community/cli-platform-ios:IhU8pFANtnEx/hA47rVjrknPI14Ex+DZggflcr8yM3KkHdAepGpAgEyBpXPFOU9H5Ke7eXnfD7Dooz1iC7yr4A== Completed in 1014ms
+163 timing metavuln:cache:get:security-advisory:@jest/reporters:jeR0LfjbbD2ufDSvTIt1uy7kfWnGYCUq23t3eAi3NoEXczHCRmGGMJKYFACSoBzwgvx7LfvFmJFWLEoe0djD3A== Completed in 2ms
+164 timing metavuln:cache:get:security-advisory:babel-plugin-istanbul:vhd5Z6ObgNGboWqJtjZfsZwzpAdjIo3IO+ByYvVmwlNxsqAXCGuxpqOjNKXIqPuLDpAMytEsxYmRJcsAWJVsQQ== Completed in 1ms
+165 http fetch GET 200 https://registry.npmjs.org/babel-plugin-istanbul 96ms (cache revalidated)
+166 timing metavuln:packument:babel-plugin-istanbul Completed in 96ms
+167 timing metavuln:load:security-advisory:babel-plugin-istanbul:5o3uxOc/tbQ9QdlxAxaMBUencozTvWX06d+kNb419hN1hzKqOKFss/EFNSt7Kow+51hk6oFBFEgYEGavteOLFA== Completed in 0ms
+168 timing metavuln:calculate:security-advisory:babel-plugin-istanbul:5o3uxOc/tbQ9QdlxAxaMBUencozTvWX06d+kNb419hN1hzKqOKFss/EFNSt7Kow+51hk6oFBFEgYEGavteOLFA== Completed in 96ms
+169 http fetch GET 200 https://registry.npmjs.org/@jest%2freporters 134ms (cache revalidated)
+170 timing metavuln:packument:@jest/reporters Completed in 136ms
+171 timing metavuln:load:security-advisory:@jest/reporters:5o3uxOc/tbQ9QdlxAxaMBUencozTvWX06d+kNb419hN1hzKqOKFss/EFNSt7Kow+51hk6oFBFEgYEGavteOLFA== Completed in 0ms
+172 timing metavuln:calculate:security-advisory:@jest/reporters:5o3uxOc/tbQ9QdlxAxaMBUencozTvWX06d+kNb419hN1hzKqOKFss/EFNSt7Kow+51hk6oFBFEgYEGavteOLFA== Completed in 137ms
+173 timing metavuln:packument:react-native Completed in 0ms
+174 timing metavuln:cache:get:security-advisory:react-native:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 1ms
+175 timing metavuln:load:security-advisory:react-native:GPfUD89AeMPsdwIM0sXXpy6AODnAS1K099ND0YVLfpjDTsecuLCQwkDqzGiaK9WCH7u3iJVt/PdRGJQzhi62qw== Completed in 7ms
+176 timing metavuln:calculate:security-advisory:react-native:GPfUD89AeMPsdwIM0sXXpy6AODnAS1K099ND0YVLfpjDTsecuLCQwkDqzGiaK9WCH7u3iJVt/PdRGJQzhi62qw== Completed in 8ms
+177 timing metavuln:cache:get:security-advisory:@react-native-community/cli:VZMI0NdaNofy2iEmBB6oNFxQ8CZ7MCrz6h354rIDW+fko/CcEg/3lKHf30VCWTJ3MLs2C3IeSRVaWTOEsEo/kw== Completed in 1ms
+178 timing metavuln:load:security-advisory:@react-native-community/cli:WGC4UZQLDtI1uCOELoab5eHHt2ozGcqvcgwKYZEH92B3ArLOFVUWiSGT6WZBPXkA1jCEwPQDsbaf4LO4m98VYg== Completed in 0ms
+179 timing metavuln:calculate:security-advisory:@react-native-community/cli:WGC4UZQLDtI1uCOELoab5eHHt2ozGcqvcgwKYZEH92B3ArLOFVUWiSGT6WZBPXkA1jCEwPQDsbaf4LO4m98VYg== Completed in 1ms
+180 timing metavuln:cache:get:security-advisory:istanbul-reports:0x0ycu0zdR5S+EscD8LDx+qaA8QVicLx88Ees9DekQ1lpPQhhluFHKzAWNkUwTZTAgjziI3T0coybMbEc6eGzw== Completed in 2ms
+181 timing metavuln:cache:get:security-advisory:@jest/reporters:nWIocaGZNaYTdLcj82Yr84Cw/x+5aJDOTf2P9d8ZxqnVesfgs2bm22TJBN8SrWAMRiezgwVizqwYfHsqStbqEw== Completed in 2ms
+182 timing metavuln:load:security-advisory:@jest/reporters:sPKSma7tpZHj89OuRXx+eiYUKG8scXHq/1fGfiLZaTyyaOCkFQCuW889ROFeQfZ7dlBC9pVZIuDiVKSjy/hWTw== Completed in 0ms
+183 timing metavuln:calculate:security-advisory:@jest/reporters:sPKSma7tpZHj89OuRXx+eiYUKG8scXHq/1fGfiLZaTyyaOCkFQCuW889ROFeQfZ7dlBC9pVZIuDiVKSjy/hWTw== Completed in 2ms
+184 http fetch GET 200 https://registry.npmjs.org/istanbul-reports 98ms (cache revalidated)
+185 timing metavuln:packument:istanbul-reports Completed in 99ms
+186 timing metavuln:load:security-advisory:istanbul-reports:sPKSma7tpZHj89OuRXx+eiYUKG8scXHq/1fGfiLZaTyyaOCkFQCuW889ROFeQfZ7dlBC9pVZIuDiVKSjy/hWTw== Completed in 1ms
+187 timing metavuln:calculate:security-advisory:istanbul-reports:sPKSma7tpZHj89OuRXx+eiYUKG8scXHq/1fGfiLZaTyyaOCkFQCuW889ROFeQfZ7dlBC9pVZIuDiVKSjy/hWTw== Completed in 100ms
+188 timing metavuln:cache:get:security-advisory:@babel/register:dUCuTN/RNDRe90MwohmkRxFwCRrn8jOx2GvfiZgiEpct64LZPXhNZXs8KU9ZXxf33Vs5tfvHMhefauqUF31dvg== Completed in 1ms
+189 timing metavuln:load:security-advisory:@babel/register:zzFNK4I28boVkanfj1D/N9okLf0qKOG4FLPKjQqNkwB9bFpaYp9ccUkhLtSxggzr/ja36jjoGwr8EaDrVlPU5g== Completed in 0ms
+190 timing metavuln:calculate:security-advisory:@babel/register:zzFNK4I28boVkanfj1D/N9okLf0qKOG4FLPKjQqNkwB9bFpaYp9ccUkhLtSxggzr/ja36jjoGwr8EaDrVlPU5g== Completed in 1ms
+191 timing metavuln:cache:get:security-advisory:jscodeshift:UmYLazNTsRtYZI6l4wVd2BeDAfWXXWwfMzuAs4KnRal7Y496S+o9U3knC9lnY6gPi3TII3jj3HIFQzrSZcPMqA== Completed in 1ms
+192 http fetch GET 200 https://registry.npmjs.org/jscodeshift 170ms (cache revalidated)
+193 timing metavuln:packument:jscodeshift Completed in 172ms
+194 timing metavuln:load:security-advisory:jscodeshift:h9XTjeBfyIiG2Yi1oke4vatk5dW5T6MkCtoYxc65aXbkvBaHYgXjCyaYNU+jnLS1NuxIeIHNdunrdA3muUwfRg== Completed in 0ms
+195 timing metavuln:calculate:security-advisory:jscodeshift:h9XTjeBfyIiG2Yi1oke4vatk5dW5T6MkCtoYxc65aXbkvBaHYgXjCyaYNU+jnLS1NuxIeIHNdunrdA3muUwfRg== Completed in 172ms
+196 timing metavuln:cache:get:security-advisory:@react-native-community/cli-hermes:A86wjIzTQaazJGnWez1CqluT3HBaL8+lMemuIvrL/CJFbcVAeMPSh2FgVJoBA6hiGHvs0bzFaS9FeYH+HeWBgA== Completed in 2ms
+197 timing metavuln:load:security-advisory:@react-native-community/cli-hermes:tZ9+gsReeKL02+k6u8+Z01nLzRYqEVgsV8iwvbp1JSo20fJhk5xBL9B4BAAuc4ONZeHfrUwjmZ43h8I3xaYgcQ== Completed in 0ms
+198 timing metavuln:calculate:security-advisory:@react-native-community/cli-hermes:tZ9+gsReeKL02+k6u8+Z01nLzRYqEVgsV8iwvbp1JSo20fJhk5xBL9B4BAAuc4ONZeHfrUwjmZ43h8I3xaYgcQ== Completed in 3ms
+199 timing metavuln:cache:get:security-advisory:@react-native-community/cli-doctor:sC84T/n+2/RaepsXb/6sJzclfRv5Qnt0wmT/hmp+K7UkbIHSimN3ggO787hXPtmyv1Z0CsJSrwDeaMm2zJkFnQ== Completed in 3ms
+200 timing metavuln:load:security-advisory:@react-native-community/cli-doctor:tZ9+gsReeKL02+k6u8+Z01nLzRYqEVgsV8iwvbp1JSo20fJhk5xBL9B4BAAuc4ONZeHfrUwjmZ43h8I3xaYgcQ== Completed in 0ms
+201 timing metavuln:calculate:security-advisory:@react-native-community/cli-doctor:tZ9+gsReeKL02+k6u8+Z01nLzRYqEVgsV8iwvbp1JSo20fJhk5xBL9B4BAAuc4ONZeHfrUwjmZ43h8I3xaYgcQ== Completed in 3ms
+202 timing metavuln:cache:get:security-advisory:react-native:HbbNjFHLENgNjS2KloBo28N983JbDeXqs+zECSQjd8y92pPGccyGodTPCL67NM245dXi8aHNQK0OZL0JIv4gKQ== Completed in 4ms
+203 timing metavuln:load:security-advisory:react-native:tZ9+gsReeKL02+k6u8+Z01nLzRYqEVgsV8iwvbp1JSo20fJhk5xBL9B4BAAuc4ONZeHfrUwjmZ43h8I3xaYgcQ== Completed in 12ms
+204 timing metavuln:calculate:security-advisory:react-native:tZ9+gsReeKL02+k6u8+Z01nLzRYqEVgsV8iwvbp1JSo20fJhk5xBL9B4BAAuc4ONZeHfrUwjmZ43h8I3xaYgcQ== Completed in 16ms
+205 timing metavuln:cache:get:security-advisory:@react-native-community/cli:ftODJ01M1DKUBN1Zmdty+fjygZu8MRB/i4WNGD/fj/gpugKr93sFhKgHIU1zqGtbB9JsUFLVBjNlUIOG9Nzg7Q== Completed in 2ms
+206 timing metavuln:load:security-advisory:@react-native-community/cli:ZwzDnFlSnkji8Ifa6ONh1ZHpryoz7iWXb2I/Ow8Q+FP3iYm547yVp7bogzjMQp4LDvGxe1rMiffklZLQS6RbYg== Completed in 1ms
+207 timing metavuln:calculate:security-advisory:@react-native-community/cli:ZwzDnFlSnkji8Ifa6ONh1ZHpryoz7iWXb2I/Ow8Q+FP3iYm547yVp7bogzjMQp4LDvGxe1rMiffklZLQS6RbYg== Completed in 3ms
+208 timing metavuln:cache:get:security-advisory:@react-native-community/cli:5rQDQhJRA48O8n+I6f/sWEeU8o44ZNKfNJc058uRoidKTcwmO6cAYbDYwBBC8bRocUaZdiC4BXlUTdw/bYm1PA== Completed in 1ms
+209 timing metavuln:load:security-advisory:@react-native-community/cli:N/hTy4lSxfkgKXbLl7NE0A/MFylf2umxAF+5UCXjt6vwy4AZNLDjprYmwVtij3w/AZdv6JC105AEE3Voe1NcaA== Completed in 1ms
+210 timing metavuln:calculate:security-advisory:@react-native-community/cli:N/hTy4lSxfkgKXbLl7NE0A/MFylf2umxAF+5UCXjt6vwy4AZNLDjprYmwVtij3w/AZdv6JC105AEE3Voe1NcaA== Completed in 2ms
+211 timing metavuln:cache:get:security-advisory:@react-native-community/cli:dWTQY52kRSjOjL2DlFdQZTKDo7HB7s/9AsqbfS8KW8SOnlmsT1Bkd4KD4EbEbBE/8sR9goxcI3BSbw4dNa764g== Completed in 0ms
+212 timing metavuln:load:security-advisory:@react-native-community/cli:BPcpNDHkgPe0MUfVWFL+exuAu1GaVkUM/4f69aSGnwBHNKv+mWZi5DRG/9lGwFUke/yYO8Aw975R1f4lz79QDg== Completed in 1ms
+213 timing metavuln:calculate:security-advisory:@react-native-community/cli:BPcpNDHkgPe0MUfVWFL+exuAu1GaVkUM/4f69aSGnwBHNKv+mWZi5DRG/9lGwFUke/yYO8Aw975R1f4lz79QDg== Completed in 1ms
+214 timing metavuln:cache:get:security-advisory:@react-native-community/cli:Dz8eBYTpCxE1gBTd0ZGDQTn5O+H6T3zPrGFh3RxJHFs8xUXE6weU0g+vDe6ARIfNklokDxdPd05h2zZEtNITMQ== Completed in 1ms
+215 timing metavuln:load:security-advisory:@react-native-community/cli:jznnWQb21SIrOlfs/UMiY+Qjrr6mvO9/5uqkCMbyt9fx23uTutptI4foYHL0iJ6QcBZeorKqc0KyD0JZwrJciA== Completed in 1ms
+216 timing metavuln:calculate:security-advisory:@react-native-community/cli:jznnWQb21SIrOlfs/UMiY+Qjrr6mvO9/5uqkCMbyt9fx23uTutptI4foYHL0iJ6QcBZeorKqc0KyD0JZwrJciA== Completed in 2ms
+217 timing metavuln:cache:get:security-advisory:@react-native-community/cli-plugin-metro:hjEgAndUk2+tX3K+4mZ7NXDupmRJAWy+s4EeN1CbRGGKS3DIj88my/ZMovMe2m1t6ZXA1ZCFf9nfnJJSWwWamw== Completed in 2ms
+218 timing metavuln:load:security-advisory:@react-native-community/cli-plugin-metro:jznnWQb21SIrOlfs/UMiY+Qjrr6mvO9/5uqkCMbyt9fx23uTutptI4foYHL0iJ6QcBZeorKqc0KyD0JZwrJciA== Completed in 0ms
+219 timing metavuln:calculate:security-advisory:@react-native-community/cli-plugin-metro:jznnWQb21SIrOlfs/UMiY+Qjrr6mvO9/5uqkCMbyt9fx23uTutptI4foYHL0iJ6QcBZeorKqc0KyD0JZwrJciA== Completed in 2ms
+220 timing metavuln:cache:get:security-advisory:@react-native-community/cli:8NiKFGqo0HuFCNcgGil6634C37T1vBYrGXRzADXfr5NmOqoCbOWuCKMC2/1/is0ZrnV5qWHTB9zGnGWAWLaZIA== Completed in 1ms
+221 timing metavuln:load:security-advisory:@react-native-community/cli:stnuCBw0cCFybB5OJlyo0dFKYFuRA10BnfGz9MJ49WXHFGheInkVjVKtMUh3WjEKeHQx7lsCCJo3I6RNl73inA== Completed in 0ms
+222 timing metavuln:calculate:security-advisory:@react-native-community/cli:stnuCBw0cCFybB5OJlyo0dFKYFuRA10BnfGz9MJ49WXHFGheInkVjVKtMUh3WjEKeHQx7lsCCJo3I6RNl73inA== Completed in 1ms
+223 timing metavuln:cache:get:security-advisory:@react-native-community/cli-doctor:oCdKUjmA5gNx4U7FS6ob6vduq2DBGRs6Ny/yaldL+01a9LyTsXLw3e4KFRvxO7gri+QIlhw62Kgsasm89x4WqQ== Completed in 1ms
+224 timing metavuln:load:security-advisory:@react-native-community/cli-doctor:stnuCBw0cCFybB5OJlyo0dFKYFuRA10BnfGz9MJ49WXHFGheInkVjVKtMUh3WjEKeHQx7lsCCJo3I6RNl73inA== Completed in 1ms
+225 timing metavuln:calculate:security-advisory:@react-native-community/cli-doctor:stnuCBw0cCFybB5OJlyo0dFKYFuRA10BnfGz9MJ49WXHFGheInkVjVKtMUh3WjEKeHQx7lsCCJo3I6RNl73inA== Completed in 2ms
+226 timing metavuln:cache:get:security-advisory:@react-native-community/cli-doctor:SxWCtxOwL/G8zdWT7dM05UKrhhLG2vVWwI148OHsroBTzyKvOck+/4jr+iMx3T/q77kvssknuPbcg0C8ZTpXDA== Completed in 0ms
+227 timing metavuln:load:security-advisory:@react-native-community/cli-doctor:lomY0AQ6SszNujHLJ+jJ7G6AGcI7jC8I3i+kvLXhePezvtRBgnf8KfPM8CiZjRN05v4KTmoCAjNpA5/AQYUXWA== Completed in 0ms
+228 timing metavuln:calculate:security-advisory:@react-native-community/cli-doctor:lomY0AQ6SszNujHLJ+jJ7G6AGcI7jC8I3i+kvLXhePezvtRBgnf8KfPM8CiZjRN05v4KTmoCAjNpA5/AQYUXWA== Completed in 0ms
+229 timing metavuln:cache:get:security-advisory:react-native:pOEAl/3xFneH/QMUccKB/JzpNce1yRvl9zfJXBBu6YhStPq153e6GB5h0KSElLrN7yYQyjX2Nryy4zHNhofL7A== Completed in 1ms
+230 timing metavuln:load:security-advisory:react-native:lomY0AQ6SszNujHLJ+jJ7G6AGcI7jC8I3i+kvLXhePezvtRBgnf8KfPM8CiZjRN05v4KTmoCAjNpA5/AQYUXWA== Completed in 9ms
+231 timing metavuln:calculate:security-advisory:react-native:lomY0AQ6SszNujHLJ+jJ7G6AGcI7jC8I3i+kvLXhePezvtRBgnf8KfPM8CiZjRN05v4KTmoCAjNpA5/AQYUXWA== Completed in 10ms
+232 timing metavuln:cache:get:security-advisory:@jest/transform:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 2ms
+233 timing metavuln:cache:get:security-advisory:babel-jest:BGK6uGQQPilRaxlr5fwilm0Djkpmmb6PJfn0ESaPLKXYjGuO9eCo/If68zoGRwTP9rzCqus3foenC98xPtAuFw== Completed in 2ms
+234 http fetch GET 200 https://registry.npmjs.org/babel-jest 111ms (cache revalidated)
+235 timing metavuln:packument:babel-jest Completed in 114ms
+236 timing metavuln:load:security-advisory:babel-jest:vhd5Z6ObgNGboWqJtjZfsZwzpAdjIo3IO+ByYvVmwlNxsqAXCGuxpqOjNKXIqPuLDpAMytEsxYmRJcsAWJVsQQ== Completed in 1ms
+237 timing metavuln:calculate:security-advisory:babel-jest:vhd5Z6ObgNGboWqJtjZfsZwzpAdjIo3IO+ByYvVmwlNxsqAXCGuxpqOjNKXIqPuLDpAMytEsxYmRJcsAWJVsQQ== Completed in 115ms
+238 http fetch GET 200 https://registry.npmjs.org/@jest%2ftransform 142ms (cache revalidated)
+239 timing metavuln:packument:@jest/transform Completed in 143ms
+240 timing metavuln:load:security-advisory:@jest/transform:vhd5Z6ObgNGboWqJtjZfsZwzpAdjIo3IO+ByYvVmwlNxsqAXCGuxpqOjNKXIqPuLDpAMytEsxYmRJcsAWJVsQQ== Completed in 1ms
+241 timing metavuln:calculate:security-advisory:@jest/transform:vhd5Z6ObgNGboWqJtjZfsZwzpAdjIo3IO+ByYvVmwlNxsqAXCGuxpqOjNKXIqPuLDpAMytEsxYmRJcsAWJVsQQ== Completed in 144ms
+242 timing metavuln:cache:get:security-advisory:@jest/core:MIVALBD5732XQhi9G0KWUDVd4iNtxxOB70t4KDij2Ss7SzdOTYUs/Ry7gHbTJO53zlwsQP1SY9eF0e39dLJJzA== Completed in 2ms
+243 http fetch GET 200 https://registry.npmjs.org/@jest%2fcore 161ms (cache revalidated)
+244 timing metavuln:packument:@jest/core Completed in 164ms
+245 timing metavuln:load:security-advisory:@jest/core:jeR0LfjbbD2ufDSvTIt1uy7kfWnGYCUq23t3eAi3NoEXczHCRmGGMJKYFACSoBzwgvx7LfvFmJFWLEoe0djD3A== Completed in 1ms
+246 timing metavuln:calculate:security-advisory:@jest/core:jeR0LfjbbD2ufDSvTIt1uy7kfWnGYCUq23t3eAi3NoEXczHCRmGGMJKYFACSoBzwgvx7LfvFmJFWLEoe0djD3A== Completed in 165ms
+247 timing metavuln:packument:react-native-webview Completed in 31ms
+248 timing metavuln:cache:get:security-advisory:@react-navigation/elements:wRAese17Yldwf8ATSKNuTnSeCJL5nWD+AyX3JokLP3CucugE1iBzniSv/fvZbpYv0Nxyw1Ju6+8+3gbZyPguLw== Completed in 42ms
+249 timing metavuln:cache:get:security-advisory:@react-native-community/masked-view:HkFLHXqIawuBhgO9T+TrIQ/np4LiMvrzUtcxoWmTydpgYjHunG7kVU9zCDKGKYOauHQLbGxSLl2h+HZHBg6uHQ== Completed in 44ms
+250 timing metavuln:cache:get:security-advisory:react-native-reanimated:S3JfEfeKtbx+qGOlB46kXDjXsfNWu6OY7zT5zVA9NGtiXJKNOGuYWiFeKh3AtXcegyunLuYLYy31yzx2RCGLUQ== Completed in 37ms
+251 timing metavuln:cache:get:security-advisory:@react-navigation/drawer:m8KZb6e/um0kOkxriivwEIi7m2xiDASLxS4ZNLNCwcRVjRsZ2z/C5TOcb8F3QUePQGo68jfqdA6f55oKCzz2Qg== Completed in 42ms
+252 timing metavuln:cache:get:security-advisory:react-native-autoheight-webview:FkTlxQCn0yYXJkBjaFVESjpffA10ZLev8MtqtF3XT0v0KiDv6VlxpsOnFzMOEsWS5//Dp4PUAwJwje97SXU/Uw== Completed in 40ms
+253 timing metavuln:cache:get:security-advisory:@react-navigation/native:kBhsk7Zobhv80TotsdAdLU2yUwi3umW4glJ/yANmTyIlEoU9U4QzheSqUdLuyYDiT0KNYTrTlkPpCS1nJkI25g== Completed in 41ms
+254 timing metavuln:cache:get:security-advisory:@react-navigation/stack:xkEKbd37nPDwb6EFyEVhg2Th+UZ+8qSD91cP3/9UMbLuuaGiv5nz+/1+mI0CBoQhJ5QIAyMlQDqX1QBnBOr5LA== Completed in 41ms
+255 timing metavuln:cache:get:security-advisory:@react-native/virtualized-lists:Yd6jD2NkJUkNALKXYnygnHFlQ9eVkqbifTALvIdLu+mYISTf1ZFDVo3z+QIIvXQnsKaCvI0dKY7o0vorkn+yWQ== Completed in 43ms
+256 timing metavuln:cache:get:security-advisory:react-native-safe-area-context:dhd18e1tVhusPg9nWltrLD+gsLFjk+wqVBIBzqqms1yULB2lI3gTMSqPrnUaLaRyOZUu7t3nPMHXK83uGB/E+A== Completed in 37ms
+257 timing metavuln:cache:get:security-advisory:react-native-webview:PGBgjA61wTuwg/vl4XhFMpFDrgeZQk0c3c/xKtXglroqCElX2LW8Z4CAgT0N8UQqUpj00k4hYzflHpghaG0bgg== Completed in 36ms
+258 timing metavuln:load:security-advisory:react-native-webview:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 1ms
+259 timing metavuln:calculate:security-advisory:react-native-webview:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 37ms
+260 timing metavuln:cache:get:security-advisory:react-native-gesture-handler:YNC6gqx79rk2Suq6pAUbZbMiywFYMPsaSBhQtWM0CvhrRWM3iLrG4r7zjQ5jjwFynza6kBWaorFzigp6R2V7Ig== Completed in 41ms
+261 timing metavuln:cache:get:security-advisory:react-native-screens:eCZoEw2jLY3JOJSdjK9pPBEwELYHSWSAJx4HdNBIy5eC8+L6bjgEzKStQMMg5KL2di3iyKhsgS/3IR8hHlNzxQ== Completed in 39ms
+262 http fetch GET 200 https://registry.npmjs.org/react-native-reanimated 137ms (cache revalidated)
+263 timing metavuln:packument:react-native-reanimated Completed in 140ms
+264 timing metavuln:load:security-advisory:react-native-reanimated:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+265 timing metavuln:calculate:security-advisory:react-native-reanimated:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 140ms
+266 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fnative 161ms (cache revalidated)
+267 timing metavuln:packument:@react-navigation/native Completed in 163ms
+268 timing metavuln:load:security-advisory:@react-navigation/native:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+269 timing metavuln:calculate:security-advisory:@react-navigation/native:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 163ms
+270 http fetch GET 200 https://registry.npmjs.org/react-native-gesture-handler 165ms (cache revalidated)
+271 timing metavuln:packument:react-native-gesture-handler Completed in 167ms
+272 timing metavuln:load:security-advisory:react-native-gesture-handler:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+273 timing metavuln:calculate:security-advisory:react-native-gesture-handler:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 167ms
+274 http fetch GET 200 https://registry.npmjs.org/@react-native-community%2fmasked-view 320ms (cache revalidated)
+275 timing metavuln:packument:@react-native-community/masked-view Completed in 321ms
+276 timing metavuln:load:security-advisory:@react-native-community/masked-view:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+277 timing metavuln:calculate:security-advisory:@react-native-community/masked-view:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 322ms
+278 http fetch GET 200 https://registry.npmjs.org/@react-native%2fvirtualized-lists 376ms (cache revalidated)
+279 timing metavuln:packument:@react-native/virtualized-lists Completed in 376ms
+280 timing metavuln:load:security-advisory:@react-native/virtualized-lists:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+281 timing metavuln:calculate:security-advisory:@react-native/virtualized-lists:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 376ms
+282 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2felements 380ms (cache revalidated)
+283 timing metavuln:packument:@react-navigation/elements Completed in 381ms
+284 timing metavuln:load:security-advisory:@react-navigation/elements:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+285 timing metavuln:calculate:security-advisory:@react-navigation/elements:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 381ms
+286 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fstack 457ms (cache revalidated)
+287 timing metavuln:packument:@react-navigation/stack Completed in 461ms
+288 timing metavuln:load:security-advisory:@react-navigation/stack:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+289 timing metavuln:calculate:security-advisory:@react-navigation/stack:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 462ms
+290 http fetch GET 200 https://registry.npmjs.org/@react-navigation%2fdrawer 530ms (cache revalidated)
+291 timing metavuln:packument:@react-navigation/drawer Completed in 533ms
+292 timing metavuln:load:security-advisory:@react-navigation/drawer:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+293 timing metavuln:calculate:security-advisory:@react-navigation/drawer:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 534ms
+294 http fetch GET 200 https://registry.npmjs.org/react-native-safe-area-context 622ms (cache revalidated)
+295 timing metavuln:packument:react-native-safe-area-context Completed in 625ms
+296 timing metavuln:load:security-advisory:react-native-safe-area-context:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+297 timing metavuln:calculate:security-advisory:react-native-safe-area-context:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 625ms
+298 http fetch GET 200 https://registry.npmjs.org/react-native-screens 672ms (cache revalidated)
+299 timing metavuln:packument:react-native-screens Completed in 675ms
+300 timing metavuln:load:security-advisory:react-native-screens:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+301 timing metavuln:calculate:security-advisory:react-native-screens:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 675ms
+302 http fetch GET 200 https://registry.npmjs.org/react-native-autoheight-webview 1203ms (cache revalidated)
+303 timing metavuln:packument:react-native-autoheight-webview Completed in 1206ms
+304 timing metavuln:load:security-advisory:react-native-autoheight-webview:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 0ms
+305 timing metavuln:calculate:security-advisory:react-native-autoheight-webview:74gQElRW7wLn/CqpBFoOGfFX3LuIzQt8zoBRxMuv3UEdtFQ0mMO5CGWAYWTja2uTNIgsd3b6p6E+iq8EwfdNTA== Completed in 1206ms
+306 timing metavuln:cache:get:security-advisory:@jest/reporters:vBx9OicvC5IK/NYugIwgYZL+MpkvMvEBFo0g7ACf8Wdewkf/mUvAGSmYCY919uiNGZQ5B3UKy5CkOsYET9qKQg== Completed in 2ms
+307 timing metavuln:load:security-advisory:@jest/reporters:0x0ycu0zdR5S+EscD8LDx+qaA8QVicLx88Ees9DekQ1lpPQhhluFHKzAWNkUwTZTAgjziI3T0coybMbEc6eGzw== Completed in 0ms
+308 timing metavuln:calculate:security-advisory:@jest/reporters:0x0ycu0zdR5S+EscD8LDx+qaA8QVicLx88Ees9DekQ1lpPQhhluFHKzAWNkUwTZTAgjziI3T0coybMbEc6eGzw== Completed in 2ms
+309 timing metavuln:cache:get:security-advisory:@react-native/codegen:M4ham9pNbIH+0blG1YXdQboQPkPJ9uWvUBzF1uhKTc39uAmcX/p57loU+m2KZONsSIukWhfRlbHvb7UtcfIOAw== Completed in 2ms
+310 http fetch GET 200 https://registry.npmjs.org/@react-native%2fcodegen 2023ms (cache revalidated)
+311 timing metavuln:packument:@react-native/codegen Completed in 2025ms
+312 timing metavuln:load:security-advisory:@react-native/codegen:UmYLazNTsRtYZI6l4wVd2BeDAfWXXWwfMzuAs4KnRal7Y496S+o9U3knC9lnY6gPi3TII3jj3HIFQzrSZcPMqA== Completed in 0ms
+313 timing metavuln:calculate:security-advisory:@react-native/codegen:UmYLazNTsRtYZI6l4wVd2BeDAfWXXWwfMzuAs4KnRal7Y496S+o9U3knC9lnY6gPi3TII3jj3HIFQzrSZcPMqA== Completed in 2025ms
+314 timing metavuln:cache:get:security-advisory:jest-config:y5f24PevUstI1pu4z1KVM5lpnDiY7c8AgndOwh9jWsWdLxj2/x9IZ+qwFpVmkTy4iLqB/74X9jtgJXfrJyzEFA== Completed in 27ms
+315 http fetch GET 200 https://registry.npmjs.org/jest-config 403ms (cache revalidated)
+316 timing metavuln:packument:jest-config Completed in 406ms
+317 timing metavuln:load:security-advisory:jest-config:BGK6uGQQPilRaxlr5fwilm0Djkpmmb6PJfn0ESaPLKXYjGuO9eCo/If68zoGRwTP9rzCqus3foenC98xPtAuFw== Completed in 1ms
+318 timing metavuln:calculate:security-advisory:jest-config:BGK6uGQQPilRaxlr5fwilm0Djkpmmb6PJfn0ESaPLKXYjGuO9eCo/If68zoGRwTP9rzCqus3foenC98xPtAuFw== Completed in 407ms
+319 timing metavuln:cache:get:security-advisory:jest-runner:7m8ulmSPbHx2204kxSGGYsTOvmUMG7bymGojRV+G61uug488LwwTkC86VxCAi9Oo/jiiw7WLDiOOYDtXceAfKg== Completed in 2ms
+320 timing metavuln:cache:get:security-advisory:@jest/core:KMLZsWMB5I0r+nIQEWp2BqFPWUyfeMWkXMFidHdoa/mKywV6ix3UaLF7lJro+ECPx4o1rdWuqhlFobK7pWK5Xw== Completed in 2ms
+321 timing metavuln:load:security-advisory:@jest/core:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 1ms
+322 timing metavuln:calculate:security-advisory:@jest/core:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 3ms
+323 timing metavuln:cache:get:security-advisory:@jest/reporters:gh/aporoWRlRrVtqcVYabAtGIZipflfaWaXJkw+ZO5lxwtRNoZjuMlQbdDdMvlr9dB+zUpy7i48TwnNUwnlhig== Completed in 3ms
+324 timing metavuln:load:security-advisory:@jest/reporters:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 0ms
+325 timing metavuln:calculate:security-advisory:@jest/reporters:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 3ms
+326 timing metavuln:cache:get:security-advisory:babel-jest:Jl5p/iyoDtdCE1ja4iiQth3tFrTQ0ubLBjwFYXIPeMs0ZUXycDdCcYqYKklJjf/2C68MAYPj1w7/232Zul/l/A== Completed in 3ms
+327 timing metavuln:load:security-advisory:babel-jest:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 1ms
+328 timing metavuln:calculate:security-advisory:babel-jest:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 4ms
+329 timing metavuln:cache:get:security-advisory:jest-runtime:YJgylThhI4QhReJDHZqHVTPOh/Krpq7mQu5XORWIb1AVdAfmqviSY48Wfqdm+eDMGA+miU4B7SC/jaqR25wEAA== Completed in 4ms
+330 timing metavuln:cache:get:security-advisory:jest-snapshot:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 4ms
+331 http fetch GET 200 https://registry.npmjs.org/jest-snapshot 89ms (cache revalidated)
+332 timing metavuln:packument:jest-snapshot Completed in 95ms
+333 timing metavuln:load:security-advisory:jest-snapshot:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 2ms
+334 timing metavuln:calculate:security-advisory:jest-snapshot:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 97ms
+335 http fetch GET 200 https://registry.npmjs.org/jest-runner 98ms (cache revalidated)
+336 timing metavuln:packument:jest-runner Completed in 100ms
+337 timing metavuln:load:security-advisory:jest-runner:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 5ms
+338 timing metavuln:calculate:security-advisory:jest-runner:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 105ms
+339 http fetch GET 200 https://registry.npmjs.org/jest-runtime 110ms (cache revalidated)
+340 timing metavuln:packument:jest-runtime Completed in 112ms
+341 timing metavuln:load:security-advisory:jest-runtime:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 0ms
+342 timing metavuln:calculate:security-advisory:jest-runtime:zrrAgvsHNSEFEPnJoGw5kf56o2+cu2dcGfjwtbpubA/gFV9MxCZbvvCQwveWPQRqi3oH5gji+sbU2ulUHa/5gw== Completed in 112ms
+343 timing metavuln:cache:get:security-advisory:jest:ENG56WpTpykdQAqQnuXnpYP0UDjkxf/G5PsoI+gvKhQvekLm0HZS0rU5ETDoQhijbrQTYMbGtn9wJXtEPmFxHA== Completed in 2ms
+344 timing metavuln:cache:get:security-advisory:jest-cli:QlDnZBtBQ16Gx4Dpe7/WhBSRPDzaBfpNjHCYtsF50ar5r4Ao1VL/y+LKgkO0tRHtx62WjMpjdJLyMGuBsiniuw== Completed in 1ms
+345 http fetch GET 200 https://registry.npmjs.org/jest 87ms (cache revalidated)
+346 timing metavuln:packument:jest Completed in 90ms
+347 timing metavuln:load:security-advisory:jest:MIVALBD5732XQhi9G0KWUDVd4iNtxxOB70t4KDij2Ss7SzdOTYUs/Ry7gHbTJO53zlwsQP1SY9eF0e39dLJJzA== Completed in 0ms
+348 timing metavuln:calculate:security-advisory:jest:MIVALBD5732XQhi9G0KWUDVd4iNtxxOB70t4KDij2Ss7SzdOTYUs/Ry7gHbTJO53zlwsQP1SY9eF0e39dLJJzA== Completed in 90ms
+349 http fetch GET 200 https://registry.npmjs.org/jest-cli 92ms (cache revalidated)
+350 timing metavuln:packument:jest-cli Completed in 96ms
+351 timing metavuln:load:security-advisory:jest-cli:MIVALBD5732XQhi9G0KWUDVd4iNtxxOB70t4KDij2Ss7SzdOTYUs/Ry7gHbTJO53zlwsQP1SY9eF0e39dLJJzA== Completed in 2ms
+352 timing metavuln:calculate:security-advisory:jest-cli:MIVALBD5732XQhi9G0KWUDVd4iNtxxOB70t4KDij2Ss7SzdOTYUs/Ry7gHbTJO53zlwsQP1SY9eF0e39dLJJzA== Completed in 98ms
+353 timing metavuln:cache:get:security-advisory:react-native:YKhgZ7MnkNArBsMdUP41A7ebN4BFjX48+tisQsDSxDyZUmzPzqiXP0ipJ63NhhQ3whs4oBWOLqaYVjWIfROkdQ== Completed in 2ms
+354 timing metavuln:load:security-advisory:react-native:M4ham9pNbIH+0blG1YXdQboQPkPJ9uWvUBzF1uhKTc39uAmcX/p57loU+m2KZONsSIukWhfRlbHvb7UtcfIOAw== Completed in 6ms
+355 timing metavuln:calculate:security-advisory:react-native:M4ham9pNbIH+0blG1YXdQboQPkPJ9uWvUBzF1uhKTc39uAmcX/p57loU+m2KZONsSIukWhfRlbHvb7UtcfIOAw== Completed in 8ms
+356 timing metavuln:cache:get:security-advisory:jest-cli:UnxwN8ApbFxPNsSsb0gUpRYyUg4wYL8+uMzDasta4aezhcmfvX/4nxaII5cjs8WwsRXjRE7fTJNMemdJ3IKjNg== Completed in 9ms
+357 timing metavuln:load:security-advisory:jest-cli:y5f24PevUstI1pu4z1KVM5lpnDiY7c8AgndOwh9jWsWdLxj2/x9IZ+qwFpVmkTy4iLqB/74X9jtgJXfrJyzEFA== Completed in 1ms
+358 timing metavuln:calculate:security-advisory:jest-cli:y5f24PevUstI1pu4z1KVM5lpnDiY7c8AgndOwh9jWsWdLxj2/x9IZ+qwFpVmkTy4iLqB/74X9jtgJXfrJyzEFA== Completed in 10ms
+359 timing metavuln:cache:get:security-advisory:@jest/core:TDLxEHp0HXVnLYFgOwOjNRqJpR8Z1qpohOp6OHEkctZN3QudPUJsAAPfYullEyJSTHet7D8nSUNnUcWLbKkioA== Completed in 10ms
+360 timing metavuln:load:security-advisory:@jest/core:y5f24PevUstI1pu4z1KVM5lpnDiY7c8AgndOwh9jWsWdLxj2/x9IZ+qwFpVmkTy4iLqB/74X9jtgJXfrJyzEFA== Completed in 0ms
+361 timing metavuln:calculate:security-advisory:@jest/core:y5f24PevUstI1pu4z1KVM5lpnDiY7c8AgndOwh9jWsWdLxj2/x9IZ+qwFpVmkTy4iLqB/74X9jtgJXfrJyzEFA== Completed in 10ms
+362 timing metavuln:cache:get:security-advisory:jest-resolve-dependencies:bEtaEYIv0M0OcvRBODElvSBbHVhrA4hWPCHi6fqXeq1hNFPB1hXwIGKEO76TkXG9CcNccqnMwMCV7qdEKNpbIA== Completed in 2ms
+363 timing metavuln:cache:get:security-advisory:@jest/core:BE/h1H0R10gTj156a5CQI9l1V35ig0RLnPa4WmUPbRMh7UsNRu0KI2nD2qChIvMKcG36YWslyXSeY5wkMj8kLw== Completed in 2ms
+364 timing metavuln:load:security-advisory:@jest/core:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 0ms
+365 timing metavuln:calculate:security-advisory:@jest/core:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 3ms
+366 timing metavuln:cache:get:security-advisory:jest-runtime:1zR9uDTAqsTLYW7KxNO56AeCs9cUq6SQplftIL3wmLArEaQSpIYk87KNgbkOvQx39vifB2kCrcPH7DeUQlUMPQ== Completed in 2ms
+367 timing metavuln:load:security-advisory:jest-runtime:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 0ms
+368 timing metavuln:calculate:security-advisory:jest-runtime:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 2ms
+369 timing metavuln:cache:get:security-advisory:jest-circus:AlsqG2QQVsTan/maFiw2brY+TIu7gDmzdTqcIVE1EY8YF9aYgbaYDJ9YO6h9q+6mg02ht3kX5FTbCG9TbPK9yA== Completed in 2ms
+370 timing metavuln:cache:get:security-advisory:@jest/expect:J3wbkL9mesGyZaRvvctH3IkTkjwHhUKk/dZciz7ptg+O5RYZpmjtZtK7zO0M17/pv6AzAjezuzoe/hB66VrYlw== Completed in 2ms
+371 http fetch GET 200 https://registry.npmjs.org/jest-resolve-dependencies 94ms (cache revalidated)
+372 timing metavuln:packument:jest-resolve-dependencies Completed in 95ms
+373 timing metavuln:load:security-advisory:jest-resolve-dependencies:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 1ms
+374 timing metavuln:calculate:security-advisory:jest-resolve-dependencies:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 96ms
+375 http fetch GET 200 https://registry.npmjs.org/jest-circus 97ms (cache revalidated)
+376 timing metavuln:packument:jest-circus Completed in 99ms
+377 timing metavuln:load:security-advisory:jest-circus:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 1ms
+378 timing metavuln:calculate:security-advisory:jest-circus:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 100ms
+379 http fetch GET 200 https://registry.npmjs.org/@jest%2fexpect 404ms (cache revalidated)
+380 timing metavuln:packument:@jest/expect Completed in 404ms
+381 timing metavuln:load:security-advisory:@jest/expect:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 0ms
+382 timing metavuln:calculate:security-advisory:@jest/expect:wTVlD7K5GlMTfoZPg59+9zFdEtTo1Sbmez4WCBEDMAc5TktF3O6tL6RIyzkJTo7nIAJUpnJa6LbKu7/JnKkFxA== Completed in 404ms
+383 timing metavuln:cache:get:security-advisory:@jest/core:Qleq0a3ej8IvcBSUgxc7KwLKuBz5AepTdk+IMFWyHveBzeQDn/Ei2cV9oe0gd5eCb/zjSvWuuZeIHlsvVXbPMw== Completed in 1ms
+384 timing metavuln:load:security-advisory:@jest/core:7m8ulmSPbHx2204kxSGGYsTOvmUMG7bymGojRV+G61uug488LwwTkC86VxCAi9Oo/jiiw7WLDiOOYDtXceAfKg== Completed in 1ms
+385 timing metavuln:calculate:security-advisory:@jest/core:7m8ulmSPbHx2204kxSGGYsTOvmUMG7bymGojRV+G61uug488LwwTkC86VxCAi9Oo/jiiw7WLDiOOYDtXceAfKg== Completed in 2ms
+386 timing metavuln:cache:get:security-advisory:jest-config:JzBVj/IDQg1GqwZcqaNPK4lVmU1sYB0G3lNQQ/dW9Mf+fC/nnoNQKx/ZaDb1dArW6b67FilUTV7V09KyKSZrsw== Completed in 2ms
+387 timing metavuln:load:security-advisory:jest-config:7m8ulmSPbHx2204kxSGGYsTOvmUMG7bymGojRV+G61uug488LwwTkC86VxCAi9Oo/jiiw7WLDiOOYDtXceAfKg== Completed in 0ms
+388 timing metavuln:calculate:security-advisory:jest-config:7m8ulmSPbHx2204kxSGGYsTOvmUMG7bymGojRV+G61uug488LwwTkC86VxCAi9Oo/jiiw7WLDiOOYDtXceAfKg== Completed in 2ms
+389 timing metavuln:cache:get:security-advisory:jest-circus:zseqB2m2DOImGEmCO8sYVTQg7Y1WVKvwQm/hz0YZPocU1I+uDIl4nykns7y7omPLqaBZOle7UGArLPdIEumMnw== Completed in 1ms
+390 timing metavuln:load:security-advisory:jest-circus:YJgylThhI4QhReJDHZqHVTPOh/Krpq7mQu5XORWIb1AVdAfmqviSY48Wfqdm+eDMGA+miU4B7SC/jaqR25wEAA== Completed in 1ms
+391 timing metavuln:calculate:security-advisory:jest-circus:YJgylThhI4QhReJDHZqHVTPOh/Krpq7mQu5XORWIb1AVdAfmqviSY48Wfqdm+eDMGA+miU4B7SC/jaqR25wEAA== Completed in 2ms
+392 timing metavuln:cache:get:security-advisory:jest-runner:AnTcsLpJf2RJQzDvytL4brXqImdfDQ3i/WZ5Nf4YfQhlduFUcJZGbmNsCf6dbDICG1UJ08VyKwCaL10/h6L/HA== Completed in 2ms
+393 timing metavuln:load:security-advisory:jest-runner:YJgylThhI4QhReJDHZqHVTPOh/Krpq7mQu5XORWIb1AVdAfmqviSY48Wfqdm+eDMGA+miU4B7SC/jaqR25wEAA== Completed in 0ms
+394 timing metavuln:calculate:security-advisory:jest-runner:YJgylThhI4QhReJDHZqHVTPOh/Krpq7mQu5XORWIb1AVdAfmqviSY48Wfqdm+eDMGA+miU4B7SC/jaqR25wEAA== Completed in 2ms
+395 timing metavuln:cache:get:security-advisory:@jest/core:ndgWn6BY5Gor2tvcg5DUtfct1K8oCoou94Gy7YxcAbB5nrFXluOG6WH6P8VDaefWkAeZpy5ezpglJiTZPtKvsA== Completed in 2ms
+396 timing metavuln:load:security-advisory:@jest/core:YJgylThhI4QhReJDHZqHVTPOh/Krpq7mQu5XORWIb1AVdAfmqviSY48Wfqdm+eDMGA+miU4B7SC/jaqR25wEAA== Completed in 1ms
+397 timing metavuln:calculate:security-advisory:@jest/core:YJgylThhI4QhReJDHZqHVTPOh/Krpq7mQu5XORWIb1AVdAfmqviSY48Wfqdm+eDMGA+miU4B7SC/jaqR25wEAA== Completed in 3ms
+398 timing metavuln:cache:get:security-advisory:jest:3qr7nMyPorm0OS++DDwaLO9fYRZ0X50eBS0RsYDt8bxC6lfzEjs6WZs1ULHi+Iob0Id2lx8htqZDGzqL4GMjmg== Completed in 1ms
+399 timing metavuln:load:security-advisory:jest:QlDnZBtBQ16Gx4Dpe7/WhBSRPDzaBfpNjHCYtsF50ar5r4Ao1VL/y+LKgkO0tRHtx62WjMpjdJLyMGuBsiniuw== Completed in 1ms
+400 timing metavuln:calculate:security-advisory:jest:QlDnZBtBQ16Gx4Dpe7/WhBSRPDzaBfpNjHCYtsF50ar5r4Ao1VL/y+LKgkO0tRHtx62WjMpjdJLyMGuBsiniuw== Completed in 2ms
+401 timing metavuln:cache:get:security-advisory:@jest/core:XF1WR9K2PXnhwxQd8g4l7AQuAN4H5ajUP9SXJGXKLvjqBTLeLP5bRGjP+k7+mpN1p2mqRZWmCZXyROQ2cPWK/A== Completed in 1ms
+402 timing metavuln:load:security-advisory:@jest/core:bEtaEYIv0M0OcvRBODElvSBbHVhrA4hWPCHi6fqXeq1hNFPB1hXwIGKEO76TkXG9CcNccqnMwMCV7qdEKNpbIA== Completed in 0ms
+403 timing metavuln:calculate:security-advisory:@jest/core:bEtaEYIv0M0OcvRBODElvSBbHVhrA4hWPCHi6fqXeq1hNFPB1hXwIGKEO76TkXG9CcNccqnMwMCV7qdEKNpbIA== Completed in 1ms
+404 timing metavuln:cache:get:security-advisory:jest-config:fWtgd5UrTjw1KV/QMi4P53YB14MZOm7JUEP0pMo4yvL6XFeI0aGmqkwQ3lm9p8NZ1P21ZypeaAjzWJmSP3CG8Q== Completed in 0ms
+405 timing metavuln:load:security-advisory:jest-config:AlsqG2QQVsTan/maFiw2brY+TIu7gDmzdTqcIVE1EY8YF9aYgbaYDJ9YO6h9q+6mg02ht3kX5FTbCG9TbPK9yA== Completed in 19ms
+406 timing metavuln:cache:put:security-advisory:jest-config:fWtgd5UrTjw1KV/QMi4P53YB14MZOm7JUEP0pMo4yvL6XFeI0aGmqkwQ3lm9p8NZ1P21ZypeaAjzWJmSP3CG8Q== Completed in 3ms
+407 timing metavuln:calculate:security-advisory:jest-config:AlsqG2QQVsTan/maFiw2brY+TIu7gDmzdTqcIVE1EY8YF9aYgbaYDJ9YO6h9q+6mg02ht3kX5FTbCG9TbPK9yA== Completed in 22ms
+408 timing metavuln:cache:get:security-advisory:jest-circus:2JlXZzeQeS79pKNSB0zh/1opOztH4hgmY7W/KhOYNSKVWyVY4jLVjZ4Bfbd73T3RPUITPnDfro4dPP8QiB1NOQ== Completed in 1ms
+409 timing metavuln:load:security-advisory:jest-circus:J3wbkL9mesGyZaRvvctH3IkTkjwHhUKk/dZciz7ptg+O5RYZpmjtZtK7zO0M17/pv6AzAjezuzoe/hB66VrYlw== Completed in 0ms
+410 timing metavuln:calculate:security-advisory:jest-circus:J3wbkL9mesGyZaRvvctH3IkTkjwHhUKk/dZciz7ptg+O5RYZpmjtZtK7zO0M17/pv6AzAjezuzoe/hB66VrYlw== Completed in 1ms
+411 timing metavuln:cache:get:security-advisory:@jest/globals:dhVA2NalRQNXSofMw8KNi83NCeOBcwboCNH//1LrRQ136obwz5soLRj+51qEas6SQ6KGQg1oAj/svRICtq6Ptg== Completed in 1ms
+412 http fetch GET 200 https://registry.npmjs.org/@jest%2fglobals 131ms (cache revalidated)
+413 timing metavuln:packument:@jest/globals Completed in 131ms
+414 timing metavuln:load:security-advisory:@jest/globals:J3wbkL9mesGyZaRvvctH3IkTkjwHhUKk/dZciz7ptg+O5RYZpmjtZtK7zO0M17/pv6AzAjezuzoe/hB66VrYlw== Completed in 0ms
+415 timing metavuln:calculate:security-advisory:@jest/globals:J3wbkL9mesGyZaRvvctH3IkTkjwHhUKk/dZciz7ptg+O5RYZpmjtZtK7zO0M17/pv6AzAjezuzoe/hB66VrYlw== Completed in 132ms
+416 timing metavuln:cache:get:security-advisory:jest-runtime:7+tDAF3Z30jWDnOm7EgZINyVODwlhZmSs1CnRqqvyrY8duRoyOYppwBfoAwWXrHRg2QGhULcf3MfzKu0k6yHuQ== Completed in 0ms
+417 timing metavuln:load:security-advisory:jest-runtime:dhVA2NalRQNXSofMw8KNi83NCeOBcwboCNH//1LrRQ136obwz5soLRj+51qEas6SQ6KGQg1oAj/svRICtq6Ptg== Completed in 1ms
+418 timing metavuln:calculate:security-advisory:jest-runtime:dhVA2NalRQNXSofMw8KNi83NCeOBcwboCNH//1LrRQ136obwz5soLRj+51qEas6SQ6KGQg1oAj/svRICtq6Ptg== Completed in 1ms
+419 timing auditReport:init Completed in 7148ms
+420 timing reify:audit Completed in 7514ms
+421 timing reify Completed in 8391ms
+422 timing command:install Completed in 8421ms
+423 verbose exit 0
+424 timing npm Completed in 8556ms
+425 info ok

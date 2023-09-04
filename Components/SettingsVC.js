@@ -246,8 +246,8 @@ return(
         if(Platform.OS == 'android'){
           navigation.navigate('Albumlist') 
         }else{
-          navigation.navigate('Albumlist') 
-         // navigation.navigate('IOSAlbumlist') 
+          //navigation.navigate('Albumlist') 
+         navigation.navigate('IOSAlbumlist') 
         }    
           }}>
       <Text style = {stylesheet.settingstext}>Gallery</Text>

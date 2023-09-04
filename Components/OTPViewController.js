@@ -68,6 +68,7 @@ function OTPViewController({navigation}){
         Contacts.getAll().then(contacts => {
           contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
           setContacts(contacts)
+          insertData()
         })
       })
     }
@@ -75,18 +76,12 @@ function OTPViewController({navigation}){
 
       db.transaction((tx) => {
         tx.executeSql('SELECT * FROM contact_info', [], (tx, results) => {
-          console.log("Query completed");
-          // Get rows with Web SQL Database spec compliance.
-          var len = results.rows.length;
-          for (let i = 0; i < len; i++) {
-           let row = results.rows.item(i);
-           console.log(`Record: ${row.user_name}`);
-          }
+          console.log("device contacts "+results.rows.length);    
          });
        });
       db.transaction(function (txn) {
          txn.executeSql(
-           'CREATE TABLE IF NOT EXISTS contact_info(phone_num INTEGER PRIMARY KEY AUTOINCREMENT, user_name VARCHAR(20), user_email VARCHAR(255))',
+           'CREATE TABLE IF NOT EXISTS contact_info(contact_id INTEGER PRIMARY KEY AUTOINCREMENT,phone_num VARCHAT(20) UNIQUE, user_name VARCHAR(20), user_email VARCHAR(255))',
              []
          );
       });
@@ -138,7 +133,23 @@ function OTPViewController({navigation}){
       ),
     });
     }
-    
+    const insertData = () => {
+      {contacts.map((item, index) => (
+        db.transaction((tx) => {
+          tx.executeSql('SELECT * FROM contact_info WHERE user_name=?', [item?.givenName], (tx, results) => {
+            if(results.rows.length == 0){
+                tx.executeSql(
+                  'INSERT INTO contact_info (phone_num, user_name, user_email) VALUES (?,?,?)',
+                  [item?.phoneNumbers[0]?.number, item?.givenName, ""],
+                  (tx, results) => {
+                    console.log('Results', results);
+                     console.log("inserted user "+item?.givenName)
+                  })
+            }  
+           });
+         })
+      ))}
+    }
     useEffect(() => {
       navigationData()
       createUserTable();
@@ -160,19 +171,8 @@ function OTPViewController({navigation}){
                    // console.log(contacts);
                     contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
                     setContacts(contacts)
-                    {contacts.map((item, index) => (
-                      db.transaction(function (tx) {
-                        tx.executeSql(
-                          'INSERT INTO contact_info (phone_num, user_name, user_email) VALUES (?,?,?)',
-                          [item?.phoneNumbers[0]?.number, item?.givenName, ""],
-                          (tx, results) => {
-                            console.log('Results', results.rowsAffected);
-                            if (results.rowsAffected > 0) {
-                             console.log(item?.givenName[0])
-                            } else{
-                            }})
-                      })
-                    ))}
+                    insertData()
+
                 })
                 .catch((e) => {
                     console.log("error"+e);
@@ -183,31 +183,12 @@ function OTPViewController({navigation}){
         });
       }
       else{
+      
         Contacts.getAll().then(contacts => {
           contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
           setContacts(contacts)
-          db.transaction((tx) => {
-            tx.executeSql('SELECT * FROM contact_info', [], (tx, results) => {
-              console.log("Query completed"+results.rows.length);            
-              var len = results.rows.length;
-              if(len == contacts.count){
-               console.log("all contacts inserted locally")
-              }
-              else{
-                {contacts.map((item, index) => (
-                  db.transaction(function (tx) {
-                    tx.executeSql(
-                      'INSERT INTO contact_info (phone_num, user_name, user_email) VALUES (?,?,?)',
-                      [item?.phoneNumbers[0]?.number, item?.givenName, ""],
-                      (tx, results) => {
-                         console.log("inserted"+results)
-                      }
-                    )
-                  })
-                ))}
-              }
-             });
-           });
+           insertData()
+        
         })
       }
     }, []);
@@ -249,8 +230,8 @@ function OTPViewController({navigation}){
                   })
                       .then((res) => {
                           console.log('Permission: ', res);
-                          Contacts.deleteContact(item).then((recordId) => {
-                            Contacts.getAll().then(contacts => {
+                              Contacts.deleteContact(item).then((recordId) => {
+                              Contacts.getAll().then(contacts => {
                               contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
                               setContacts(contacts)
                             })

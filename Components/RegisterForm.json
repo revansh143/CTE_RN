@@ -1,0 +1,24 @@
+{
+    "fields": [
+      {
+        "label": "Name",
+        "type": "text",
+        "fieldName": "name",
+        "placeholder": "Annie Smith",
+        "helpText": "supply your first and last name",
+        "required": true
+      },
+      {
+        "label": "Password",
+        "type": "password",
+        "fieldName": "password",
+        "required": true
+      },
+      {
+        "label": "Phone number",
+        "type": "text",
+        "fieldName": "phone",
+        "placeholder": "+44 7809 12 34 56"
+      }
+    ]
+  }

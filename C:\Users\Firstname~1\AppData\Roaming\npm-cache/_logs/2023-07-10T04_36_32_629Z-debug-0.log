@@ -1,0 +1,84 @@
+0 verbose cli /opt/homebrew/Cellar/node/20.4.0/bin/node /opt/homebrew/bin/npm
+1 info using npm@9.7.2
+2 info using node@v20.4.0
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/opt/homebrew/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 timing config:load:cli Completed in 1ms
+8 timing config:load:env Completed in 0ms
+9 timing config:load:file:/Users/arunakumari/Desktop/TestProject/.npmrc Completed in 0ms
+10 timing config:load:project Completed in 1ms
+11 timing config:load:file:/Users/arunakumari/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/opt/homebrew/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:setEnvs Completed in 1ms
+16 timing config:load Completed in 5ms
+17 timing npm:load:configload Completed in 5ms
+18 timing config:load:flatten Completed in 1ms
+19 timing npm:load:mkdirpcache Completed in 1ms
+20 timing npm:load:mkdirplogs Completed in 0ms
+21 verbose title npm install react-native-webview-fix
+22 verbose argv "install" "react-native-webview-fix"
+23 timing npm:load:setTitle Completed in 3ms
+24 timing npm:load:display Completed in 0ms
+25 verbose logfile logs-max:10 dir:/Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-10T04_36_32_629Z-
+26 verbose logfile /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-10T04_36_32_629Z-debug-0.log
+27 timing npm:load:logFile Completed in 5ms
+28 timing npm:load:timers Completed in 0ms
+29 timing npm:load:configScope Completed in 0ms
+30 timing npm:load Completed in 22ms
+31 timing arborist:ctor Completed in 0ms
+32 silly logfile done cleaning log files
+33 timing idealTree:init Completed in 183ms
+34 timing idealTree:userRequests Completed in 1ms
+35 silly idealTree buildDeps
+36 silly fetch manifest react-native-webview-fix@*
+37 http fetch GET 200 https://registry.npmjs.org/react-native-webview-fix 1689ms (cache miss)
+38 silly fetch manifest react@18.2.0
+39 http fetch GET 200 https://registry.npmjs.org/react 2256ms (cache updated)
+40 silly fetch manifest react@16.8.6
+41 timing idealTree Completed in 4149ms
+42 timing command:install Completed in 4154ms
+43 verbose stack Error: unable to resolve dependency tree
+43 verbose stack     at #failPeerConflict (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1376:25)
+43 verbose stack     at #loadPeerSet (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:1342:33)
+43 verbose stack     at async #buildDepStep (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:917:11)
+43 verbose stack     at async Arborist.buildIdealTree (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/build-ideal-tree.js:196:7)
+43 verbose stack     at async Promise.all (index 1)
+43 verbose stack     at async Arborist.reify (/opt/homebrew/lib/node_modules/npm/node_modules/@npmcli/arborist/lib/arborist/reify.js:159:5)
+43 verbose stack     at async Install.exec (/opt/homebrew/lib/node_modules/npm/lib/commands/install.js:149:5)
+43 verbose stack     at async module.exports (/opt/homebrew/lib/node_modules/npm/lib/cli-entry.js:61:5)
+44 verbose cwd /Users/arunakumari/Desktop/TestProject
+45 verbose Darwin 22.1.0
+46 verbose node v20.4.0
+47 verbose npm  v9.7.2
+48 error code ERESOLVE
+49 error ERESOLVE unable to resolve dependency tree
+50 error
+51 error While resolving: [1mTestProject[22m@[1m0.0.1[22m
+51 error Found: [1mreact[22m@[1m18.2.0[22m[2m[22m
+51 error [2mnode_modules/react[22m
+51 error   [1mreact[22m@"[1m18.2.0[22m" from the root project
+51 error
+51 error Could not resolve dependency:
+51 error [35mpeer[39m [1mreact[22m@"[1m16.8.6[22m" from [1mreact-native-webview-fix[22m@[1m1.0.10[22m[2m[22m
+51 error [2mnode_modules/react-native-webview-fix[22m
+51 error   [1mreact-native-webview-fix[22m@"[1m*[22m" from the root project
+51 error
+51 error Fix the upstream dependency conflict, or retry
+51 error this command with --force or --legacy-peer-deps
+51 error to accept an incorrect (and potentially broken) dependency resolution.
+52 error
+52 error
+52 error For a full report see:
+52 error /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-10T04_36_32_629Z-eresolve-report.txt
+53 verbose exit 1
+54 timing npm Completed in 4295ms
+55 verbose unfinished npm timer reify 1688963792765
+56 verbose unfinished npm timer reify:loadTrees 1688963792767
+57 verbose unfinished npm timer idealTree:buildDeps 1688963792952
+58 verbose unfinished npm timer idealTree:#root 1688963792953
+59 verbose code 1
+60 error A complete log of this run can be found in: /Users/arunakumari/Desktop/TestProject/C:\Users\Firstname~1\AppData\Roaming\npm-cache/_logs/2023-07-10T04_36_32_629Z-debug-0.log
