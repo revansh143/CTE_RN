@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { View, TextInput, StyleSheet,FlatList,Text, Platform, PermissionsAndroid,TouchableOpacity,Image,Dimensions } from 'react-native';
+import { View, TextInput, StyleSheet,FlatList,Text, Platform, PermissionsAndroid,TouchableOpacity,Image,Dimensions,Alert } from 'react-native';
 
 import Contacts, { requestPermission } from 'react-native-contacts';
 import { openDatabase } from 'react-native-sqlite-storage';
@@ -150,6 +150,20 @@ function OTPViewController({navigation}){
          })
       ))}
     }
+
+    const deleteContact = (item) =>{
+      Contacts.deleteContact(item).then((recordId) => {
+        db.transaction((tx) => {
+          tx.executeSql('DELETE FROM contact_info WHERE user_name=?', [item.givenName], (tx, results) => {
+              Contacts.getAll().then(contacts => {
+              contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
+              setContacts(contacts)
+               insertData()  
+           });
+         })
+      })
+    })
+    }
     useEffect(() => {
       navigationData()
       createUserTable();
@@ -230,16 +244,30 @@ function OTPViewController({navigation}){
                   })
                       .then((res) => {
                           console.log('Permission: ', res);
-                              Contacts.deleteContact(item).then((recordId) => {
-                              Contacts.getAll().then(contacts => {
-                              contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
-                              setContacts(contacts)
-                            })
-                          })
+                          Alert.alert(
+                            'Delete',
+                            'Are you sure do you want to delete contact from your device contacts and local DB?', // <- this part is optional, you can pass an empty string
+                            [
+                              {text: 'YES', onPress: () =>  deleteContact(item)},
+                              {text: 'NO', onPress: () => console.log("")},
+                            ],
+                            {cancelable: false},
+                          );  
                       })
                       .catch((error) => {
                           console.error('Permission error: ', error);
                       });
+                    }
+                    else{
+                      Alert.alert(
+                        'Delete',
+                        'Are you sure do you want to delete contact from your device contacts and local DB?', // <- this part is optional, you can pass an empty string
+                        [
+                          {text: 'YES', onPress: () =>  deleteContact(item)},
+                          {text: 'NO', onPress: () => console.log("")},
+                        ],
+                        {cancelable: false},
+                      );
                     }
                 } }
              },
@@ -248,8 +276,17 @@ function OTPViewController({navigation}){
                 backgroundColor: 'blue',
                 underlayColor: 'rgba(0, 0, 0, 1, 0.6)',
                 onPress: () => { {
-                  Contacts.openExistingContact({recordID:item.recordID}).then( recordID => {
-                  })
+                  Alert.alert(
+                    'Delete',
+                    'Are you sure do you want to Edit contact from your device contacts and local DB?', // <- this part is optional, you can pass an empty string
+                    [
+                      {text: 'YES', onPress: () =>   Contacts.openExistingContact({recordID:item.recordID}).then( recordID => {
+                      })},
+                      {text: 'NO', onPress: () => console.log("")},
+                    ],
+                    {cancelable: false},
+                  );
+                 
                 } }
              }
             ]
