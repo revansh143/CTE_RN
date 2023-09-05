@@ -65,7 +65,6 @@ export default class NewContact extends Component({route,navigation}){
       <Container>
         <Content>
           {this._renderHeader()}
-
           <Form>
             <Item>
               <Input placeholder="First Name" onChangeText={(text) => this.setState({firstName: text})}/>
@@ -84,5 +83,4 @@ export default class NewContact extends Component({route,navigation}){
       </Container>
     );
   }
-
 }

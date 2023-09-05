@@ -19,10 +19,7 @@ function OTPViewController({navigation}){
       const newOtp = [...otp];
       newOtp[index] = value;
       setOtp(newOtp);
- 
       if(index == 2){
-        console.log(value.count)
-        console.log(index)
         if (value.length == index+1) {
           inputs[index + 1].focus();
         }
@@ -41,7 +38,6 @@ function OTPViewController({navigation}){
           PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
           PermissionsAndroid.PERMISSIONS.ACCESS_COARSE_LOCATION,
         ]).then((result) => {
-          console.log(result);
           if (
             result['android.permission.ACCESS_COARSE_LOCATION'] &&
             result['android.permission.ACCESS_FINE_LOCATION'] === 'granted'
@@ -73,7 +69,6 @@ function OTPViewController({navigation}){
       })
     }
     const createUserTable = () => {
-
       db.transaction((tx) => {
         tx.executeSql('SELECT * FROM contact_info', [], (tx, results) => {
           console.log("device contacts "+results.rows.length);    
@@ -88,10 +83,7 @@ function OTPViewController({navigation}){
   }
     const getLocation = () => {
       Geolocation.getCurrentPosition(info => {
-        console.log(info)
         setLocation(info)
-        console.log(info.coords.latitude)
-        console.log(info.coords.longitude)
         Geocoder.init("GOOGLE_MAP_APIKEY"); 
         Geocoder.from(info.coords.latitude, info.coords.longitude)
             .then(json => {
@@ -142,7 +134,6 @@ function OTPViewController({navigation}){
                   'INSERT INTO contact_info (phone_num, user_name, user_email) VALUES (?,?,?)',
                   [item?.phoneNumbers[0]?.number, item?.givenName, ""],
                   (tx, results) => {
-                    console.log('Results', results);
                      console.log("inserted user "+item?.givenName)
                   })
             }  
@@ -167,26 +158,20 @@ function OTPViewController({navigation}){
     useEffect(() => {
       navigationData()
       createUserTable();
-     
       if (Platform.OS === 'android') {
         requestLocationPermission();
       } else {
         getLocation();
        }
-
       if(Platform.OS == 'android'){
       PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.READ_CONTACTS, {
     })
         .then((res) => {
-            console.log('Permission: ', res);
             Contacts.getAll()
                 .then((contacts) => {
-                    // work with contacts
-                   // console.log(contacts);
                     contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
                     setContacts(contacts)
                     insertData()
-
                 })
                 .catch((e) => {
                     console.log("error"+e);
@@ -197,12 +182,10 @@ function OTPViewController({navigation}){
         });
       }
       else{
-      
         Contacts.getAll().then(contacts => {
           contacts.sort((a, b) => a.givenName.localeCompare(b.givenName));
-          setContacts(contacts)
+           setContacts(contacts)
            insertData()
-        
         })
       }
     }, []);
@@ -243,7 +226,6 @@ function OTPViewController({navigation}){
                     PermissionsAndroid.request(PermissionsAndroid.PERMISSIONS.WRITE_CONTACTS, {
                   })
                       .then((res) => {
-                          console.log('Permission: ', res);
                           Alert.alert(
                             'Delete',
                             'Are you sure do you want to delete contact from your device contacts and local DB?', // <- this part is optional, you can pass an empty string

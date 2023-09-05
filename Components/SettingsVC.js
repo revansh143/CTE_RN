@@ -153,7 +153,7 @@ setImages(result)
         console.log('ImagePicker Error: ', response.error);
       } else if (response.customButton) {
         console.log('User tapped custom button: ', response.customButton);
-        alert(response.customButton);
+        Alert.alert(response.customButton);
       } else {
         const source = { uri: response.uri };
         console.log('response', JSON.stringify(response));
@@ -177,7 +177,7 @@ setImages(result)
         console.log('ImagePicker Error: ', response.error);
       } else if (response.customButton) {
         console.log('User tapped custom button: ', response.customButton);
-        alert(response.customButton);
+        Alert.alert(response.customButton);
       } else {
         const source = { uri: response.uri };
         console.log('response', JSON.stringify(response));

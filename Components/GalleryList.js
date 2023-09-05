@@ -1,8 +1,9 @@
 
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { View,  FlatList, Image,  Text,   TouchableOpacity,  Dimensions,ImageBackground} from 'react-native';
-  import CameraRoll from '@react-native-community/cameraroll';
-  import { RFValue } from 'react-native-responsive-fontsize';
+import CameraRoll from '@react-native-community/cameraroll';
+import { RFValue } from 'react-native-responsive-fontsize';
+import { openDatabase } from 'react-native-sqlite-storage';
 
 function GalleryList({route,navigation,props}){
 
@@ -15,10 +16,32 @@ function GalleryList({route,navigation,props}){
 
     const [getalbumname, setalbumname] = useState(route.params['albumname'])
     const [selectedLetter, setSelectedLetter] = useState('')
-    var selectionData=selectedLetter;
+    const [selectionImagesDB, setselectionImagesDB] = useState([])
 
+    var selectionData=selectedLetter;
+    var db = openDatabase({ name: 'UserDatabase.db' });
+
+    const createImagesTable = () => {
+      db.transaction((tx) => {
+        tx.executeSql('SELECT * FROM GalleryImages', [], (tx, results) => {
+          let images = []
+          var len = results.rows.length;
+          for (let i = 0; i < len; i++) {
+            let row = results.rows.item(i);
+            images.push(row.imageURl)
+          }
+          setselectionImagesDB(images)
+        })
+      })
+      db.transaction(function (txn) {
+         txn.executeSql(
+           'CREATE TABLE IF NOT EXISTS GalleryImages(id INTEGER PRIMARY KEY AUTOINCREMENT,imageURl VARCHAT(20) UNIQUE)',
+             []
+         );
+      });
+  }
     React.useEffect(() => {
-         console.log('album name '+ getalbumname)
+      createImagesTable()
         const photos =  CameraRoll.getPhotos({
             first: 100000000,
             assetType: "Photos",
@@ -77,7 +100,6 @@ function GalleryList({route,navigation,props}){
           }
           return item;
         });
-        console.log("selection image "+categories[index].node.image.uri)
         if(categories[index].selected == 1){
           categories[index].selected = 0;
         }
@@ -85,6 +107,24 @@ function GalleryList({route,navigation,props}){
           categories[index].selected = 1;
         }
         updateCategory(categories);
+        db.transaction((tx) => {
+          tx.executeSql('SELECT * FROM GalleryImages WHERE imageURl=?', [categories[index].node.image.uri], (tx, results) => {
+            if(results.rows.length == 0){
+                tx.executeSql(
+                  'INSERT INTO GalleryImages (imageURl) VALUES (?)',
+                  [categories[index].node.image.uri],
+                  (tx, results) => {
+                  })
+            }
+            else{
+                db.transaction((tx) => {
+                  tx.executeSql('DELETE FROM GalleryImages WHERE imageURl=?', [categories[index].node.image.uri], (tx, results) => {
+                    createImagesTable()
+                   });
+                 })
+            }  
+           });
+         })
         previousSelection = selectedImages
         if(previousSelection.includes(categories[index].node.image.uri)){
           previousSelection.pop(categories[index].node.image.uri)
@@ -110,7 +150,7 @@ return(
          <Image
           style={{width: 30, height: 30,}}
           //require(item.selected == 1 ? '../assets/ch.png': '../assets/uncheckbox.png')
-          source={item.selected == 1 || selectedImages.includes(item.node.image.uri) ? require('../assets/ch.png') : require('../assets/uncheckbox.png')}
+          source={item.selected == 1 || selectedImages.includes(item.node.image.uri) || selectionImagesDB.includes(item.node.image.uri) ? require('../assets/ch.png') : require('../assets/uncheckbox.png')}
           resizeMode='contain'
         />      
             </View>

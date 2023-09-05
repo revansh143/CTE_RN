@@ -8,9 +8,30 @@ function IOSGalleryList({route,navigation,props}){
 
     const [data, setData] = useState(route.params['albumname']);
     const [selectedLetter, setSelectedLetter] = useState('')
+    const [selectionImages, setselectionImages] = useState('')
+
     var selectionData=selectedLetter;
+    var db = openDatabase({ name: 'UserDatabase.db' });
+
+    const createImagesTable = () => {
+
+      db.transaction((tx) => {
+        tx.executeSql('SELECT * FROM GalleryImages', [], (tx, results) => {
+          console.log("device images "+results);    
+          setselectionImages(results)
+
+         });
+       });
+      db.transaction(function (txn) {
+         txn.executeSql(
+           'CREATE TABLE IF NOT EXISTS GalleryImages(id INTEGER PRIMARY KEY AUTOINCREMENT,imageURl VARCHAT(20) UNIQUE)',
+             []
+         );
+      });
+  }
 
     React.useEffect(() => {
+      createImagesTable()
         console.log(data)
         if(Platform.OS === "android"){
           navigation.setOptions({
@@ -66,6 +87,19 @@ function IOSGalleryList({route,navigation,props}){
           categories[index].selected = 1;
         }
         updateCategory(categories);
+        db.transaction((tx) => {
+          tx.executeSql('SELECT * FROM GalleryImages WHERE imageURl=?', [item?.image.uri], (tx, results) => {
+            if(results.rows.length == 0){
+                tx.executeSql(
+                  'INSERT INTO GalleryImages (imageURl) VALUES (?)',
+                  [item.image.uri],
+                  (tx, results) => {
+                    console.log('Results', results);
+                     console.log("inserted image "+item?.image.uri)
+                  })
+            }  
+           });
+         })
       };
 
 return(   
@@ -83,7 +117,7 @@ return(
          <Image
           style={{width: 30, height: 30,}}
           //require(item.selected == 1 ? '../assets/ch.png': '../assets/uncheckbox.png')
-          source={item.selected == 1 ? require('../assets/ch.png') : require('../assets/uncheckbox.png')}
+          source={item.selected == 1 || selectionImages.includes(item.image.uri) ?  require('../assets/ch.png') : require('../assets/uncheckbox.png')}
           resizeMode='contain'
         />      
             </View>

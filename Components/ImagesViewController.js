@@ -6,6 +6,7 @@ import React, {useState,useEffect} from 'react';
 import { Dimensions,ActivityIndicator } from 'react-native';
 import RNPhotosFramework from 'rn-photos-framework';
 import { RFValue } from 'react-native-responsive-fontsize';
+import { openDatabase } from 'react-native-sqlite-storage';
 
 
 // import all the components we are going to use
@@ -48,11 +49,33 @@ function ImagesViewController({navigation}){
   const [gallerylist, setAlbum] = useState();
   const [data, setData] = useState();
   const [sectionTitle, setSectionTitle] = useState();
+  const [selectionImagesDB, setselectionImagesDB] = useState([])
 
   var groupnames = []
   var userList = []
+  var db = openDatabase({ name: 'UserDatabase.db' });
 
+  const createImagesTable = () => {
+    db.transaction((tx) => {
+      tx.executeSql('SELECT * FROM GalleryImages', [], (tx, results) => {
+        let images = []
+        var len = results.rows.length;
+        for (let i = 0; i < len; i++) {
+          let row = results.rows.item(i);
+          images.push(row.imageURl)
+        }
+        setselectionImagesDB(images)
+      })
+    })
+    db.transaction(function (txn) {
+       txn.executeSql(
+         'CREATE TABLE IF NOT EXISTS GalleryImages(id INTEGER PRIMARY KEY AUTOINCREMENT,imageURl VARCHAT(20) UNIQUE)',
+           []
+       );
+    });
+}
   React.useEffect(() => {
+    createImagesTable()
     // Use `setOptions` to update the button that we previously specified
     // Now the button includes an `onPress` handler to update the count
 
@@ -191,7 +214,6 @@ function ImagesViewController({navigation}){
       trackChanges : false
    
     }).then((queryResult) => {
-      console.log(queryResult.albums.length)
       queryResult.albums.forEach((album) => {
         album.getAssets({
           //The fetch-options from the outer query will apply here, if we get
@@ -264,7 +286,6 @@ function ImagesViewController({navigation}){
       }
     ],
  }).then((response) => {
-   console.log(response)
    setSectionTitle(CONTENT[sections[0]]['group_name'])
    //list.sort((a, b) => (a.qty > b.qty) ? 1 : -1)
    setData(response.assets)
@@ -316,28 +337,36 @@ function ImagesViewController({navigation}){
       categories[index].selected = 1;
      }
      updateCategory(categories);
-     console.log(getDic)
      var item = data[index]
-     console.log(getDic[sectionTitle] !== undefined); 
 
-    //  if(getDic[sectionTitle] !== undefined){ 
-    //   previousSelection.push(item.image.uri)
-    //  }
-    //  else{
+     db.transaction((tx) => {
+      tx.executeSql('SELECT * FROM GalleryImages WHERE imageURl=?', [item.image.uri], (tx, results) => {
+        if(results.rows.length == 0){
+            tx.executeSql(
+              'INSERT INTO GalleryImages (imageURl) VALUES (?)',
+              [item.image.uri],
+              (tx, results) => {
+              })
+        }
+        else{
+            db.transaction((tx) => {
+              tx.executeSql('DELETE FROM GalleryImages WHERE imageURl=?', [item.image.uri], (tx, results) => {
+                createImagesTable()
+               });
+             })
+        }  
+       });
+     })
+   
       previousSelection = selectedImages
       if(previousSelection.includes(item.image.uri)){
         previousSelection.pop(item.image.uri)
        }else{
         previousSelection.push(item.image.uri)
        }
-    //  }
      setselectedImages(previousSelection)
      myMap.set(sectionTitle, previousSelection);
-     for (var [key, value] of myMap) {
-      console.log(key + ' = ' + value); 
-     } 
      setDic(myMap)
-     console.log(selectedImages)
    };
    const renderContent = (section, _, isActive) => {
     // Accordion Content view
@@ -362,7 +391,7 @@ function ImagesViewController({navigation}){
         <View>
         <Image
           style={{width: 30, height: 30,}}
-          source={item.selected == 1 || selectedImages.includes(item.image.uri) ? require('../assets/radio_checkred.png') : require('../assets/radio_uncheck.png')}
+          source={item.selected == 1 || selectedImages.includes(item.image.uri) || selectionImagesDB.includes(item.image.uri) ? require('../assets/radio_checkred.png') : require('../assets/radio_uncheck.png')}
           resizeMode='contain'
           transition={false}
          />   
