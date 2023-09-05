@@ -44,24 +44,8 @@ const bottombarItems = [
   
 function HomeViewController({navigation})  {
   const getData = async (key) => {
-    // get Data from Storage
-    // try {
-    //   const data = await AsyncStorage.getItem(key);
-    //   if (data !== null) {
-    //     console.log(data);
-    //     return data;
-    //   }
-    // } catch (error) {
-    //   console.log(error);
-    // }
-  }
+  
     React.useEffect(() => {
-  //     getData("mobileNumber")
-  //     .then(data => data)
-  //     .then(value => {
-  //     console.log("yourKey Value:  " + value)
-  //      })
-  // .catch(err => console.log(err))
       navigation.setOptions({
         headerTitle:() =>(
           <Text></Text>

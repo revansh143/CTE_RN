@@ -157,8 +157,7 @@ const imageThumb = (item) =>
       result = JSON.parse(JSON.stringify(data))
         if(result.status == 1){
           let inventoryfields = result.result
-        setResults(inventoryfields)
-         console.log(getResults)
+          setResults(inventoryfields)
         }
         else{
           Alert.alert(response.details)

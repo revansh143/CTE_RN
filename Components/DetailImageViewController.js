@@ -98,7 +98,6 @@ function DetailImageViewController({route,navigation}){
     React.useEffect(() => {
         //  fetchData()
      setResults(route.params["images"])
-     console.log(route.params)
       },[])
     
 

@@ -54,7 +54,6 @@ function MarketplaceDetailView({route,navigation}){
         api_id:  "cteios2020v3.0",
       }).then(data => { console.log("data", data)
       result = JSON.parse(JSON.stringify(data))
-      console.log(result)
         if(result.status == 1){
           let inventoryfields = result.car
           carinfo = result.car.gallery
@@ -67,8 +66,6 @@ function MarketplaceDetailView({route,navigation}){
           "phonenumber": result.car.sellernumber
         }
         setdetailData(obj)
-        console.log(obj)
-        console.log(getdetailData)
          result["Car Information IOS"].map((userData) => {
           userData.map( (data) => {
             carinfo_ios.push(data) 
