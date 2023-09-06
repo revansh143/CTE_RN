@@ -513,6 +513,8 @@ PODS:
     - RCTTypeSafety
     - React-Core
     - ReactCommon/turbomodule/core
+  - react-native-sms (1.11.0):
+    - React
   - react-native-sqlite-2 (3.6.2):
     - React-Core
   - react-native-sqlite-storage (6.0.1):
@@ -766,6 +768,7 @@ DEPENDENCIES:
   - react-native-geolocation-service (from `../node_modules/react-native-geolocation-service`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-safe-area-context (from `../node_modules/react-native-safe-area-context`)
+  - react-native-sms (from `../node_modules/react-native-sms`)
   - react-native-sqlite-2 (from `../node_modules/react-native-sqlite-2`)
   - react-native-sqlite-storage (from `../node_modules/react-native-sqlite-storage`)
   - react-native-webview (from `../node_modules/react-native-webview`)
@@ -893,6 +896,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-image-picker"
   react-native-safe-area-context:
     :path: "../node_modules/react-native-safe-area-context"
+  react-native-sms:
+    :path: "../node_modules/react-native-sms"
   react-native-sqlite-2:
     :path: "../node_modules/react-native-sqlite-2"
   react-native-sqlite-storage:
@@ -1019,6 +1024,7 @@ SPEC CHECKSUMS:
   react-native-geolocation-service: 608e1da71a1ac31b4de64d9ef2815f697978c55b
   react-native-image-picker: db60857e03d63721f19b6f4027de20429ddd9cba
   react-native-safe-area-context: 68b07eabfb0d14547d36f6929c0e98d818064f02
+  react-native-sms: 31fbb9d6ebb565ad32e409eaf9dc70329936a129
   react-native-sqlite-2: 21c4a9d439e92193a8712c68492731c014671b53
   react-native-sqlite-storage: f6d515e1c446d1e6d026aa5352908a25d4de3261
   react-native-webview: b8ec89966713985111a14d6e4bf98d8b54bced0d

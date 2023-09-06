@@ -11,7 +11,18 @@ import {
   console.log(width > 375 ? 18 : 16)
  
 
-export default StyleSheet.create({   
+export default StyleSheet.create({  
+  Stylecard: {
+    backgroundColor: "#FFFFFF",
+    padding: 15,
+    margin: 10,
+    borderRadius: 15,
+    shadowColor: "green",
+    elevation: 15,
+    flexDirection: "row",
+    flex: 1,
+    justifyContent: "space-between"
+    }, 
 sidemenuTitle:
 {
   fontFamily : "Roboto Bold",fontSize:RFValue(9,width),alignSelf:'center',
@@ -214,7 +225,7 @@ imageThumbnailbg: {
   },
   transparentView:{
     backgroundColor: 'transparent',
-    shadowColor: 'black',
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
   //  shadowRadius: 6,
     shadowOpacity: 0.26,
@@ -225,7 +236,7 @@ imageThumbnailbg: {
     margin: 0.5,
   },
   card: {
-    shadowColor: 'black',
+    shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
   //  shadowRadius: 6,
     shadowOpacity: 0.26,

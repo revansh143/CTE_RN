@@ -71,7 +71,6 @@ var getalbum = [];
  
    const getPhotos = () => {
     // for each album, get the first photo
-    console.log(albumlist)
 
     const albumDataAll =  Promise.all(albumlist.map(async (album) => {
         const photos =  CameraRoll.getPhotos({
@@ -80,7 +79,6 @@ var getalbum = [];
           groupName: album['value'],
           groupTypes: "Album"
         }) .then(res => {
-          console.log(res)
             albumimages.push(res.edges)
            res.edges.forEach((gallery) => {
             userList.push({'image':gallery.node.image.uri,'group_name':album['value']})
@@ -119,18 +117,9 @@ multipleimages = () => {
     maxFiles:10,
 }).then(async images => {
 const result = [];
-console.log(images)
 for await (const image of images) {
-    // const img = await ImagePicker.openCropper({
-    //     mediaType: "photo",
-    //     path: image.path,
-    //     width: 1000,
-    //     height: 1000,
-    // });
-    console.log(image.uri)
     result.push(image.path);
 }
-console.log("gallery images " + result)
 setImages(result)
 
 

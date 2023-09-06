@@ -60,7 +60,7 @@ function GalleryList({route,navigation,props}){
             headerLeft: () => (
               <View style={{ flex: 1, flexDirection: 'row' }}>
               <Text style= {{fontSize:RFValue(10,Dimensions.get('window').width),textAlign: "left",color :"#ae0000",marginTop:10,marginStart:10,fontFamily:"Roboto Bold"}}>
-             Dashboard
+               Dashboard
               </Text>
               </View>
             ), 

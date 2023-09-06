@@ -171,7 +171,7 @@ const imageThumb = (item) =>
       <SafeAreaView>
         <View style={{backgroundColor : "#fff",
       padding: 2,
-      borderColor : "#d3d3d3",borderBottomWidth:1,borderTopWidth:1,borderRightWidth:1,borderLeftWidth:1,  shadowColor: 'black',    flexDirection: 'row',
+      borderColor : "#d3d3d3",borderBottomWidth:1,borderTopWidth:1,borderRightWidth:1,borderLeftWidth:1,  shadowColor: '#000',    flexDirection: 'row',
       }}>
      <Loader loading ={isloading}/>
      <Text style={{color : "#000",
