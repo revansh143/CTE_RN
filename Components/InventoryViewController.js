@@ -121,7 +121,7 @@ const onShare = async () => {
              </Text>
              <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'stretch',marginTop:10 }}>
              <View style={{ marginEnd:10 }}>
-             <Image style ={styles.image} source={{uri:imageThumb(item)}}/>
+             <Image style ={styles.image} source={{uri:item.image_thumbnail == "" ? undefined : item.image_thumbnail}}/>
              </View>
              <View style={{ flex: 1, flexDirection: 'column', alignItems: 'stretch'}}>
              <Text style= {{fontSize:14,textAlign: "left",color :"#a7a7a7",marginTop:5,fontFamily: 'Roboto Italic',marginTop:1}} >{item.price}</Text>
@@ -176,9 +176,7 @@ const onShare = async () => {
    // resizeMode: 'contain',
   },
     card: {
-    //  shadowColor: 'black',
-    //  shadowOffset: { width: 0, height: 2 },
-    //  shadowRadius: 6,
+  
       shadowOpacity: 0.26,
       elevation: 8,
       backgroundColor: '#fff',

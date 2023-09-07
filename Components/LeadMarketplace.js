@@ -187,24 +187,16 @@ import { getApi } from '../config/APIResponse';
       color: "#000000"
    },
     card: {
-    //  shadowColor: 'black',
       shadowOffset: { width: 0, height: 2 },
-    //  shadowRadius: 6,
-    //  shadowOpacity: 0.26,
       backgroundColor: '#fff',
-      // padding: 10,
-     // borderRadius: 10,
       margin: 5,
       borderColor : "#d3d3d3",borderBottomWidth:1,borderTopWidth:1,borderRightWidth:1,borderLeftWidth:1,
-  
     },
     container: {
       flex: 1,
       justifyContent: 'center',
       alignItems: 'center',
       margin: 16,
-      // borderWidth: 1,
-      // borderColor: 'red',
     },
     image: {
       width: 150,

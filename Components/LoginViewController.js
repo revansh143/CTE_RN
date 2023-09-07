@@ -88,11 +88,9 @@ function LoginView({navigation}){
       }, [navigation]);
 
       const createUserTable = () => {
-
         db.transaction((tx) => {
           tx.executeSql('SELECT * FROM table_user', [], (tx, results) => {
             console.log("login Users "+results.rows.length);    
-
            });
          });
         db.transaction(function (txn) {
@@ -197,14 +195,12 @@ function LoginView({navigation}){
                     console.log("Query completed");
                     var len = results.rows.length;
                     // Get rows with Web SQL Database spec compliance.
-                    console.log("number of rows"+len)
                    if(len == 0){
                     db.transaction(function (tx) {
                       tx.executeSql(
                         'INSERT INTO table_user (user_name, user_contact, user_address) VALUES (?,?,?)',
                         [userEmail, userpwd, userEmail],
                         (tx, results) => {
-                          console.log('Results', results.rowsAffected);
                           if (results.rowsAffected > 0) {
                             Alert.alert(
                               'Success',
@@ -225,10 +221,6 @@ function LoginView({navigation}){
                       );
                     });
                    }
-                    for (let i = 0; i < len; i++) {
-                     let row = results.rows.item(i);
-                     console.log(`Record: ${row.user_name}`);
-                    }
                    });
                  });
                 setLoading(true)

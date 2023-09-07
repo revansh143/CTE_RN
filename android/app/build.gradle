@@ -72,7 +72,7 @@ android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion "27.0.3"
+    buildToolsVersion "33.0.0"
 
     namespace "com.testproject"
     defaultConfig {

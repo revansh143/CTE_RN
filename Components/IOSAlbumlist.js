@@ -56,20 +56,10 @@ var images = [];
           trackInsertsAndDeletes: true,
           trackChanges: false
         }).then(queryResult => {
-          console.log(queryResult.albums)
             setAlbum(queryResult.albums)
         });
       }
-    });
-    
-
-
-      // (async function handleGetAlbums() {
-      //       const result = await getAlbums({assetType: "Photos",groupTypes:'smartAlbum'});
-      //       getalbum = result
-      //       console.log(result)
-      //       setAlbum(gallerylist,result)
-      //     })();   
+    });  
   }, []);
   const getnormalAlbums = () => {
     RNPhotosFramework.requestAuthorization().then(statusObj => {
@@ -114,8 +104,6 @@ var images = [];
   }, []);
    const getPhotos = () => {
       gallerylist.forEach((album) => {
-        console.log('single album'+album['title'])
-        console.log('single album'+album.assets)
         album.getAssets({
           //The fetch-options from the outer query will apply here, if we get
           startIndex: 0,
@@ -128,7 +116,6 @@ var images = [];
           trackChanges: false
       }).then((response) => {
         albumimages.push(response.assets)
-        console.log(response.assets.assetCount)
         if(album['title'] == 'Videos'){
         }
         else{
@@ -141,20 +128,7 @@ var images = [];
       .catch(error => {
         console.log(error);
       });; 
-        // const photos =  CameraRoll.getPhotos({
-        //   first: 1,
-        //   groupName : album['title'],
-        // }) .then(res => {
-        //   console.log(res)
-        //     albumimages.push(res.edges)
-        //    res.edges.forEach((gallery) => {
-        //     userList.push({'image':gallery.node.image.uri,'group_name':album['title'],'count':album['count']})
-        //    });
-        //    setData(userList)
-        // })
-        // .catch(error => {
-        //   console.log(error);
-        // });;
+       
     });
   };
   const askPermission = async () => {
@@ -202,7 +176,6 @@ var images = [];
             <Text style={{color:"#ae0000",fontFamily: 'Roboto Bold',fontSize:RFValue(8,Dimensions.get('window').width)}}>Gallery</Text>
           ),
         });
-
         }else{
           navigation.setOptions({
             headerLeft: () => (
@@ -227,8 +200,6 @@ var images = [];
       }, [navigation]);
 
         const popAction = StackActions.pop(2);
-
-
 return(
     <View style = {{  flexDirection: 'column',flex : 1,alignItems:'center'}}  onLayout={getPhotos}>
     <View >
@@ -244,7 +215,6 @@ return(
                 trackInsertsAndDeletes: true,
                 trackChanges: false
             }).then((response) => {
-              console.log(response)
               let imagesofAlbum = []
               response.assets.forEach((gallery) => {
                 imagesofAlbum.push({'image':gallery.image})

@@ -32,7 +32,6 @@ export default class AwesomeProject extends Component {
           trackInsertsAndDeletes: true,
           trackChanges: true
         }).then(queryResult => {
-            console.log(queryResult.albums)
           const album = queryResult.albums[0];
           return album
             .getAssets({
@@ -46,7 +45,6 @@ export default class AwesomeProject extends Component {
               trackChanges: false
             })
             .then(response => {
-            console.log(response.assets.album)
               this.setState({
                 images: response.assets
               });

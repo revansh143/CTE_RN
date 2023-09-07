@@ -52,7 +52,7 @@ function Dashboard({navigation}){
         }
      
       }, [navigation]);
-      const dashboardURL = 'https://uat.cartradeexchange.com/include_ctemobiledashboard_v2?uid=KDk3OUU8UzRZLjM0YApgCg==&mobile=ios'
+      const dashboardURL = 'https://www.cartradeexchange.com/include_ctemobiledashboardnew?uid=KDk3OUU8UzRZLjM0YApgCg=='
 
 return(   
     <AutoHeightWebView hidden = {dashboardURL.length == 0 ? true : false} style = {{backgroundColor : "#fff"}}

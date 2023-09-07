@@ -43,7 +43,6 @@ import DetailImageViewController from './Components/DetailImageViewController';
 import DealerDetailsVC from './Components/DealerDetailsVC';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Albumlist from './Components/Albumslist';
-import DetailAlbumList from './Components/DetailAlbumList';
 import GalleryList from './Components/GalleryList';
 import AwesomeProject from './Components/Groupnames';
 import IOSAlbumlist from './Components/IOSAlbumlist';
@@ -53,6 +52,9 @@ import RegisterForm from './Components/RgisterViewController';
 import OtpInput from './Components/OTPViewController';
 import OTPViewController from './Components/OTPViewController';
 import NewContact from './Components/NewContact';
+import RTOCheck from './Components/RTOCheck';
+import OemConsumerCars from './Components/OemConsumerCars'
+import CTEPriceQuoteWebView from './Components/CTEPriceQuoteWebView';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -74,7 +76,7 @@ const sidemenulist = [
   { title: 'OEM & Consumer', content: '',image : require("./assets/OEM&CosnumerCars.png")},
   { title: 'CarTrade Price', content: '',image :require( "./assets/cartradePrice.png")},
   { title: 'Inventory Market', content: 'marketplaceVC',image : require("./assets/InventoryMarketplace.png")},
-  { title: 'RTO Check', content: '',image : require("./assets/RTOCheck.png")},
+  { title: 'RTO Check', content: 'RTOCheck',image : require("./assets/RTOCheck.png")},
   { title: 'Auctions', content: '',image : require( './assets/Auctions.png')},
   { title: 'Payments', content: '',image : require("./assets/Payment.png")},
   { title: 'Dealer Details', content: '',image : require("./assets/DealerDetails.png")},
@@ -129,6 +131,7 @@ function Root() {
       <Drawer.Screen name="marketplaceDetailVC" component={MarketplaceDetailView}/>
       <Drawer.Screen name='detailimageVC' component={DetailImageViewController}/>
       <Drawer.Screen name="DealerDetails" component={DealerDetailsVC}/>
+      <Stack.Screen name="RTOCheck" component={RTOCheck} />
   </Drawer.Navigator> 
   );
 }
@@ -157,6 +160,10 @@ function MyStack() {
       <Stack.Screen name="IOSGalleryList" component={IOSGalleryList} />
       <Stack.Screen name="RegisterForm" component={RegisterForm} />
       <Stack.Screen name="OTPViewController" component={OTPViewController} />
+
+      <Stack.Screen name="RTOCheck" component={RTOCheck} />
+      <Stack.Screen name="OemConsumerCars" component={OemConsumerCars} />
+      <Stack.Screen name="CTEPrice" component={CTEPriceQuoteWebView} />
 
 
       </Stack.Navigator>

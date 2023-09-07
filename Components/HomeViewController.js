@@ -25,10 +25,10 @@ const bottombarItems = [
     { title: 'Lead Marketplace', content: 'Main',image :require("../assets/LeadMarketplace.png"),component:"leadMarketplace"},
     { title: 'Dashboard', content: 'contact',image :require( "../assets/Dashborad.png"),component:"DashboardVC"},
     { title: 'Dealer Details', content: 'logout',image : require("../assets/DealerDetails.png"),component:"DealerDetails"},
+    { title: 'RTO Check', content: 'RTOCheck',image : require("../assets/RTOCheck.png"),component:"RTOCheck"},
 
-    { title: 'OEM & Consumer Cars', content: 'contact',image : require("../assets/OEM&CosnumerCars.png"),component:""},
+    { title: 'OEM & Consumer Cars', content: 'contact',image : require("../assets/OEM&CosnumerCars.png"),component:"OemConsumerCars"},
     { title: 'Evalutions', content: 'logout',image :require( "../assets/Evaluation.png"),component:""},
-    { title: 'RTO Check', content: 'contact',image : require("../assets/RTOCheck.png"),component:""},
     { title: 'CarTrade Price', content: 'logout',image :require( "../assets/cartradePrice.png"),component:""},
     { title: 'CarTrade Social', content: 'Main',image :require("../assets/social_icon.png"),component:"marketplaceVC"},
     { title: 'Warranties', content: 'Main',image :require("../assets/Warranties.png"),component:""},
@@ -114,8 +114,8 @@ function HomeViewController({navigation})  {
             height :100,
           }}>
             <TouchableOpacity style={{
-            flex: 1, opacity: index <= 3 ? 1.0 : 0.5
-          }} onPress={() => index <= 3 ? navigation.navigate(item.component) : ""}>
+            flex: 1, opacity: index <= 5 ? 1.0 : 0.5
+          }} onPress={() => index <= 5 ? navigation.navigate(item.component) : ""}>
             <View style={stylesheet.imagecontainer}>
             <Image
             style={{ justifyContent: 'center',

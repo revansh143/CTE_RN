@@ -40,7 +40,6 @@ var getalbum = [];
       (async function handleGetAlbums() {
             const result = await getAlbums({assetType: "Photos"});
             getalbum = result
-            console.log(result)
             setAlbum(result)
           })();   
   }, []);
@@ -72,7 +71,6 @@ var getalbum = [];
   //  groupTypes: "All"
     
   }) .then(res => {
-    console.log(res)
       albumimages.push(res.edges)
      res.edges.forEach((gallery) => {
       userList.push({'image':gallery.node.image.uri,'group_name':gallery.node.group_name})
@@ -85,7 +83,6 @@ var getalbum = [];
     }
 
    
-    console.log(gallerylist)
     Promise.all(gallerylist.map(async (album) => {
         const photos =  CameraRoll.getPhotos({
           first: 1,
@@ -93,7 +90,6 @@ var getalbum = [];
           groupName: album['value'],
           groupTypes: "Album"
         }) .then(res => {
-          console.log(res)
             albumimages.push(res.edges)
            res.edges.forEach((gallery) => {
             userList.push({'image':gallery.node.image.uri,'group_name':album['value'],'count':album['count']})
